@@ -1,0 +1,93 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e7736/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7736.dir/build.make CMakeFiles/cmTC_e7736.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/tools/FlairGCS/build_x86_64/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_e7736.dir/CheckSymbolExists.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_e7736.dir/CheckSymbolExists.cxx.o -c /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: 'Q_WS_WIN' was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTC_e7736.dir/CheckSymbolExists.cxx.o] Erreur 1
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/tools/FlairGCS/build_x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTC_e7736/fast] Erreur 2
+
+File /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3404/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d3404.dir/build.make CMakeFiles/cmTC_d3404.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/tools/FlairGCS/build_x86_64/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_d3404.dir/CheckSymbolExists.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_d3404.dir/CheckSymbolExists.cxx.o -c /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: 'Q_WS_QWS' was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTC_d3404.dir/CheckSymbolExists.cxx.o] Erreur 1
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/tools/FlairGCS/build_x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTC_d3404/fast] Erreur 2
+
+File /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6e2fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6e2fe.dir/build.make CMakeFiles/cmTC_6e2fe.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/tools/FlairGCS/build_x86_64/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_6e2fe.dir/CheckSymbolExists.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_6e2fe.dir/CheckSymbolExists.cxx.o -c /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: 'Q_WS_MAC' was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTC_6e2fe.dir/CheckSymbolExists.cxx.o] Erreur 1
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/tools/FlairGCS/build_x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTC_6e2fe/fast] Erreur 2
+
+File /home/rafik/flair/flair-src/tools/FlairGCS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

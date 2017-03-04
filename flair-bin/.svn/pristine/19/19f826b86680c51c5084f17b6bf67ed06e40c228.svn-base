@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root name="Manager">
+  <TabWidget name="Main_TabWidget">
+    <Tab name="GuiGcs">
+      <TabWidget name="GuiGcs">
+        <Tab name="Settings">
+          <GroupBox name="Controls">
+            <PushButton name="Start mission" value="0"/>
+            <PushButton name="Stop mission" value="0"/>
+            <PushButton name="Pause mission" value="0"/>
+          </GroupBox>
+          <GroupBox name="Add mission command">
+            <ComboBox name="Select command" value="0"/>
+            <DoubleSpinBox name="Param1" value="0"/>
+            <DoubleSpinBox name="Latitude" value="1.5"/>
+            <DoubleSpinBox name="Param2" value="0"/>
+            <DoubleSpinBox name="Longitude" value="-1.5"/>
+            <DoubleSpinBox name="Param3" value="0"/>
+            <DoubleSpinBox name="Altitude" value="2"/>
+            <PushButton name="Add mission cmd" value="1"/>
+            <PushButton name="Del mission cmd" value="1"/>
+            <PushButton name="Send mission" value="0"/>
+          </GroupBox>
+          <GroupBox name="Show mission items">
+            <ListWidget name="Mission cmd list" value="1" item0="TAKEOFF|0|0|0|1.5|2.0|3.0" item1="WAYPOINT|0|0|0|2.0|2.0|3.0"/>
+          </GroupBox>
+        </Tab>
+      </TabWidget>
+    </Tab>
+  </TabWidget>
+  <TabWidget name="App_TabWidget">
+    <Tab name="MavPlanner">
+      <PushButton name="save config on target" value="1"/>
+    </Tab>
+  </TabWidget>
+<PushButton name="save config on target (MavPlanner)" value="1"/></root>

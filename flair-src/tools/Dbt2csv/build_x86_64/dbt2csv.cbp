@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="dbt2csv"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\;CMake Files\..\..\..\flair-dev\;CMake Files\..\..\..\flair-dev\cmake-modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_info">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 compile_info"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dbt2csv">
+				<Option output="/home/rafik/flair/flair-src/tools/Dbt2csv/build/bin/dbt2csv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4/QtGui"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4/QtCore"/>
+					<Add directory="/home/rafik/flair/flair-src/tools/Dbt2csv/src"/>
+					<Add directory="/home/rafik/flair/flair-src/tools/Dbt2csv/../FlairGCS/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 dbt2csv"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dbt2csv/fast">
+				<Option output="/home/rafik/flair/flair-src/tools/Dbt2csv/build/bin/dbt2csv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Dbt2csv/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4/QtGui"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4/QtCore"/>
+					<Add directory="/home/rafik/flair/flair-src/tools/Dbt2csv/src"/>
+					<Add directory="/home/rafik/flair/flair-src/tools/Dbt2csv/../FlairGCS/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 dbt2csv/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Dbt2csv/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/build/__/FlairGCS/src/moc_file_ui.cxx">
+			<Option target="dbt2csv"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/build/__/FlairGCS/src/moc_file_ui.cxx.rule">
+			<Option target="dbt2csv"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/src/main.cpp">
+			<Option target="dbt2csv"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/FlairGCS/src/file_ui.cpp">
+			<Option target="dbt2csv"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/FlairGCS/src/file_ui.h">
+			<Option target="dbt2csv"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Dbt2csv/../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

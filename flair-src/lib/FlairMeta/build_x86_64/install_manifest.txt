@@ -1,0 +1,11 @@
+/home/rafik/flair/flair-bin/lib/x86_64/unix/libFlairMeta.a
+/home/rafik/flair/flair-dev/include/FlairMeta/HdsX8.h
+/home/rafik/flair/flair-dev/include/FlairMeta/MetaDualShock3.h
+/home/rafik/flair/flair-dev/include/FlairMeta/MetaUsRangeFinder.h
+/home/rafik/flair/flair-dev/include/FlairMeta/MetaVrpnObject.h
+/home/rafik/flair/flair-dev/include/FlairMeta/SimuX4.h
+/home/rafik/flair/flair-dev/include/FlairMeta/SimuX8.h
+/home/rafik/flair/flair-dev/include/FlairMeta/Uav.h
+/home/rafik/flair/flair-dev/include/FlairMeta/UavFactory.h
+/home/rafik/flair/flair-dev/include/FlairMeta/UavStateMachine.h
+/home/rafik/flair/flair-dev/include/FlairMeta/XAir.h

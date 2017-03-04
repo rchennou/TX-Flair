@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MavPlanner"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\;CMake Files\..\..\..\..\flair-dev\;CMake Files\..\..\..\..\flair-dev\cmake-modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/tools/Controller/Mavlink/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Controller/Mavlink/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Controller/Mavlink/../../../../../../../opt/robomap3/1.7.3/armv7a-neon/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Controller/Mavlink/../../../../../../../opt/robomap3/1.7.3/armv7a-neon/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Controller/Mavlink/../../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Controller/Mavlink/../../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/tools/Controller/Mavlink/../../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

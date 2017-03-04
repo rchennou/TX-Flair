@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE remote_ui_xml>
+<root name="interface">
+  <TabWidget name="Main_TabWidget">
+ <Tab name="x8_0">
+  <TabWidget name="tabs">
+   <Tab name="sampling">
+    <DoubleSpinBox value="0.001" name="Tech (s):"/>
+   </Tab>
+   <Tab name="optitrack">
+    <CheckBox value="1" name="enabled"/>
+   </Tab>
+   <Tab name="init">
+    <DoubleSpinBox value="-1.50" name="x:"/>
+    <DoubleSpinBox value="0.0" name="y:"/>
+    <DoubleSpinBox value="-1.2" name="z:"/>
+    <SpinBox value="90" name="yaw (deg):"/>
+   <Vector3DSpinBox name="position" value_x="1.5" value_y="0.00" value_z="-1.00"/></Tab>
+   <Tab name="model">
+    <DoubleSpinBox value="1.6" name="mass (kg):"/>
+    <DoubleSpinBox value="0.2" name="arm length (m):"/>
+    <DoubleSpinBox value="0" name="position G (m):"/>
+    <DoubleSpinBox value="0.001" name="k_mot:"/>
+    <DoubleSpinBox value="0.001" name="c_mot:"/>
+    <DoubleSpinBox value="0.01" name="f_air_vert:"/>
+    <DoubleSpinBox value="0.4" name="f_air_lat:"/>
+    <DoubleSpinBox value="0.006" name="j_roll:"/>
+    <DoubleSpinBox value="0.006" name="j_pitch:"/>
+    <DoubleSpinBox value="0.1" name="j_yaw:"/>
+    <DoubleSpinBox value="0" name="j_r:"/>
+    <DoubleSpinBox value="0.72" name="sigma:"/>
+    <DoubleSpinBox value="1" name="S:"/>
+   </Tab>
+   <Tab name="us">
+    <GroupBox name="position">
+     <DoubleSpinBox value="0" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="0.04" name="z:"/>
+    </GroupBox>
+    <GroupBox name="direction">
+     <DoubleSpinBox value="0" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="1" name="z:"/>
+    </GroupBox>
+    <DoubleSpinBox value="6" name="range:"/>
+   <Vector3DSpinBox name="position" value_x="0" value_y="0" value_z="0.0399999991059303"/><Vector3DSpinBox name="direction" value_x="0" value_y="0" value_z="1"/></Tab>
+   <Tab name="bottom camera">
+    <GroupBox name="position">
+     <DoubleSpinBox value="0" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="0" name="z:"/>
+    </GroupBox>
+    <GroupBox name="direction">
+     <DoubleSpinBox value="0" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="1" name="z:"/>
+    </GroupBox>
+    <GroupBox name="up">
+     <DoubleSpinBox value="1" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="0" name="z:"/>
+    </GroupBox>
+    <DoubleSpinBox value="70" name="fov:"/>
+   </Tab>
+   <Tab name="front camera">
+    <GroupBox name="position">
+     <DoubleSpinBox value="0" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="0" name="z:"/>
+    </GroupBox>
+    <GroupBox name="direction">
+     <DoubleSpinBox value="1" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="0" name="z:"/>
+    </GroupBox>
+    <GroupBox name="up">
+     <DoubleSpinBox value="0" name="x:"/>
+     <DoubleSpinBox value="0" name="y:"/>
+     <DoubleSpinBox value="-1" name="z:"/>
+    </GroupBox>
+    <DoubleSpinBox value="70" name="fov:"/>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="target">
+  <TabWidget name="tabs">
+   <Tab name="sampling">
+    <DoubleSpinBox value="0.02" name="Tech (s):"/>
+   </Tab>
+   <Tab name="optitrack">
+    <CheckBox value="1" name="enabled"/>
+   </Tab>
+   <Tab name="init">
+    <DoubleSpinBox value="0" name="x:"/>
+    <DoubleSpinBox value="0" name="y:"/>
+    <DoubleSpinBox value="0" name="z:"/>
+    <SpinBox value="0" name="yaw (deg):"/>
+   </Tab>
+   <Tab name="model">
+    <DoubleSpinBox value="1.3" name="translational speed (m/s):"/>
+    <DoubleSpinBox value="60" name="rotational speed (deg/s):"/>
+   </Tab>
+  </TabWidget>
+ </Tab>
+<Tab name="x8_1"><TabWidget name="tabs"><Tab name="sampling"><DoubleSpinBox name="Tech (s):" value="0.001"/></Tab><Tab name="optitrack"><CheckBox name="enabled" value="1"/></Tab><Tab name="init"><DoubleSpinBox name="x:" value="1.50"/><DoubleSpinBox name="y:" value="0.0"/><DoubleSpinBox name="z:" value="-1.2"/><SpinBox name="yaw (deg):" value="-90"/><Vector3DSpinBox name="position" value_x="-1.5" value_y="0.00" value_z="-1.00"/></Tab><Tab name="model"><DoubleSpinBox name="mass (kg):" value="1.6"/><DoubleSpinBox name="arm length (m):" value="0.2"/><DoubleSpinBox name="position G (m):" value="0"/><DoubleSpinBox name="k_mot:" value="0.001"/><DoubleSpinBox name="c_mot:" value="0.001"/><DoubleSpinBox name="f_air_vert:" value="0.01"/><DoubleSpinBox name="f_air_lat:" value="0.4"/><DoubleSpinBox name="j_roll:" value="0.006"/><DoubleSpinBox name="j_pitch:" value="0.006"/><DoubleSpinBox name="j_yaw:" value="0.1"/><DoubleSpinBox name="j_r:" value="0"/><DoubleSpinBox name="sigma:" value="0.72"/><DoubleSpinBox name="S:" value="1"/></Tab><Tab name="us"><GroupBox name="position"><DoubleSpinBox name="x:" value="0"/><DoubleSpinBox name="y:" value="0"/><DoubleSpinBox name="z:" value="0.04"/></GroupBox><GroupBox name="direction"><DoubleSpinBox name="x:" value="0"/><DoubleSpinBox name="y:" value="0"/><DoubleSpinBox name="z:" value="1"/></GroupBox><DoubleSpinBox name="range:" value="6"/><Vector3DSpinBox name="position" value_x="0" value_y="0" value_z="0.0399999991059303"/><Vector3DSpinBox name="direction" value_x="0" value_y="0" value_z="1"/></Tab></TabWidget></Tab></TabWidget>
+<TabWidget name="App_TabWidget"><Tab name="simulator"><PushButton name="save config on target" value="1"/></Tab></TabWidget><PushButton name="save config on target (simulator)" value="1"/></root>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FlairFilter"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\;CMake Files\..\..\..\flair-dev\;CMake Files\..\..\..\flair-dev\cmake-modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_info">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 compile_info"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairFilter">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/bin/libFlairFilter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/../FlairSensorActuator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/src"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/iir"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/arm-poky-linux-gnueabi"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 FlairFilter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairFilter/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/bin/libFlairFilter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairFilter/build_arm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/../FlairSensorActuator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairFilter/src"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/iir"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/arm-poky-linux-gnueabi"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 FlairFilter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Ahrs.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Ahrs.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/AhrsComplementaryFilter.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/AhrsComplementaryFilter.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/AhrsKalman.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/AhrsKalman.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/AhrsKalman_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Ahrs_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/ButterworthLowPass.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/ButterworthLowPass.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/ButterworthLowPass_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/ControlLaw.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/ControlLaw.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/EulerDerivative.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/EulerDerivative.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/EulerDerivative_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Gx3_25_ahrs.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Gx3_25_ahrs.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/JoyReference.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/JoyReference.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/JoyReference_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/LowPassFilter.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/LowPassFilter.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/LowPassFilter_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/NestedSat.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/NestedSat.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/NestedSat_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Pid.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Pid.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/PidThrust.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/PidThrust.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/PidThrust_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/Pid_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/SimuAhrs.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/SimuAhrs.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator1D.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator1D.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator1D_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/X4X8Multiplex.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/X4X8Multiplex.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/X4X8Multiplex_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/../../../../../../opt/robomap3/1.7.3/armv7a-neon/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/../../../../../../opt/robomap3/1.7.3/armv7a-neon/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

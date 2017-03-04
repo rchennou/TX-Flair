@@ -1,0 +1,8 @@
+CustomReferenceAngles
+
+This is a minimal skeleton to use the UavStateMachine class.
+It shows how to set custom reference angles, and use the default control laws.
+
+The custom reference angle mode is activated by clicking on the "start CustomReferenceAngles" button on ground station, or with R1 button on the Dualshock 3.
+The custom reference angle mode is deactivated by clicking on the "stop CustomReferenceAngles" button on ground station, or with X button on the Dualshock 3.
+

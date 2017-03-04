@@ -1,0 +1,14 @@
+Redaction d'un tuto d'utilisation en anglais (word - LibreOffice Writer)
+
+- Prise en main de Flair (voir wiki) 
+==> introduction, à quoi sert Flair ?
+==> expliquer toutes les installations nécessaires
+- Demo
+- Copie d'écran de code
+- Arborescence
+- Bout d'UML pour expliquer comment communique les classes
+- Programme de demarrage 
+
+Prog 1 : Demarrage d'un drone + suivi d'une trajectoire donné (carré)
+Prog 2 : Faire voler le drone et le commander en manuel
+Possibilité de tester sur le simulateur (à voir comment faire) ==> tester dans le simulateur avant puis dans la voilière

@@ -1,0 +1,14 @@
+/*! \namespace flair::sensor
+ * 
+ * \brief Sensor classes
+ */
+
+/*! \namespace flair::actuator
+ * 
+ * \brief Actuator classes
+ */
+
+/*! \namespace flair::meta
+ * 
+ * \brief High level classes
+ */

@@ -1,0 +1,43 @@
+var NAVTREE =
+[
+  [ "Flair", "index.html", [
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
+      ] ]
+    ] ],
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"_afro_bldc_8h.html",
+"_vector3_ddata_8h.html",
+"classflair_1_1core_1_1_i_o_device.html#a8d4dacaaa8b2d282a4c38c48281387c7",
+"classflair_1_1core_1_1_vector3_d.html#abf242a58a3126477a930e34a7a9d6097",
+"classflair_1_1gui_1_1_check_box.html#ad542c13fc2280e2fc34ff291d444fb2b",
+"classflair_1_1meta_1_1_uav_state_machine.html#ac335dfcc3c91af9e59dc10d88c1da04f",
+"classflair_1_1sensor_1_1_target_controller.html#a677a1fd35d04b1ffd033206634c6c05e",
+"namespaceflair_1_1gui.html"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

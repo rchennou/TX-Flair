@@ -1,0 +1,25 @@
+<scene>
+	<params>
+		<archive id="0" path="indoor_flight_arena.zip" />
+		<mesh id="0" model="voliere.bsp" >
+			<position x="0" y="0" z="0" />
+			<rotation x="0" y="0" z="0" />
+			<scale x="10" y="10" z="3" />
+		</mesh>
+<!--
+		<camera name="fixed camera 1">
+			<position x="-5" y="-5" z="-1" />
+			<lookat x="0" y="0" z="-5" />
+		</camera>
+		<camera name="fixed camera 2">
+			<position x="-5" y="5" z="-1" />
+		</camera>
+		<camera name="fixed camera 3">
+			<position x="5" y="-5" z="-1" />
+		</camera>
+		<camera name="fixed camera 4">
+			<position x="5" y="5" z="-1" />
+		</camera>
+-->
+	</params>
+</scene>

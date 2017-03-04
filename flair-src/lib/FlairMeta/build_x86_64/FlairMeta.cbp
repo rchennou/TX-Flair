@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FlairMeta"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\;CMake Files\..\..\..\flair-dev\;CMake Files\..\..\..\flair-dev\cmake-modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_info">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 compile_info"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairMeta">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairMeta/build/bin/libFlairMeta.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/../FlairSensorActuator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/../FlairFilter/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 FlairMeta"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairMeta/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairMeta/build/bin/libFlairMeta.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairMeta/build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/../FlairSensorActuator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/../FlairFilter/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairMeta/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 FlairMeta/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairMeta/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/HdsX8.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/HdsX8.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaDualShock3.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaDualShock3.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaDualShock3_impl.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaUsRangeFinder.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaUsRangeFinder.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaVrpnObject.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/MetaVrpnObject.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/SimuX4.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/SimuX4.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/SimuX8.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/SimuX8.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/Uav.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/Uav.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/UavFactory.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/UavFactory.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/UavStateMachine.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/UavStateMachine.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/XAir.cpp">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/src/XAir.h">
+			<Option target="FlairMeta"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairMeta/../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

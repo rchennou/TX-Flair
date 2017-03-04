@@ -1,0 +1,1 @@
+/home/rafik/flair/flair-bin/tools/x86_64/unix/dualshock3

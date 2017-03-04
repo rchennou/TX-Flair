@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FlairSimulator"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\;CMake Files\..\..\..\flair-dev\;CMake Files\..\..\..\flair-dev\cmake-modules\;CMake Files\no_gl\;CMake Files\gl\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_info">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 compile_info"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairSimulator_nogl">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairSimulator/build/bin/libFlairSimulator_nogl.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-D_REENTRANT"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairSensorActuator/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/vrpn"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/irrlicht"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 FlairSimulator_nogl"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairSimulator_nogl/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairSimulator/build/bin/libFlairSimulator_nogl.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-D_REENTRANT"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairSensorActuator/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/vrpn"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/irrlicht"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 FlairSimulator_nogl/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/no_gl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairSimulator_gl">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairSimulator/build/bin/libFlairSimulator_gl.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-DGL"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairSensorActuator/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/vrpn"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/irrlicht"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 FlairSimulator_gl"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairSimulator_gl/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairSimulator/build/bin/libFlairSimulator_gl.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-DGL"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSimulator/../FlairSensorActuator/src"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/vrpn"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/irrlicht"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 FlairSimulator_gl/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSimulator/build/gl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Blade.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Blade.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Castle.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Castle.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/FixedCamera.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/FixedCamera.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/FollowMeCamera.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/GenericObject.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Gui.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Gui.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Gui_impl.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Man.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Man.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/MeshSceneNode.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/MeshSceneNode.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Model.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Model.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Model_impl.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Parser.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Parser.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SensorGL.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SensorGL.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SimuCameraGL.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SimuCameraGL.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SimuLaserGL.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SimuLaserGL.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SimuUsGL.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/SimuUsGL.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Simulator.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Simulator.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/Simulator_impl.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/VisualizationCamera.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/VisualizationCamera.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/X4.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/X4.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/X8.cpp">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/src/X8.h">
+			<Option target="FlairSimulator_nogl"/>
+			<Option target="FlairSimulator_gl"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/no_gl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\no_gl\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/no_gl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\no_gl\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/gl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gl\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSimulator/gl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gl\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

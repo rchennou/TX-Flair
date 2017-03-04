@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FlairCore"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\;CMake Files\..\..\..\flair-dev\;CMake Files\..\..\..\flair-dev\cmake-modules\;CMake Files\nrt\;CMake Files\rt\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_info">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 compile_info"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairCore_nrt">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairCore/build/bin/libFlairCore_nrt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build/nrt"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-D_REENTRANT"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/udt"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src/unexported"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 FlairCore_nrt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairCore_nrt/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairCore/build/bin/libFlairCore_nrt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build/nrt"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-D_REENTRANT"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/udt"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src/unexported"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 FlairCore_nrt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/nrt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairCore_rt">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairCore/build/bin/libFlairCore_rt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build/rt"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/udt"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src/unexported"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/xenomai"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 FlairCore_rt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairCore_rt/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairCore/build/bin/libFlairCore_rt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairCore/build/rt"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/udt"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairCore/src/unexported"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/xenomai"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/x86_64-poky-linux"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 FlairCore_rt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairCore/build/rt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/AhrsData.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/AhrsData.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Box.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Box.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/CheckBox.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/CheckBox.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ComboBox.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ComboBox.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ConditionVariable.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ConditionVariable.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ConditionVariable_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ConnectedSocket.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ConnectedSocket.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot1D.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot1D.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot2D.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot2D.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DataPlot_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DoubleSpinBox.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/DoubleSpinBox.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Euler.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Euler.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/FrameworkManager.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/FrameworkManager.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/FrameworkManager_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GeoCoordinate.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GeoCoordinate.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GpsData.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GpsData.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GridLayout.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GridLayout.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GroupBox.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/GroupBox.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/IODevice.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/IODevice.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/IODevice_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ImuData.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ImuData.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Label.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Label.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Layout.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Layout.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/LayoutPosition.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/LayoutPosition.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ListWidget.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ListWidget.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Map.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Map.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Mutex.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Mutex.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Mutex_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Object.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Object.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Object_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/OneAxisRotation.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/OneAxisRotation.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/OneAxisRotation_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Picture.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Picture.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/PushButton.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/PushButton.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Quaternion.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Quaternion.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RTDM_I2cPort.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RTDM_I2cPort.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RTDM_SerialPort.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RTDM_SerialPort.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RangeFinderPlot.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RangeFinderPlot.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RotationMatrix.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/RotationMatrix.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SendData.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SendData.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SendData_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SharedMem.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SharedMem.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SharedMem_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Socket.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Socket.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Socket_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SpinBox.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/SpinBox.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Tab.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Tab.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/TabWidget.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/TabWidget.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/TcpSocket.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/TcpSocket.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/TextEdit.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/TextEdit.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Thread.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Thread.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Thread_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/UdtSocket.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/UdtSocket.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Unix_I2cPort.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Unix_I2cPort.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Unix_SerialPort.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Unix_SerialPort.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector2D.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector2D.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector3D.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector3D.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector3DSpinBox.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector3DSpinBox.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector3Ddata.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Vector3Ddata.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Watchdog.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Watchdog.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Widget.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Widget.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/Widget_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvimage.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvimage.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvmatrix.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvmatrix.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvmatrix_descriptor.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvmatrix_descriptor.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/cvmatrix_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/io_data.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/io_data.h">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/io_data_impl.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/src/ui_com.cpp">
+			<Option target="FlairCore_nrt"/>
+			<Option target="FlairCore_rt"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../flair-dev/cmake-modules/FindXenomai.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/../../../flair-dev/cmake-modules/FindXenomai.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/nrt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\nrt\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/nrt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\nrt\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/rt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rt\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairCore/rt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rt\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

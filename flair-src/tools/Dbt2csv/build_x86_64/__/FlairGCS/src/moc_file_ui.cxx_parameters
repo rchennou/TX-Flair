@@ -1,0 +1,9 @@
+-I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4
+-I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4/QtGui
+-I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/qt4/QtCore
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-o
+/home/rafik/flair/flair-src/tools/Dbt2csv/build/__/FlairGCS/src/moc_file_ui.cxx
+/home/rafik/flair/flair-src/tools/FlairGCS/src/file_ui.h

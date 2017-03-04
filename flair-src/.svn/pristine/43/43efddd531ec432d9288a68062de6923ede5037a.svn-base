@@ -1,0 +1,9 @@
+// %flair:license{
+// This file is part of the Flair framework distributed under the
+// CECILL-C License, Version 1.0.
+// %flair:license}
+
+/*! \namespace flair::simulator
+ * 
+ * \brief %Simulator classes
+ */

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['rawax',['RawAx',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bea90ece67a73f71355e7c5a6adf5e8149d',1,'flair::core::ImuData']]],
+  ['raway',['RawAy',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26beaf17fe48e3f3aeeb97c77e78340bb5803',1,'flair::core::ImuData']]],
+  ['rawaz',['RawAz',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bead8be85dbc38cbd7c3e5493256ffa1d00',1,'flair::core::ImuData']]],
+  ['rawgx',['RawGx',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26beafbc2d2a514c95994271df80a8e5be519',1,'flair::core::ImuData']]],
+  ['rawgxdeg',['RawGxDeg',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bea915a640fc43e113b03e4391cf0c733a9',1,'flair::core::ImuData']]],
+  ['rawgy',['RawGy',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bea4b4d9ad7d324cc7658342ec2c4771695',1,'flair::core::ImuData']]],
+  ['rawgydeg',['RawGyDeg',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26beadbc88531fe4da892ae4bcd48089d0565',1,'flair::core::ImuData']]],
+  ['rawgz',['RawGz',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26beadc2e059b491fedb6d2960281b7ad6622',1,'flair::core::ImuData']]],
+  ['rawgzdeg',['RawGzDeg',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bea98589e84fadf04b96b5c578ec931a78f',1,'flair::core::ImuData']]],
+  ['rawmx',['RawMx',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bea9ad641005399ef838c6b72845404be6b',1,'flair::core::ImuData']]],
+  ['rawmy',['RawMy',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26bea526c117774f8517ee9496395c87b63cf',1,'flair::core::ImuData']]],
+  ['rawmz',['RawMz',['../classflair_1_1core_1_1_imu_data.html#adb0dfdbb977697425cd06265077c26beae864388017d2f02860096371f515a367',1,'flair::core::ImuData']]],
+  ['red',['Red',['../classflair_1_1gui_1_1_data_plot.html#a0e106271554ff92ebeb94d22014f037ea785377b2f1b0af2b89cbfb67634e2228',1,'flair::gui::DataPlot']]],
+  ['roll',['Roll',['../classflair_1_1core_1_1_ahrs_data.html#a543cdebeff537350a819b07a4a55cdfea5f8990388fad1c927fc08019824fcbdd',1,'flair::core::AhrsData']]],
+  ['rolldeg',['RollDeg',['../classflair_1_1core_1_1_ahrs_data.html#a543cdebeff537350a819b07a4a55cdfea5fc64bf63e469acf2ea04b026566898a',1,'flair::core::AhrsData']]],
+  ['rtk',['Rtk',['../classflair_1_1core_1_1_gps_data.html#afb181594acc39c15c07e5ed5801021b6a8ad9533f39ec3fe43d6ee0104464a116',1,'flair::core::GpsData']]],
+  ['rtkfloat',['RtkFloat',['../classflair_1_1core_1_1_gps_data.html#afb181594acc39c15c07e5ed5801021b6a1eacb557d24c49af2ec6832c5fc32413',1,'flair::core::GpsData']]]
+];

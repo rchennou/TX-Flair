@@ -1,0 +1,14 @@
+/*! \namespace flair
+ * 
+ * \brief namespace of the flair Framework
+ */
+
+/*! \namespace flair::core
+ * 
+ * \brief Core classes
+ */
+
+/*! \namespace flair::gui
+ * 
+ * \brief Graphical user interface classes
+ */

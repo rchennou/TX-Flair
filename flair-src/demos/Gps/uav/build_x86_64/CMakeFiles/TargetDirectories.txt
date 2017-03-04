@@ -1,0 +1,4 @@
+/home/rafik/flair/flair-src/demos/Gps/uav/build/CMakeFiles/edit_cache.dir
+/home/rafik/flair/flair-src/demos/Gps/uav/build/CMakeFiles/DemoGps_nrt.dir
+/home/rafik/flair/flair-src/demos/Gps/uav/build/CMakeFiles/rebuild_cache.dir
+/home/rafik/flair/flair-src/demos/Gps/uav/build/CMakeFiles/DemoGps_rt.dir

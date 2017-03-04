@@ -1,0 +1,42 @@
+<!ELEMENT scene (params, objects)>
+<!ELEMENT params (archive+, mesh)>
+<!ELEMENT archive EMPTY>
+<!ELEMENT objects (mesh+)>
+<!ELEMENT mesh (position, rotation, scale)>
+<!ELEMENT position EMPTY>
+<!ELEMENT rotation EMPTY>
+<!ELEMENT scale EMPTY>
+
+<!ATTLIST scene title CDATA "Untitled">
+<!ATTLIST archive path CDATA #REQUIRED>
+<!ATTLIST archive id CDATA #REQUIRED>
+<!ATTLIST mesh model CDATA #REQUIRED>
+<!ATTLIST mesh id CDATA #REQUIRED>
+<!ATTLIST position x CDATA "0">
+<!ATTLIST position y CDATA "0">
+<!ATTLIST position z CDATA "0">
+<!ATTLIST rotation x CDATA "0">
+<!ATTLIST rotation y CDATA "0">
+<!ATTLIST rotation z CDATA "0">
+<!ATTLIST scale x CDATA "1">
+<!ATTLIST scale y CDATA "1">
+<!ATTLIST scale z CDATA "1">
+<!ELEMENT cylinder (position, rotation, scale)>
+<!ELEMENT eight (position, rotation, scale)>
+<!ATTLIST cylinder radius CDATA #REQUIRED>
+<!ATTLIST cylinder length CDATA #REQUIRED>
+<!ATTLIST cylinder tesselation CDATA "160">
+<!ATTLIST eight width CDATA #REQUIRED>
+<!ATTLIST eight length CDATA #REQUIRED>
+<!ATTLIST eight height CDATA #REQUIRED>
+<!ELEMENT camera (position,lookat)>
+<!ATTLIST camera name CDATA #REQUIRED>
+<!ATTLIST lookat x CDATA "0">
+<!ATTLIST lookat y CDATA "0">
+<!ATTLIST lookat z CDATA "0">
+
+
+
+
+
+

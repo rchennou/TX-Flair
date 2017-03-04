@@ -1,0 +1,10 @@
+execute_process(COMMAND svnversion $ENV{IGEP_ROOT}/uav_lib OUTPUT_VARIABLE SVN_REV)
+string(REPLACE "\n" "" SVN_REV ${SVN_REV})
+#set(SVN_REV "svnversion of $ENV{IGEP_ROOT}/uav_lib is ${SVN_REV}")
+
+file(WRITE svnversion.h.txt "#define SVN_REV \"svnversion of $ENV{IGEP_ROOT}/uav_lib is ${SVN_REV}\\n\"\n")
+# copy the file to the final header only if the version changes
+# reduces needless rebuilds
+execute_process(COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                        svnversion.h.txt @CMAKE_CURRENT_SOURCE_DIR@/src/unexported/svnversion.h)
+

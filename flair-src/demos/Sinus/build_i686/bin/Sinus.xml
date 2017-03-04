@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<root name="FrameworkManager">
+  <TabWidget name="Main_TabWidget">
+    <Tab name="Loop">
+      <PushButton name="kill"/>
+      <PushButton name="start_log"/>
+      <PushButton name="stop_log"/>
+      <SpinBox name="period thread:" value="10"/>
+    </Tab>
+    <Tab name="sinus">
+      <TabWidget name="sinus">
+        <Tab name="Settings">
+          <GroupBox name="sinus">
+            <DoubleSpinBox name="frequence:" value="1.00"/>
+            <DoubleSpinBox name="amplitude:" value="1.00"/>
+            <DoubleSpinBox name="offset:" value="8.00"/>
+          </GroupBox>
+          <SpinBox name="period thread:" value="10"/>
+          <GridLayout name="setup">
+            <GroupBox name="1st order lawpass filter">
+              <DoubleSpinBox name="period, 0 for auto" value="0"/>
+              <DoubleSpinBox name="cutoff frequency" value="1"/>
+            </GroupBox>
+            <GroupBox name="3rd order lawpass filter">
+              <DoubleSpinBox name="period, 0 for auto" value="0"/>
+              <DoubleSpinBox name="cutoff frequency" value="1"/>
+            </GroupBox>
+            <GroupBox name="Mean filter">
+              <SpinBox name="numberOfElements:" value="10"/>
+            </GroupBox>
+            <GroupBox name="Mean filter on 1st order lawpass filter">
+              <SpinBox name="numberOfElements:" value="10"/>
+            </GroupBox>
+          </GridLayout>
+        </Tab>
+        <Tab name="Graph">
+          <DataPlot1D name="Sinus" period="100" enabled="1"/>
+        </Tab>
+      </TabWidget>
+    </Tab>
+  </TabWidget>
+  <PushButton name="save config on target (Sinus)" value="1"/>
+</root>

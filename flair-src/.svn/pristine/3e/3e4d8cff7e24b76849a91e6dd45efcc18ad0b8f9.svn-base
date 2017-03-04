@@ -1,0 +1,243 @@
+<!DOCTYPE remote_ui_xml>
+<root name="interface">
+ <Tab name="simu">
+  <TabWidget name="simu">
+   <Tab name="Reglages">
+    <DoubleSpinBox value="0.001" name="Tech (s):"/>
+    <DoubleSpinBox value="1" name="masse (kg):"/>
+    <DoubleSpinBox value="0.2" name="bras (m):"/>
+    <DoubleSpinBox value="0.05" name="k_driver:"/>
+    <DoubleSpinBox value="0.001" name="k_mot:"/>
+    <DoubleSpinBox value="0.01" name="c_mot:"/>
+    <DoubleSpinBox value="0.05" name="f_air_vert:"/>
+    <DoubleSpinBox value="0.5" name="f_air_lat:"/>
+    <DoubleSpinBox value="0.006" name="j_roll:"/>
+    <DoubleSpinBox value="0.006" name="j_pitch:"/>
+    <PushButton value="0" name="reset"/>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="x4">
+  <PushButton value="0" name="kill"/>
+  <PushButton value="0" name="start_log"/>
+  <PushButton value="0" name="stop_log"/>
+  <PushButton value="0" name="take_off"/>
+  <PushButton value="0" name="landing"/>
+ </Tab>
+ <Tab name="SRF08">
+  <TabWidget name="SRF08">
+   <Tab name="Reglages">
+    <GroupBox name="SRF08">
+     <SpinBox value="8" name="gain:"/>
+     <SpinBox value="46" name="range:"/>
+    </GroupBox>
+    <GridLayout name="setup">
+     <GroupBox name="Passe bas">
+      <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+      <DoubleSpinBox value="1" name="fc (Hz):"/>
+     </GroupBox>
+     <GroupBox name="Passe bas v">
+      <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+      <DoubleSpinBox value="1" name="fc (Hz):"/>
+     </GroupBox>
+     <GroupBox name="Vz">
+      <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+     </GroupBox>
+     <GroupBox name="alt cons">
+      <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+      <DoubleSpinBox value="0.4" name="velocity max (absolute):"/>
+      <DoubleSpinBox value="0.2" name="acceleration (absolute):"/>
+     </GroupBox>
+     <GroupBox name="decollage">
+      <DoubleSpinBox value="1.1" name="alt decollage (m):"/>
+      <DoubleSpinBox value="0" name="alt atterissage (m):"/>
+     </GroupBox>
+    </GridLayout>
+   </Tab>
+   <Tab name="Mesures">
+    <DataPlot name="z">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="vz">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="3dmgx3">
+  <TabWidget name="3dmgx3">
+   <Tab name="Reglages">
+    <GroupBox name="3dmgx3">
+     <PushButton value="0" name="gyros bias"/>
+     <SpinBox value="100" name="data rate (Hz):"/>
+     <SpinBox value="1" name="gyro and acc filter win size:"/>
+     <SpinBox value="1" name="mag filter win size:"/>
+     <SpinBox value="1" name="up compensation (s):"/>
+     <SpinBox value="1" name="north compensation (s):"/>
+     <CheckBox value="true" name="enable Coning&amp;Sculling:"/>
+     <CheckBox value="true" name="disable magnetometer:"/>
+     <CheckBox value="true" name="disable magnetic north compensation:"/>
+     <CheckBox value="true" name="disable gravity compensation:"/>
+    </GroupBox>
+    <GroupBox name="post rotation">
+     <DoubleSpinBox value="0" name="valeur (degre):"/>
+     <ComboBox value="0" name="axe:"/>
+    </GroupBox>
+    <GridLayout name="setup"/>
+   </Tab>
+   <Tab name="Mesures">
+    <DataPlot name="roll">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="pitch">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="yaw">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="droll">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="dpitch">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="dyaw">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="loi de commande">
+  <TabWidget name="loi">
+   <Tab name="Reglages">
+    <GroupBox name="uroll">
+     <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+     <DoubleSpinBox value="500000" name="kp:"/>
+     <DoubleSpinBox value="1e+06" name="ki:"/>
+     <DoubleSpinBox value="50000" name="kd:"/>
+    </GroupBox>
+    <GroupBox name="upitch">
+     <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+     <DoubleSpinBox value="500000" name="kp:"/>
+     <DoubleSpinBox value="1e+06" name="ki:"/>
+     <DoubleSpinBox value="50000" name="kd:"/>
+    </GroupBox>
+    <GroupBox name="uyaw">
+     <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+     <DoubleSpinBox value="20000" name="kp:"/>
+     <DoubleSpinBox value="0" name="ki:"/>
+     <DoubleSpinBox value="5000" name="kd:"/>
+    </GroupBox>
+    <GroupBox name="ugaz">
+     <DoubleSpinBox value="0" name="periode (s), 0 for auto:"/>
+     <DoubleSpinBox value="500000" name="kp:"/>
+     <DoubleSpinBox value="100000" name="ki:"/>
+     <DoubleSpinBox value="200000" name="kd:"/>
+    </GroupBox>
+   </Tab>
+   <Tab name="Graphes">
+    <DataPlot name="uroll">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="upitch">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="uyaw">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="ugaz">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="ps3eye">
+  <TabWidget name="ps3eye">
+   <Tab name="Reglages">
+    <GroupBox name="ps3eye">
+     <DoubleSpinBox value="0" name="gain:"/>
+     <DoubleSpinBox value="0" name="exposure:"/>
+     <DoubleSpinBox value="0" name="bright:"/>
+     <DoubleSpinBox value="0" name="contrast:"/>
+     <DoubleSpinBox value="0" name="hue:"/>
+     <DoubleSpinBox value="0" name="sharpness:"/>
+     <CheckBox value="true" name="autogain:"/>
+     <CheckBox value="true" name="awb:"/>
+     <Picture name="image source">
+      <Setup period="200" enabled="0"/>
+     </Picture>
+    </GroupBox>
+    <GridLayout name="setup">
+     <GroupBox name="flux optique">
+      <SpinBox value="64" name="max features:"/>
+     </GroupBox>
+    </GridLayout>
+   </Tab>
+   <Tab name="flux optique">
+    <DataPlot name="vx">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="vy">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="moteurs">
+  <TabWidget name="moteurs">
+   <Tab name="Reglages">
+    <GroupBox name="moteurs">
+     <SpinBox value="0" name="min:"/>
+     <SpinBox value="2000" name="max:"/>
+     <SpinBox value="0" name="test value:"/>
+     <SpinBox value="950" name="valeur demarrage:"/>
+     <DoubleSpinBox value="0.1" name="pas decollage:"/>
+     <ComboBox value="0" name="avant gauche:"/>
+     <PushButton value="0" name="test avg"/>
+     <ComboBox value="1" name="avant droite:"/>
+     <PushButton value="0" name="test avd"/>
+     <ComboBox value="2" name="arriere gauche:"/>
+     <PushButton value="0" name="test arg"/>
+     <ComboBox value="3" name="arriere droite:"/>
+     <PushButton value="0" name="test ard"/>
+     <ComboBox value="0" name="pas helice avant gauche:"/>
+    </GroupBox>
+   </Tab>
+  </TabWidget>
+ </Tab>
+ <Tab name="dualshock3">
+  <TabWidget name="dualshock3">
+   <Tab name="Reglages">
+    <GroupBox name="consignes joy">
+     <DoubleSpinBox value="20" name="debattement roll (deg)"/>
+     <DoubleSpinBox value="20" name="debattement pitch (deg)"/>
+     <DoubleSpinBox value="90" name="debattement dyaw (deg/s)"/>
+     <DoubleSpinBox value="0.7" name="debattement dz (m/s)"/>
+     <SpinBox value="10" name="trim:"/>
+     <Label name="trim roll"/>
+     <PushButton value="0" name="reset roll trim"/>
+     <Label name="trim pitch"/>
+     <PushButton value="0" name="reset pitch trim"/>
+    </GroupBox>
+    <GroupBox name="dualshock3">
+     <SpinBox value="10" name="dead zone:"/>
+     <Label name="batterie"/>
+    </GroupBox>
+   </Tab>
+   <Tab name="Mesures">
+    <DataPlot name="roll">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="pitch">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="yaw">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+    <DataPlot name="gaz">
+     <Setup period="100" enabled="1"/>
+    </DataPlot>
+   </Tab>
+  </TabWidget>
+ </Tab>
+</root>

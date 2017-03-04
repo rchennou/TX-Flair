@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['background',['background',['http://qt-project.org/doc/qt-4.8/qworkspace.html#background-prop',0,'QWorkspace::background()'],['http://qt-project.org/doc/qt-4.8/qmdiarea.html#background-prop',0,'QMdiArea::background()']]],
+  ['backgroundbrush',['backgroundBrush',['http://qt-project.org/doc/qt-4.8/qgraphicsview.html#backgroundBrush-prop',0,'QGraphicsView::backgroundBrush()'],['http://qt-project.org/doc/qt-4.8/qgraphicsscene.html#backgroundBrush-prop',0,'QGraphicsScene::backgroundBrush()']]],
+  ['backgroundvisible',['backgroundVisible',['http://qt-project.org/doc/qt-4.8/qplaintextedit.html#backgroundVisible-prop',0,'QPlainTextEdit']]],
+  ['baselineoffset',['baselineOffset',['http://qt-project.org/doc/qt-4.8/qdeclarativeitem.html#baselineOffset-prop',0,'QDeclarativeItem']]],
+  ['basesize',['baseSize',['http://qt-project.org/doc/qt-4.8/qwidget.html#baseSize-prop',0,'QWidget']]],
+  ['baseurl',['baseUrl',['http://qt-project.org/doc/qt-4.8/qwebframe.html#baseUrl-prop',0,'QWebFrame']]],
+  ['batchsize',['batchSize',['http://qt-project.org/doc/qt-4.8/qlistview.html#batchSize-prop',0,'QListView']]],
+  ['blockcount',['blockCount',['http://qt-project.org/doc/qt-4.8/qtextdocument.html#blockCount-prop',0,'QTextDocument::blockCount()'],['http://qt-project.org/doc/qt-4.8/qplaintextedit.html#blockCount-prop',0,'QPlainTextEdit::blockCount()']]],
+  ['blurhints',['blurHints',['http://qt-project.org/doc/qt-4.8/qgraphicsblureffect.html#blurHints-prop',0,'QGraphicsBlurEffect']]],
+  ['blurradius',['blurRadius',['http://qt-project.org/doc/qt-4.8/qgraphicsblureffect.html#blurRadius-prop',0,'QGraphicsBlurEffect::blurRadius()'],['http://qt-project.org/doc/qt-4.8/qgraphicsdropshadoweffect.html#blurRadius-prop',0,'QGraphicsDropShadowEffect::blurRadius()']]],
+  ['bottom',['bottom',['http://qt-project.org/doc/qt-4.8/qintvalidator.html#bottom-prop',0,'QIntValidator::bottom()'],['http://qt-project.org/doc/qt-4.8/qdoublevalidator.html#bottom-prop',0,'QDoubleValidator::bottom()']]],
+  ['boundarychecking',['boundaryChecking',['http://qt-project.org/doc/qt-4.8/q3databrowser.html#boundaryChecking-prop',0,'Q3DataBrowser']]],
+  ['brightness',['brightness',['http://qt-project.org/doc/qt-4.8/phonon-videowidget.html#brightness-prop',0,'Phonon::VideoWidget']]],
+  ['bsptreedepth',['bspTreeDepth',['http://qt-project.org/doc/qt-4.8/qgraphicsscene.html#bspTreeDepth-prop',0,'QGraphicsScene']]],
+  ['button',['button',['http://qt-project.org/doc/qt-4.8/qmouseeventtransition.html#button-prop',0,'QMouseEventTransition']]],
+  ['buttonsymbols',['buttonSymbols',['http://qt-project.org/doc/qt-4.8/qabstractspinbox.html#buttonSymbols-prop',0,'QAbstractSpinBox']]]
+];

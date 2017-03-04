@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FlairSensorActuator"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\robomap3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\;CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\;CMake Files\..\..\..\flair-dev\;CMake Files\..\..\..\flair-dev\cmake-modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_info">
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 compile_info"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairSensorActuator">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/bin/libFlairSensorActuator.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../FlairCore/src"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/vrpn"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/arm-poky-linux-gnueabi"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 FlairSensorActuator"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FlairSensorActuator/fast">
+				<Option output="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/bin/libFlairSensorActuator.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/libxml2"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/unexported"/>
+					<Add directory="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../FlairCore/src"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/opencv"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/vrpn"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/arm-poky-linux-gnueabi"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/backward"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/include-fixed"/>
+					<Add directory="/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 FlairSensorActuator/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rafik/flair/flair-src/lib/FlairSensorActuator/build_arm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/AfroBldc.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/AfroBldc.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/AfroBldc_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BatteryMonitor.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BatteryMonitor.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BlCtrlV2.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BlCtrlV2.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BlCtrlV2_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BlCtrlV2_x4_speed.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/BlCtrlV2_x4_speed.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Bldc.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Bldc.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Bldc_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Camera.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Camera.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Controller.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Controller.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/EmulatedController.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/EmulatedController.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Gx3_25_imu.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Gx3_25_imu.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Gx3_25_imu_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/HokuyoUTM30Lx.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/HokuyoUTM30Lx.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/HostEthController.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/HostEthController.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Imu.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Imu.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/LaserRangeFinder.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/LaserRangeFinder.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Mb800.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Mb800.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/NmeaGps.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/NmeaGps.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Novatel.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Novatel.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Ps3Eye.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Ps3Eye.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/RadioReceiver.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/RadioReceiver.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuBldc.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuBldc.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuCamera.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuCamera.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuGps.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuGps.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuImu.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuImu.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuLaser.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuLaser.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuUs.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/SimuUs.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Srf08.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/Srf08.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/TargetController.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/TargetController.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/TargetEthController.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/TargetEthController.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/UsRangeFinder.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/UsRangeFinder.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/V4LCamera.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/V4LCamera.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/VrpnClient.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/VrpnClient.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/VrpnClient_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/VrpnObject.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/VrpnObject.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/VrpnObject_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/XBldc.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/XBldc.h">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/XBldc_impl.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/src/geodesie.cpp">
+			<Option target="FlairSensorActuator"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../../../../../../opt/robomap3/1.7.3/armv7a-neon/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../../../../../../opt/robomap3/1.7.3/armv7a-neon/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\robomap3\1.7.3\armv7a-neon\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../../../flair-dev/cmake-modules/ColoredMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairSensorActuator/../../../flair-dev/cmake-modules/ArchDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\flair-dev\cmake-modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

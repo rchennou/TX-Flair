@@ -1,0 +1,15 @@
+* Actual Version:
+
+-----------------------------------------------------------
+* Tag 0.0.2:
+
+- src/SensorActuator: quaternion support for 3dmgx3
+- tool/FlairGCS: added rx rate display
+- demos/SimpleFleet: new demo, 2 UAVs coordination
+- src/FlairSimulator: added fixed camera
+
+-----------------------------------------------------------
+* Tag 0.0.1:
+
+-original commit
+
