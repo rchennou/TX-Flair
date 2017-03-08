@@ -123,27 +123,51 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       v.y = 0;
     } else {
       if (CurrentTime < V / A) {
-        theta = angle_off + A / 2 * CurrentTime * CurrentTime / R;
+       /* theta = angle_off + A / 2 * CurrentTime * CurrentTime / R;
+        pos.x = R * cos(theta);
+        pos.y = R * sin(theta);
+        v.x = -A * CurrentTime * sin(theta);
+        v.y = A * CurrentTime * cos(theta);*/
+        
+        /*v.x = -R * sin(theta);
+        v.y = R * cos(theta);*/
+        
+        /*pos.x = -R;
+        pos.y = 0;
+        v.x = 0;
+        v.y = 0;*/
+        
+        theta = PI/2;
         pos.x = R * cos(theta);
         pos.y = R * sin(theta);
         v.x = -A * CurrentTime * sin(theta);
         v.y = A * CurrentTime * cos(theta);
-        /*v.x = -R * sin(theta);
-        v.y = R * cos(theta);*/
   
       } else {
         if (!is_finishing) {
-          theta =
+          /*theta =
               angle_off + V * V / (2 * A * R) + (CurrentTime - V / A) * V / R;
           pos.x = R * cos(theta);
           pos.y = R * sin(theta);
           v.x = -V * sin(theta);
-          v.y = V * cos(theta);
+          v.y = V * cos(theta);*/
+          
           /*v.x = -R * sin(theta);
           v.y = R * cos(theta);*/
           
+          /*pos.x = -R;
+          pos.y = -3;
+          v.x = 0;
+          v.y = 0;*/
+          
+          theta = PI/2;
+       		pos.x = R * cos(theta);
+        	pos.y = R * sin(theta);
+          v.x = -V * sin(theta);
+          v.y = V * cos(theta);
+          
         } else {
-          theta = angle_off + V * V / (2 * A * R) +
+          /*theta = angle_off + V * V / (2 * A * R) +
                   (FinishTime - V / A) * V / R -
                   A / 2 * (FinishTime - CurrentTime) *
                       (FinishTime - CurrentTime) / R +
@@ -151,7 +175,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
           pos.x = R * cos(theta);
           pos.y = R * sin(theta);
           v.x = -(V + A * (FinishTime - CurrentTime)) * sin(theta);
-          v.y = (V + A * (FinishTime - CurrentTime)) * cos(theta);
+          v.y = (V + A * (FinishTime - CurrentTime)) * cos(theta);*/
         }
       }
     }

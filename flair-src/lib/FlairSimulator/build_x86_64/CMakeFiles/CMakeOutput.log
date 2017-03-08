@@ -1,5 +1,5 @@
 The target system is: Linux -  - x86_64
-The host system is: Linux - 3.19.0-66-generic - x86_64
+The host system is: Linux - 4.4.0-34-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc 
 Build flags: ;-m64;-march=core2;-mtune=core2;-msse3;-mfpmath=sse;--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux;-O2;-pipe
@@ -29,28 +29,28 @@ The CXX compiler identification is GNU, found in "/home/rafik/flair/flair-src/li
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f9b34/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f9b34.dir/build.make CMakeFiles/cmTC_f9b34.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_62576/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62576.dir/build.make CMakeFiles/cmTC_62576.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_f9b34.dir/testCCompiler.c.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_f9b34.dir/testCCompiler.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_f9b34
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9b34.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_f9b34.dir/testCCompiler.c.o  -o cmTC_f9b34 -rdynamic 
+Building C object CMakeFiles/cmTC_62576.dir/testCCompiler.c.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_62576.dir/testCCompiler.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_62576
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62576.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_62576.dir/testCCompiler.c.o  -o cmTC_62576 -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a6bcf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a6bcf.dir/build.make CMakeFiles/cmTC_a6bcf.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c7803/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c7803.dir/build.make CMakeFiles/cmTC_c7803.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_a6bcf
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6bcf.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o  -o cmTC_a6bcf -rdynamic  
+Building C object CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_c7803
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7803.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o  -o cmTC_c7803 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc
 COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper
@@ -60,8 +60,8 @@ Thread model: posix
 gcc version 4.9.1 (GCC) 
 COMPILER_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/
 LIBRARY_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-v' '-o' 'cmTC_a6bcf' '-rdynamic'
- /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfTM4IN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_a6bcf /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-v' '-o' 'cmTC_c7803' '-rdynamic'
+ /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2tfIaZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_c7803 /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -69,14 +69,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a6bcf/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a6bcf.dir/build.make CMakeFiles/cmTC_a6bcf.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c7803/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c7803.dir/build.make CMakeFiles/cmTC_c7803.dir/build]
   ignore line: [make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »]
-  ignore line: [Building C object CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_a6bcf]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6bcf.dir/link.txt --verbose=1]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o  -o cmTC_a6bcf -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_c7803]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7803.dir/link.txt --verbose=1]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o  -o cmTC_c7803 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.9.1 (GCC) ]
   ignore line: [COMPILER_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/]
   ignore line: [LIBRARY_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-v' '-o' 'cmTC_a6bcf' '-rdynamic']
-  link line: [ /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfTM4IN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_a6bcf /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-v' '-o' 'cmTC_c7803' '-rdynamic']
+  link line: [ /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2tfIaZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_c7803 /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o]
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccfTM4IN.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc2tfIaZ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a6bcf] ==> ignore
+    arg [cmTC_c7803] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-O1] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--as-needed] ==> ignore
-    arg [CMakeFiles/cmTC_a6bcf.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_c7803.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -153,14 +153,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0bbbc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0bbbc.dir/build.make CMakeFiles/cmTC_0bbbc.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3b1df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b1df.dir/build.make CMakeFiles/cmTC_3b1df.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_0bbbc.dir/feature_tests.c.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c11 -o CMakeFiles/cmTC_0bbbc.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0bbbc
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bbbc.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_0bbbc.dir/feature_tests.c.o  -o cmTC_0bbbc -rdynamic 
+Building C object CMakeFiles/cmTC_3b1df.dir/feature_tests.c.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c11 -o CMakeFiles/cmTC_3b1df.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3b1df
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b1df.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_3b1df.dir/feature_tests.c.o  -o cmTC_3b1df -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -173,14 +173,14 @@ make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulat
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3ed84/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3ed84.dir/build.make CMakeFiles/cmTC_3ed84.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ed90c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed90c.dir/build.make CMakeFiles/cmTC_ed90c.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_3ed84.dir/feature_tests.c.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c99 -o CMakeFiles/cmTC_3ed84.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_3ed84
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ed84.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_3ed84.dir/feature_tests.c.o  -o cmTC_3ed84 -rdynamic 
+Building C object CMakeFiles/cmTC_ed90c.dir/feature_tests.c.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c99 -o CMakeFiles/cmTC_ed90c.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ed90c
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed90c.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_ed90c.dir/feature_tests.c.o  -o cmTC_ed90c -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -193,14 +193,14 @@ make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulat
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ad92e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ad92e.dir/build.make CMakeFiles/cmTC_ad92e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cc3bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc3bb.dir/build.make CMakeFiles/cmTC_cc3bb.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building C object CMakeFiles/cmTC_ad92e.dir/feature_tests.c.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c90 -o CMakeFiles/cmTC_ad92e.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_ad92e
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad92e.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_ad92e.dir/feature_tests.c.o  -o cmTC_ad92e -rdynamic 
+Building C object CMakeFiles/cmTC_cc3bb.dir/feature_tests.c.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c90 -o CMakeFiles/cmTC_cc3bb.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cc3bb
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc3bb.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_cc3bb.dir/feature_tests.c.o  -o cmTC_cc3bb -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -211,28 +211,28 @@ make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulat
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_33563/fast"
-/usr/bin/make -f CMakeFiles/cmTC_33563.dir/build.make CMakeFiles/cmTC_33563.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c4b28/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4b28.dir/build.make CMakeFiles/cmTC_c4b28.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_33563.dir/testCXXCompiler.cxx.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_33563.dir/testCXXCompiler.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_33563
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33563.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_33563.dir/testCXXCompiler.cxx.o  -o cmTC_33563 -rdynamic 
+Building CXX object CMakeFiles/cmTC_c4b28.dir/testCXXCompiler.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_c4b28.dir/testCXXCompiler.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c4b28
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4b28.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_c4b28.dir/testCXXCompiler.cxx.o  -o cmTC_c4b28 -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9f696/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9f696.dir/build.make CMakeFiles/cmTC_9f696.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6a6da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a6da.dir/build.make CMakeFiles/cmTC_6a6da.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9f696
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f696.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9f696 -rdynamic  
+Building CXX object CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_6a6da
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a6da.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6a6da -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++
 COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper
@@ -242,8 +242,8 @@ Thread model: posix
 gcc version 4.9.1 (GCC) 
 COMPILER_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/
 LIBRARY_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-O2' '-pipe' '-v' '-o' 'cmTC_9f696' '-rdynamic' '-shared-libgcc'
- /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDW1VQ4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_9f696 /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib --dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-O2' '-pipe' '-v' '-o' 'cmTC_6a6da' '-rdynamic' '-shared-libgcc'
+ /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccplox6i.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_6a6da /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib --dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -251,14 +251,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9f696/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9f696.dir/build.make CMakeFiles/cmTC_9f696.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6a6da/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6a6da.dir/build.make CMakeFiles/cmTC_6a6da.dir/build]
   ignore line: [make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »]
-  ignore line: [Building CXX object CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9f696]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f696.dir/link.txt --verbose=1]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9f696 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -o CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_6a6da]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a6da.dir/link.txt --verbose=1]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6a6da -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper]
@@ -268,13 +268,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.9.1 (GCC) ]
   ignore line: [COMPILER_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/]
   ignore line: [LIBRARY_PATH=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-O2' '-pipe' '-v' '-o' 'cmTC_9f696' '-rdynamic' '-shared-libgcc']
-  link line: [ /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDW1VQ4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_9f696 /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib --dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux' '-march=core2' '-mtune=core2' '-mfpmath=sse' '-O2' '-pipe' '-m64' '-march=core2' '-mtune=core2' '-msse3' '-mfpmath=sse' '-O2' '-pipe' '-v' '-o' 'cmTC_6a6da' '-rdynamic' '-shared-libgcc']
+  link line: [ /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccplox6i.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -o cmTC_6a6da /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/lib/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1 -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -L/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib --dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtend.o /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crtn.o]
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/libexec/x86_64-poky-linux/gcc/x86_64-poky-linux/4.9.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccDW1VQ4.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccplox6i.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -290,7 +290,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9f696] ==> ignore
+    arg [cmTC_6a6da] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crt1.o] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/../lib/crti.o] ==> ignore
     arg [/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/x86_64-poky-linux/4.9.1/crtbegin.o] ==> ignore
@@ -305,7 +305,7 @@ Parsed CXX implicit link information from above output:
     arg [-O1] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--as-needed] ==> ignore
-    arg [CMakeFiles/cmTC_9f696.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_6a6da.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -335,14 +335,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7b111/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7b111.dir/build.make CMakeFiles/cmTC_7b111.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2959d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2959d.dir/build.make CMakeFiles/cmTC_2959d.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_7b111.dir/feature_tests.cxx.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c++14 -o CMakeFiles/cmTC_7b111.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7b111
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b111.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_7b111.dir/feature_tests.cxx.o  -o cmTC_7b111 -rdynamic 
+Building CXX object CMakeFiles/cmTC_2959d.dir/feature_tests.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c++14 -o CMakeFiles/cmTC_2959d.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2959d
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2959d.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_2959d.dir/feature_tests.cxx.o  -o cmTC_2959d -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -408,14 +408,14 @@ make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulat
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1f913/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1f913.dir/build.make CMakeFiles/cmTC_1f913.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_aafc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aafc8.dir/build.make CMakeFiles/cmTC_aafc8.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_1f913.dir/feature_tests.cxx.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c++11 -o CMakeFiles/cmTC_1f913.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1f913
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f913.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_1f913.dir/feature_tests.cxx.o  -o cmTC_1f913 -rdynamic 
+Building CXX object CMakeFiles/cmTC_aafc8.dir/feature_tests.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c++11 -o CMakeFiles/cmTC_aafc8.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_aafc8
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aafc8.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_aafc8.dir/feature_tests.cxx.o  -o cmTC_aafc8 -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
@@ -481,14 +481,14 @@ make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulat
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_62f89/fast"
-/usr/bin/make -f CMakeFiles/cmTC_62f89.dir/build.make CMakeFiles/cmTC_62f89.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ff436/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff436.dir/build.make CMakeFiles/cmTC_ff436.dir/build
 make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
-Building CXX object CMakeFiles/cmTC_62f89.dir/feature_tests.cxx.o
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c++98 -o CMakeFiles/cmTC_62f89.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_62f89
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62f89.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_62f89.dir/feature_tests.cxx.o  -o cmTC_62f89 -rdynamic 
+Building CXX object CMakeFiles/cmTC_ff436.dir/feature_tests.cxx.o
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux    -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe    -std=c++98 -o CMakeFiles/cmTC_ff436.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/lib/FlairSimulator/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ff436
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff436.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -O2 -pipe   -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux -Wl,--dynamic-linker=/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/lib/ld-linux-x86-64.so.2 -Wl,-rpath=/usr/lib/x86_64-linux-gnu/mesa:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib:/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_ff436.dir/feature_tests.cxx.o  -o cmTC_ff436 -rdynamic 
 make[1]: quittant le répertoire « /home/rafik/flair/flair-src/lib/FlairSimulator/build_x86_64/CMakeFiles/CMakeTmp »
 
 
