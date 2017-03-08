@@ -51,12 +51,12 @@ CircleFollower::CircleFollower(Uav* uav,TargetController *controller): UavStateM
 
     getFrameworkManager()->AddDeviceToLog(targetVrpn);
 
-    circle=new TrajectoryGenerator2DCircle(uav->GetVrpnClient()->GetLayout()->NewRow(),"circle");
+    circle=new TrajectoryGenerator2DCircle(uav->GetVrpnClient()->GetLayout()->NewRow(),"square");
     uav->GetVrpnObject()->xPlot()->AddCurve(circle->Matrix()->Element(0,0),DataPlot::Blue);
     uav->GetVrpnObject()->yPlot()->AddCurve(circle->Matrix()->Element(0,1),DataPlot::Blue);
     uav->GetVrpnObject()->VxPlot()->AddCurve(circle->Matrix()->Element(1,0),DataPlot::Blue);
     uav->GetVrpnObject()->VyPlot()->AddCurve(circle->Matrix()->Element(1,1),DataPlot::Blue);
-    uav->GetVrpnObject()->XyPlot()->AddCurve(circle->Matrix()->Element(0,1),circle->Matrix()->Element(0,0),DataPlot::Blue,"circle");
+    uav->GetVrpnObject()->XyPlot()->AddCurve(circle->Matrix()->Element(0,1),circle->Matrix()->Element(0,0),DataPlot::Blue,"square");
 
     uX=new Pid(setupLawTab->At(1,0),"u_x");
     uX->UseDefaultPlot(graphLawTab->NewRow());
@@ -224,9 +224,9 @@ void CircleFollower::ExtraCheckJoystick(void) {
 
 void CircleFollower::StartCircle(void) {
     if (SetOrientationMode(OrientationMode_t::Custom)) {
-        Thread::Info("CircleFollower: start circle\n");
+        Thread::Info("SquareFollower: start square\n");
     } else {
-        Thread::Warn("CircleFollower: could not start circle\n");
+        Thread::Warn("SquareFollower: could not start square\n");
         return;
     }
     Vector3D uav_pos,target_pos;
@@ -248,7 +248,7 @@ void CircleFollower::StartCircle(void) {
 void CircleFollower::StopCircle(void) {
     circle->FinishTraj();
     //GetJoystick()->Rumble(0x70);
-    Thread::Info("CircleFollower: finishing circle\n");
+    Thread::Info("SquareFollower: finishing square\n");
 }
 
 void CircleFollower::VrpnPositionHold(void) {
@@ -265,5 +265,5 @@ void CircleFollower::VrpnPositionHold(void) {
     uY->Reset();
     behaviourMode=BehaviourMode_t::PositionHold;
     SetOrientationMode(OrientationMode_t::Custom);
-    Thread::Info("CircleFollower: holding position\n");
+    Thread::Info("SquareFollower: holding position\n");
 }

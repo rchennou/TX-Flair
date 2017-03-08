@@ -38,7 +38,7 @@ namespace simulator {
 
 Man::Man(const Simulator *parent, std::string name) : Model(parent, name) {
   node = getGui()->getSceneManager()->addAnimatedMeshSceneNode(
-      getGui()->getMesh("ArmyPilot.dae"), getSceneNode(), -1, vector3df(0, 0, 0),
+      getGui()->getMesh("Soldier.3DS"), getSceneNode(), -1, vector3df(0, 0, 0),
       vector3df(90, 0, 90), vector3df(10, 10, 10));
 
   node->setFrameLoop(0, 13);
