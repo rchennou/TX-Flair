@@ -697,6 +697,8 @@ DoubleSpinBox.h
 -
 cmath
 -
+iostream
+-
 
 /home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex.cpp
 UavMultiplex.h

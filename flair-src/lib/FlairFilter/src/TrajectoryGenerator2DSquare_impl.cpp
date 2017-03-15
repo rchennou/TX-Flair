@@ -22,6 +22,7 @@
 #include <GroupBox.h>
 #include <DoubleSpinBox.h>
 #include <cmath>
+#include <iostream>
 
 #define PI ((float)3.14159265358979323846)
 
@@ -36,6 +37,8 @@ TrajectoryGenerator2DCircle_impl::TrajectoryGenerator2DCircle_impl(
   first_update = true;
   is_running = false;
   is_finishing = false;
+  
+  nb = 0;
 
   // init UI
   GroupBox *reglages_groupbox = new GroupBox(position, name);
@@ -75,8 +78,10 @@ void TrajectoryGenerator2DCircle_impl::StartTraj(const Vector2D &start_pos,
   this->nb_lap = nb_lap;
 
   // configure trajectory
-  angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);
+  angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);				// pos_start.x - pos_off.x ==> position départ
   CurrentTime = 0;
+  
+  pos_start = start_pos;
 }
 
 void TrajectoryGenerator2DCircle_impl::FinishTraj(void) {
@@ -84,6 +89,11 @@ void TrajectoryGenerator2DCircle_impl::FinishTraj(void) {
     is_finishing = true;
     FinishTime = CurrentTime;
   }
+}
+
+void TrajectoryGenerator2DCircle_impl::setNb(unsigned int n)
+{
+		nb = n;
 }
 
 void TrajectoryGenerator2DCircle_impl::Update(Time time) {
@@ -108,7 +118,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
   } else {
     delta_t = T->Value();
   }
-  
+
   previous_time = time;																																// algo "temps réel"
   CurrentTime += delta_t;
 
@@ -122,73 +132,151 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       v.x = 0;
       v.y = 0;
     } else {
-      if (CurrentTime < V / A) {
-       /* theta = angle_off + A / 2 * CurrentTime * CurrentTime / R;
-        pos.x = R * cos(theta);
-        pos.y = R * sin(theta);
-        v.x = -A * CurrentTime * sin(theta);
-        v.y = A * CurrentTime * cos(theta);*/
+      if (nb == 0) { //CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) { //((-V + sqrt(V*V-2*A*(R + pos_start.x - pos_off.x))) / A)
+
+				v.x = 0;
+        pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + (pos_start.y - pos_off.y));
         
-        /*v.x = -R * sin(theta);
-        v.y = R * cos(theta);*/
-        
-        /*pos.x = -R;
-        pos.y = 0;
-        v.x = 0;
-        v.y = 0;*/
-        
-        theta = PI/2;
-        pos.x = R * cos(theta);
-        pos.y = R * sin(theta);
-        v.x = -A * CurrentTime * sin(theta);
-        v.y = A * CurrentTime * cos(theta);
-  
+        if( pos.y >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
+        {
+        		setNb(1);
+        		v.y = 0;
+        		v.x = 0;
+       	}
+       	else if( pos.y < R && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       	{
+       	    v.y = (A * CurrentTime + V);
+       	}
+
       } else {
-        if (!is_finishing) {
-          /*theta =
-              angle_off + V * V / (2 * A * R) + (CurrentTime - V / A) * V / R;
-          pos.x = R * cos(theta);
-          pos.y = R * sin(theta);
-          v.x = -V * sin(theta);
-          v.y = V * cos(theta);*/
-          
-          /*v.x = -R * sin(theta);
-          v.y = R * cos(theta);*/
-          
-          /*pos.x = -R;
-          pos.y = -3;
-          v.x = 0;
-          v.y = 0;*/
-          
-          theta = PI/2;
-       		pos.x = R * cos(theta);
-        	pos.y = R * sin(theta);
-          v.x = -V * sin(theta);
-          v.y = V * cos(theta);
-          
-        } else {
-          /*theta = angle_off + V * V / (2 * A * R) +
-                  (FinishTime - V / A) * V / R -
-                  A / 2 * (FinishTime - CurrentTime) *
-                      (FinishTime - CurrentTime) / R +
-                  V * (CurrentTime - FinishTime) / R;
-          pos.x = R * cos(theta);
-          pos.y = R * sin(theta);
-          v.x = -(V + A * (FinishTime - CurrentTime)) * sin(theta);
-          v.y = (V + A * (FinishTime - CurrentTime)) * cos(theta);*/
+     
+      	//if (CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.x - pos_off.x))) / A))
+      	if (nb == 1)
+      	{
+      			v.y = 0;
+      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime);
+      			
+        		if( pos.x >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
+       			{
+        				setNb(2);
+        				v.x = 0;
+        				v.y = 0;
+      		 	}
+       			else if( pos.x < R && CurrentTime < ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       			{
+       			    v.x = (A * CurrentTime + V);
+       			}
+      	}
+      	else if (nb == 2)
+      	{
+      			v.x = 0;
+      			pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			
+      			if(pos.y <= -R && CurrentTime >= ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+        		{
+        				setNb(3);
+        				v.y = 0;
+        				v.x = 0;
+       			}
+       			else if ( pos.y > -R && CurrentTime < ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       			{
+       	    		v.y = -(A * CurrentTime + V);
+       			}
+       			
+      	}
+      	else if (nb == 3)
+      	{
+      			v.y = 0;
+      			pos.x = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			
+        		if(pos.x <= -R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) 
+       			{
+        				setNb(4);
+        				v.x = 0;
+        				v.y = 0;
+      		 	}
+       			else if( pos.x > -R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       			{
+       			    v.x = -(A * CurrentTime + V);
+       			}
+      	}
+      	else if (nb == 4)
+      	{
+      			v.x = 0;
+      			pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			
+      			if(pos.y >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+        		{
+        				setNb(5);
+        				v.y = 0;
+        				v.x = 0;
+       			}
+       			else if( pos.y < R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       			{
+       	    		v.y = (A * CurrentTime + V);
+       			}
+      	}
+      	else if (nb == 5)
+      	{
+      			v.y = 0;
+      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			
+        		if(pos.x >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       			{
+        				setNb(6);
+        				v.x = 0;
+        				v.y = 0;
+      		 	}
+       			else if( pos.x < R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
+       			{
+       			    v.x = (A * CurrentTime + V);
+       			}
+      	}
+      	
+       /* else if (!is_finishing && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos.y + pos_off.y))) / A) )
+        {
+        
+          pos.y = (1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + pos.y + pos_off.y;
+          v.y = A * CurrentTime + V;
+
+        }*/
+        /*else if (!is_finishing && CurrentTime >= (((-V + sqrt(V*V-2*A*(- 2*R))) / A) + V / A)  && CurrentTime < (((-V + sqrt(V*V-2*A*(- 2*R))) / A) ))
+        {
+
+        	pos.x = pos_off.x + (1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R;
+          v.x = A * CurrentTime + V;
+
+        }*/
+        /*else if (!is_finishing && pos.x >= R && pos.y >= R)
+        {
+
+        	pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R) ;
+          v.y =  -(A * CurrentTime + V);
+
+        }*/
+        else if( nb == 6 )
+        {
+    			v.x = 0;
+    			v.y = 0;
         }
       }
     }
 
-    if (theta - angle_off >= nb_lap * 2 * PI - (-A / 2 * (V / A) * (V / A) / R +
+
+   /* if (theta - angle_off >= nb_lap * 2 * PI - (-A / 2 * (V / A) * (V / A) / R +
                                                 V * (V / A) / R) &&
         nb_lap > 0) {
       FinishTraj();
-    }
+    }*/
+
   } else {
     v.x = 0;
     v.y = 0;
   }
+
+	   /*if(pos.y + pos_off.y >= R)
+        	nb == 1;*/
+        
 
   // on prend une fois pour toute les mutex et on fait des accès directs
   output->GetMutex();

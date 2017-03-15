@@ -47,6 +47,7 @@ public:
   bool is_running;
   flair::core::cvmatrix *output;
   flair::core::Vector2D pos_off, vel_off;
+  flair::core::Vector2D pos_start;
 
 private:
   flair::core::Time previous_time;
@@ -56,6 +57,9 @@ private:
   float angle_off;
   flair::gui::DoubleSpinBox *T, *veloctity, *acceleration, *rayon;
   float nb_lap;
+  
+  unsigned int nb;
+  void setNb(unsigned int n);
 };
 
 #endif // TRAJECTORYGENERATOR2DCIRCLE_IMPL_H
