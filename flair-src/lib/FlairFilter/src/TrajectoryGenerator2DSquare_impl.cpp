@@ -136,12 +136,10 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
 
 				v.x = 0;
         pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + (pos_start.y - pos_off.y));
-        
+      
         if( pos.y >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
         {
         		setNb(1);
-        		v.y = 0;
-        		v.x = 0;
        	}
        	else if( pos.y < R && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        	{
@@ -154,13 +152,11 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	if (nb == 1)
       	{
       			v.y = 0;
-      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime);
+      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + pos_off.x);
       			
         		if( pos.x >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
        			{
         				setNb(2);
-        				v.x = 0;
-        				v.y = 0;
       		 	}
        			else if( pos.x < R && CurrentTime < ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
@@ -170,13 +166,11 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	else if (nb == 2)
       	{
       			v.x = 0;
-      			pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R + pos_off.y);
       			
       			if(pos.y <= -R && CurrentTime >= ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
         		{
         				setNb(3);
-        				v.y = 0;
-        				v.x = 0;
        			}
        			else if ( pos.y > -R && CurrentTime < ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
@@ -187,13 +181,11 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	else if (nb == 3)
       	{
       			v.y = 0;
-      			pos.x = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			pos.x = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R + pos_off.x);
       			
         		if(pos.x <= -R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) 
        			{
         				setNb(4);
-        				v.x = 0;
-        				v.y = 0;
       		 	}
        			else if( pos.x > -R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
@@ -203,13 +195,11 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	else if (nb == 4)
       	{
       			v.x = 0;
-      			pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R - pos_off.y);
       			
       			if(pos.y >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
         		{
         				setNb(5);
-        				v.y = 0;
-        				v.x = 0;
        			}
        			else if( pos.y < R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
@@ -219,13 +209,11 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	else if (nb == 5)
       	{
       			v.y = 0;
-      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R);
+      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R - pos_off.x);
       			
         		if(pos.x >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
         				setNb(6);
-        				v.x = 0;
-        				v.y = 0;
       		 	}
        			else if( pos.x < R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
