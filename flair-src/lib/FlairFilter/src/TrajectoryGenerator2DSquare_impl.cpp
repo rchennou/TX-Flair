@@ -132,7 +132,34 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       v.x = 0;
       v.y = 0;
     } else {
-      if (nb == 0) { //CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) { //((-V + sqrt(V*V-2*A*(R + pos_start.x - pos_off.x))) / A)
+    
+      if (CurrentTime < V / A) {
+        theta = angle_off + A / 2 * CurrentTime * CurrentTime / R;			// teta(t) = teta_zero + (1/2)*alpha*t^2 (alpha = w(point) avec w =  V / R)
+        pos.x = R * cos(theta);
+        pos.y = R * sin(theta);
+        v.x = -A * CurrentTime * sin(theta);
+        v.y = A * CurrentTime * cos(theta);
+      } else {
+        if (!is_finishing) {
+          theta = angle_off + V * V / (2 * A * R) + (CurrentTime - V / A) * V / R; 		// teta(t) = teta_V/A + w*(t - V/A)
+          pos.x = R * cos(theta);
+          pos.y = R * sin(theta);
+          v.x = -V * sin(theta);
+          v.y = V * cos(theta);
+        } else {
+          theta = angle_off + V * V / (2 * A * R) +								// teta(t) = teta_FinishTime + w*(FinishTime - V/A) - (1/2)*alpha*(FinishTime - t)
+                  (FinishTime - V / A) * V / R -
+                  A / 2 * (FinishTime - CurrentTime) *
+                      (FinishTime - CurrentTime) / R +
+                  V * (CurrentTime - FinishTime) / R;
+          pos.x = R * cos(theta);
+          pos.y = R * sin(theta);
+          v.x = -(V + A * (FinishTime - CurrentTime)) * sin(theta);
+          v.y = (V + A * (FinishTime - CurrentTime)) * cos(theta);
+          
+        }
+    
+      /*if (nb == 0) { //CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) { //((-V + sqrt(V*V-2*A*(R + pos_start.x - pos_off.x))) / A)
 
 				v.x = 0;
         pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + (pos_start.y - pos_off.y));
@@ -219,7 +246,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
        			{
        			    v.x = (A * CurrentTime + V);
        			}
-      	}
+      	}*/
       	
        /* else if (!is_finishing && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos.y + pos_off.y))) / A) )
         {
@@ -242,20 +269,20 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
           v.y =  -(A * CurrentTime + V);
 
         }*/
-        else if( nb == 6 )
+       /* else if( nb == 6 )
         {
     			v.x = 0;
     			v.y = 0;
-        }
+        }*/
       }
     }
 
 
-   /* if (theta - angle_off >= nb_lap * 2 * PI - (-A / 2 * (V / A) * (V / A) / R +
+    if (theta - angle_off >= nb_lap * 2 * PI - (-A / 2 * (V / A) * (V / A) / R +
                                                 V * (V / A) / R) &&
         nb_lap > 0) {
       FinishTraj();
-    }*/
+    }
 
   } else {
     v.x = 0;
