@@ -37,6 +37,7 @@ TrajectoryGenerator2DCircle_impl::TrajectoryGenerator2DCircle_impl(
   first_update = true;
   is_running = false;
   is_finishing = false;
+  is_finishing_previous = false;
   
   nb = 0;
 
@@ -78,10 +79,10 @@ void TrajectoryGenerator2DCircle_impl::StartTraj(const Vector2D &start_pos,
   this->nb_lap = nb_lap;
 
   // configure trajectory
-  angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);				// pos_start.x - pos_off.x ==> position départ
+  angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);				// pos_start.x - pos_off.x ==> position départ en x
   CurrentTime = 0;
   
-  pos_start = start_pos;
+  pos_start = start_pos;																											// position de départ
 }
 
 void TrajectoryGenerator2DCircle_impl::FinishTraj(void) {
@@ -94,6 +95,33 @@ void TrajectoryGenerator2DCircle_impl::FinishTraj(void) {
 void TrajectoryGenerator2DCircle_impl::setNb(unsigned int n)
 {
 		nb = n;
+}
+
+const Vector2D TrajectoryGenerator2DCircle_impl::move(float& A, float V, float R, float v, float pos, Time currentTime)
+{
+					Vector2D res;
+
+	    		v = A * currentTime;
+      		if (fabs(v) > fabs(V)) {
+       		 if (v > 0)
+          		v = V;
+        		else
+          		v = -V;
+      		}
+      		pos = v * currentTime;
+      		if (R - v * v / (2 * A) <= pos && v >= 0)
+        		A = -A;
+      		if (R - v * v / (2 * A) >= pos && v < 0)
+        		A = -A;
+      		if (pos >= R && v >= 0)
+        		is_finishing = true;
+      		if (pos <= R && v < 0)
+        		is_finishing = true; 
+        		
+        	res.x = pos;
+        	res.y = v;
+        	
+        	return res;
 }
 
 void TrajectoryGenerator2DCircle_impl::Update(Time time) {
@@ -111,6 +139,16 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
     if (first_update) {
       first_update = false;
       previous_time = time;
+      
+      /*output->GetMutex();
+      output->SetValueNoMutex(0, 0, pos.x + pos_off.x);
+  		output->SetValueNoMutex(0, 1, pos.y + pos_off.y);
+  		output->SetValueNoMutex(1, 0, v.x + vel_off.x);
+  		output->SetValueNoMutex(1, 1, v.y + vel_off.y);
+      output->ReleaseMutex();
+
+      output->SetDataTime(time);*/
+      
       return;
     } else {
       delta_t = (float)(time - previous_time) / 1000000000.;
@@ -119,11 +157,14 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
     delta_t = T->Value();
   }
 
+	is_finishing_previous = is_finishing;
+	is_finishing = false;
+
   previous_time = time;																																// algo "temps réel"
   CurrentTime += delta_t;
 
-  if (is_finishing && CurrentTime > FinishTime + V / A)
-    is_running = false;
+  /*if (is_finishing && CurrentTime > FinishTime + V / A)
+    is_running = false;*/
 
   if (is_running) {
     if (R == 0) {																																			// Rayon à 0 ==> position à 0 (centre du cercle)
@@ -133,29 +174,167 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       v.y = 0;
     } else {
     
-      if (CurrentTime < V / A) {
-        theta = angle_off + A / 2 * CurrentTime * CurrentTime / R;			// teta(t) = teta_zero + (1/2)*alpha*t^2 (alpha = w(point) avec w =  V / R)
-        pos.x = R * cos(theta);
-        pos.y = R * sin(theta);
-        v.x = -A * CurrentTime * sin(theta);
-        v.y = A * CurrentTime * cos(theta);
-      } else {
-        if (!is_finishing) {
-          theta = angle_off + V * V / (2 * A * R) + (CurrentTime - V / A) * V / R; 		// teta(t) = teta_V/A + w*(t - V/A)
-          pos.x = R * cos(theta);
-          pos.y = R * sin(theta);
-          v.x = -V * sin(theta);
-          v.y = V * cos(theta);
+        if (nb < 6) {
+          
+          if(nb == 0)
+          {
+      				v.y = A * CurrentTime;
+      				if (fabs(v.y) > fabs(V)) {
+       		 		if (v.y > 0)
+          				v.y = V;
+        				else
+          				v.y = -V;
+      				}
+      				pos.y = v.y * CurrentTime;
+      				if (R - v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
+        				A = -A;
+      				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
+        				A = -A;
+      				if ( (pos.y >= R && v.y >= 0) || (pos.y <= R && v.y < 0) )
+      				{
+        				v.y = 0;
+      					pos.y = R;
+      					setNb(1);
+      					FinishTime = CurrentTime;
+        			}
+        	} 
+        	else if(nb == 1)
+        	{
+        			v.x = A * (CurrentTime - FinishTime);
+      				if (fabs(v.x) > fabs(V)) {
+       		 		if (v.x > 0)
+          				v.x = V;
+        				else
+          				v.x = -V;
+      				}
+      				pos.x = v.x * (CurrentTime - FinishTime);
+      				if (R - v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
+        				A = -A;
+      				if (R - v.x * v.x / (2 * A) >= pos.x && v.x < 0)
+        				A = -A;
+
+      				if ( (pos.x >= R && v.x >= 0) || (pos.x <= R && v.x < 0) )
+      				{
+        				v.x = 0;
+      					pos.x = R;
+      					setNb(2);
+      					FinishTime = CurrentTime;
+        			}
+
+        	}
+        	else if(nb == 2)
+        	{
+        			v.y = A * (CurrentTime - FinishTime);
+      				if (fabs(v.y) > fabs(V)) {
+       		 		if (v.y > 0)
+          				v.y = V;
+        				else
+          				v.y = -V;
+      				}
+      				pos.y = -v.y * (CurrentTime - FinishTime) + R;
+      				if (R - v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
+        				A = -A;
+      				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
+        				A = -A;
+        				
+        			if ( (pos.y <= -R && v.y >= 0) || (pos.y >= -R && v.y < 0) )
+      				{
+        				v.y = 0;
+      					pos.y = -R;
+      					setNb(3);
+      					FinishTime = CurrentTime;
+        			}
+        					
+        	}
+        	else if(nb == 3)
+        	{
+        			v.x = A * (CurrentTime - FinishTime);
+      				if (fabs(v.x) > fabs(V)) {
+       		 		if (v.x > 0)
+          				v.x = V;
+        				else
+          				v.x = -V;
+      				}
+      				pos.x = -v.x * (CurrentTime - FinishTime) + R;
+      				if (R - v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
+        				A = -A;
+      				if (R - v.x * v.x / (2 * A) >= pos.x && v.x < 0)
+        				A = -A;
+        				
+        			if ( (pos.x <= -R && v.x >= 0) || (pos.x >= -R && v.x < 0) )
+      				{
+        				v.x = 0;
+      					pos.x = -R;
+      					setNb(4);
+      					FinishTime = CurrentTime;
+        			}
+
+        	}
+        	else if(nb == 4)
+        	{
+      				v.y = A * (CurrentTime - FinishTime);
+      				if (fabs(v.y) > fabs(V)) {
+       		 		if (v.y > 0)
+          				v.y = V;
+        				else
+          				v.y = -V;
+      				}
+      				pos.y = v.y * (CurrentTime - FinishTime) - R;
+      				if (R - v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
+        				A = -A;
+      				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
+        				A = -A;
+      				if ( (pos.y >= R && v.y >= 0) || (pos.y <= R && v.y < 0) )
+      				{
+        				v.y = 0;
+      					pos.y = R;
+      					setNb(5);
+      					FinishTime = CurrentTime;
+        			}
+
+        	}
+        	else if(nb == 5)
+        	{
+        			v.x = A * (CurrentTime - FinishTime);
+      				if (fabs(v.x) > fabs(V)) {
+       		 		if (v.x > 0)
+          				v.x = V;
+        				else
+          				v.x = -V;
+      				}
+      				pos.x = v.x * (CurrentTime - FinishTime) - R;
+      				if (R - v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
+        				A = -A;
+      				if (R - v.x * v.x / (2 * A) >= pos.x && v.x < 0)
+        				A = -A;
+
+      				if ( (pos.x >= R && v.x >= 0) || (pos.x <= R && v.x < 0) )
+      				{
+        				v.x = 0;
+      					pos.x = R;
+      					setNb(6);
+        			}
+
+        	}
+        		
+        	/*if(pos.y <= R && pos.x <= R)
+        	{
+        		Vector2D res = move(A, V, R, v.y, pos.y, CurrentTime);
+        		v.y = res.y;
+        		pos.y = res.x;
+        	}*/
+          
+          
         } else {
-          theta = angle_off + V * V / (2 * A * R) +								// teta(t) = teta_FinishTime + w*(FinishTime - V/A) - (1/2)*alpha*(FinishTime - t)
-                  (FinishTime - V / A) * V / R -
-                  A / 2 * (FinishTime - CurrentTime) *
-                      (FinishTime - CurrentTime) / R +
-                  V * (CurrentTime - FinishTime) / R;
-          pos.x = R * cos(theta);
-          pos.y = R * sin(theta);
-          v.x = -(V + A * (FinishTime - CurrentTime)) * sin(theta);
-          v.y = (V + A * (FinishTime - CurrentTime)) * cos(theta);
+          
+          v.x = 0;
+    			v.y = 0;
+    			pos.x = R;
+          pos.y = R;
+    			
+    			nb = 2;
+    			CurrentTime = 0;
+    			FinishTime = 0;
           
         }
     
@@ -275,22 +454,15 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
     			v.y = 0;
         }*/
       }
-    }
+    
 
 
-    if (theta - angle_off >= nb_lap * 2 * PI - (-A / 2 * (V / A) * (V / A) / R +
-                                                V * (V / A) / R) &&
-        nb_lap > 0) {
-      FinishTraj();
-    }
 
   } else {
     v.x = 0;
     v.y = 0;
   }
 
-	   /*if(pos.y + pos_off.y >= R)
-        	nb == 1;*/
         
 
   // on prend une fois pour toute les mutex et on fait des accès directs

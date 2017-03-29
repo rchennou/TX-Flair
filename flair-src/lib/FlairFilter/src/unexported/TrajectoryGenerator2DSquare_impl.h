@@ -48,11 +48,13 @@ public:
   flair::core::cvmatrix *output;
   flair::core::Vector2D pos_off, vel_off;
   flair::core::Vector2D pos_start;
+  
+  const flair::core::Vector2D move(float& A, float V, float R, float v, float pos, flair::core::Time currentTime);
 
 private:
   flair::core::Time previous_time;
   float CurrentTime, FinishTime;
-  bool first_update, is_finishing;
+  bool first_update, is_finishing, is_finishing_previous;
   flair::core::Vector2D pos;
   float angle_off;
   flair::gui::DoubleSpinBox *T, *veloctity, *acceleration, *rayon;
