@@ -1,4 +1,0 @@
-/home/rafik/flair/flair-src/demos/SquareFollower/uav/build/CMakeFiles/rebuild_cache.dir
-/home/rafik/flair/flair-src/demos/SquareFollower/uav/build/CMakeFiles/edit_cache.dir
-/home/rafik/flair/flair-src/demos/SquareFollower/uav/build/CMakeFiles/SquareFollower_nrt.dir
-/home/rafik/flair/flair-src/demos/SquareFollower/uav/build/CMakeFiles/SquareFollower_rt.dir

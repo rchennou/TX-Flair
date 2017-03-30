@@ -1,4 +1,0 @@
-/home/rafik/flair/flair-src/demos/SquareFollower/simulator/build_arm/CMakeFiles/rebuild_cache.dir
-/home/rafik/flair/flair-src/demos/SquareFollower/simulator/build_arm/CMakeFiles/edit_cache.dir
-/home/rafik/flair/flair-src/demos/SquareFollower/simulator/build_arm/CMakeFiles/SquareFollower_simulator_nrt.dir
-/home/rafik/flair/flair-src/demos/SquareFollower/simulator/build_arm/CMakeFiles/SquareFollower_simulator_rt.dir
