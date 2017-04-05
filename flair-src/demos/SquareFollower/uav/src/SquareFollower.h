@@ -1,5 +1,5 @@
 //  created:    2011/05/01
-//  filename:   CircleFollower.h
+//  filename:   SquareFollower.h
 //
 //  author:     Guillaume Sanahuja
 //              Copyright Heudiasyc UMR UTC/CNRS 7253
@@ -31,10 +31,10 @@ namespace flair {
     }
 }
 
-class CircleFollower : public flair::meta::UavStateMachine {
+class SquareFollower : public flair::meta::UavStateMachine {
     public:
-        CircleFollower(flair::meta::Uav* uav,flair::sensor::TargetController *controller);
-        ~CircleFollower();
+        SquareFollower(flair::meta::Uav* uav,flair::sensor::TargetController *controller);
+        ~SquareFollower();
 
     private:
         enum class BehaviourMode_t {
@@ -69,4 +69,4 @@ class CircleFollower : public flair::meta::UavStateMachine {
         flair::core::AhrsData *customReferenceOrientation,*customOrientation;
 };
 
-#endif // CIRCLEFOLLOWER_H
+#endif // SquareFollower_H

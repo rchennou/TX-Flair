@@ -11,8 +11,8 @@
 //
 /*********************************************************************/
 
-#ifndef CIRCLEFOLLOWER_H
-#define CIRCLEFOLLOWER_H
+#ifndef SQUAREFOLLOWER_H
+#define SQUAREFOLLOWER_H
 
 #include <UavStateMachine.h>
 

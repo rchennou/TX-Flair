@@ -41,7 +41,7 @@ string address;
 void parseOptions(int argc, char** argv) {
 	try {
         CmdLine cmd("Command description message", ' ', "0.1");
-
+				
         ValueArg<string> nameArg("n","name","uav name, also used for vrpn",true,"x4","string");
         cmd.add( nameArg );
 
@@ -130,4 +130,3 @@ int main(int argc, char* argv[]) {
 
 	return 0;
 }
-

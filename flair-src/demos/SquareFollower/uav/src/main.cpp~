@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
 
     Uav* drone=CreateUav(manager,name,uav_type);
     TargetEthController *controller=new TargetEthController(manager,"Dualshock3",ds3port);
-    SquareFollower* demo=new SquareFollower(drone,controller);
+    CircleFollower* demo=new CircleFollower(drone,controller);
 
     demo->Start();
     demo->Join();

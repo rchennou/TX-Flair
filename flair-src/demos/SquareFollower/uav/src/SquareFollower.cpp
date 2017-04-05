@@ -1,5 +1,5 @@
 //  created:    2011/05/01
-//  filename:   CircleFollower.cpp
+//  filename:   SquareFollower.cpp
 //
 //  author:     Guillaume Sanahuja
 //              Copyright Heudiasyc UMR UTC/CNRS 7253
@@ -37,7 +37,7 @@ using namespace flair::sensor;
 using namespace flair::filter;
 using namespace flair::meta;
 
-CircleFollower::CircleFollower(Uav* uav,TargetController *controller): UavStateMachine(uav,controller), behaviourMode(BehaviourMode_t::Default), vrpnLost(false) {
+SquareFollower::SquareFollower(Uav* uav,TargetController *controller): UavStateMachine(uav,controller), behaviourMode(BehaviourMode_t::Default), vrpnLost(false) {
     uav->SetupVRPNAutoIP(uav->ObjectName());
 
     startCircle=new PushButton(GetButtonsLayout()->NewRow(),"start_square");
@@ -70,10 +70,10 @@ CircleFollower::CircleFollower(Uav* uav,TargetController *controller): UavStateM
     customOrientation=new AhrsData(this,"orientation");
 }
 
-CircleFollower::~CircleFollower() {
+SquareFollower::~SquareFollower() {
 }
 
-const AhrsData *CircleFollower::GetOrientation(void) const {
+const AhrsData *SquareFollower::GetOrientation(void) const {
     //get yaw from vrpn
     Euler vrpnEuler;
     GetUav()->GetVrpnObject()->GetEuler(vrpnEuler);
@@ -92,7 +92,7 @@ const AhrsData *CircleFollower::GetOrientation(void) const {
     return customOrientation;
 }
 
-void CircleFollower::AltitudeValues(float &z,float &dz) {
+void SquareFollower::AltitudeValues(float &z,float &dz) {
     Vector3D uav_pos,uav_vel;
 
     GetUav()->GetVrpnObject()->GetPosition(uav_pos);
@@ -102,7 +102,7 @@ void CircleFollower::AltitudeValues(float &z,float &dz) {
     dz=-uav_vel.z;
 }
 
-AhrsData *CircleFollower::GetReferenceOrientation(void) {
+AhrsData *SquareFollower::GetReferenceOrientation(void) {
     Vector2D pos_err, vel_err; // in Uav coordinate system
     float yaw_ref;
     Euler refAngles;
@@ -124,7 +124,7 @@ AhrsData *CircleFollower::GetReferenceOrientation(void) {
     return customReferenceOrientation;
 }
 
-void CircleFollower::PositionValues(Vector2D &pos_error,Vector2D &vel_error,float &yaw_ref) {
+void SquareFollower::PositionValues(Vector2D &pos_error,Vector2D &vel_error,float &yaw_ref) {
     Vector3D uav_pos,uav_vel; // in VRPN coordinate system
     Vector2D uav_2Dpos,uav_2Dvel; // in VRPN coordinate system
 
@@ -166,7 +166,7 @@ void CircleFollower::PositionValues(Vector2D &pos_error,Vector2D &vel_error,floa
     vel_error.Rotate(-currentAngles.yaw);
 }
 
-void CircleFollower::SignalEvent(Event_t event) {
+void SquareFollower::SignalEvent(Event_t event) {
     UavStateMachine::SignalEvent(event);
     switch(event) {
     case Event_t::TakingOff:
@@ -184,7 +184,7 @@ void CircleFollower::SignalEvent(Event_t event) {
     }
 }
 
-void CircleFollower::ExtraSecurityCheck(void) {
+void SquareFollower::ExtraSecurityCheck(void) {
     if ((!vrpnLost) && ((behaviourMode==BehaviourMode_t::Circle) || (behaviourMode==BehaviourMode_t::PositionHold))) {
         if (!targetVrpn->IsTracked(500)) {
             Thread::Err("VRPN, target lost\n");
@@ -201,7 +201,7 @@ void CircleFollower::ExtraSecurityCheck(void) {
     }
 }
 
-void CircleFollower::ExtraCheckPushButton(void) {
+void SquareFollower::ExtraCheckPushButton(void) {
     if(startCircle->Clicked() && (behaviourMode!=BehaviourMode_t::Circle)) {
         StartCircle();
     }
@@ -210,7 +210,7 @@ void CircleFollower::ExtraCheckPushButton(void) {
     }
 }
 
-void CircleFollower::ExtraCheckJoystick(void) {
+void SquareFollower::ExtraCheckJoystick(void) {
     //R1 and Circle
     if(GetJoystick()->IsButtonPressed(9) && GetJoystick()->IsButtonPressed(4) && (behaviourMode!=BehaviourMode_t::Circle)) {
         StartCircle();
@@ -222,7 +222,7 @@ void CircleFollower::ExtraCheckJoystick(void) {
     }
 }
 
-void CircleFollower::StartCircle(void) {
+void SquareFollower::StartCircle(void) {
     if (SetOrientationMode(OrientationMode_t::Custom)) {
         Thread::Info("SquareFollower: start square\n");
     } else {
@@ -245,13 +245,13 @@ void CircleFollower::StartCircle(void) {
     behaviourMode=BehaviourMode_t::Circle;
 }
 
-void CircleFollower::StopCircle(void) {
+void SquareFollower::StopCircle(void) {
     circle->FinishTraj();
     //GetJoystick()->Rumble(0x70);
     Thread::Info("SquareFollower: finishing square\n");
 }
 
-void CircleFollower::VrpnPositionHold(void) {
+void SquareFollower::VrpnPositionHold(void) {
     Euler vrpn_euler;
     Vector3D vrpn_pos;
 

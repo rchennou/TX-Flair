@@ -248,7 +248,7 @@ void CircleFollower::StartCircle(void) {
 void CircleFollower::StopCircle(void) {
     circle->FinishTraj();
     //GetJoystick()->Rumble(0x70);
-    Thread::Info("CircleFollower: finishing circle\n");
+    Thread::Info("SquareFollower: finishing square\n");
 }
 
 void CircleFollower::VrpnPositionHold(void) {
@@ -265,5 +265,5 @@ void CircleFollower::VrpnPositionHold(void) {
     uY->Reset();
     behaviourMode=BehaviourMode_t::PositionHold;
     SetOrientationMode(OrientationMode_t::Custom);
-    Thread::Info("CircleFollower: holding position\n");
+    Thread::Info("SquareFollower: holding position\n");
 }
