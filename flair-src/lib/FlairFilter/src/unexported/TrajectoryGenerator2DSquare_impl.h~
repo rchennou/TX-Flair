@@ -54,7 +54,7 @@ public:
 private:
   flair::core::Time previous_time;
   float CurrentTime, FinishTime;
-  bool first_update, is_finishing;
+  bool first_update, is_finishing, is_finishing_previous;
   flair::core::Vector2D pos;
   float angle_off;
   flair::gui::DoubleSpinBox *T, *veloctity, *acceleration, *rayon;

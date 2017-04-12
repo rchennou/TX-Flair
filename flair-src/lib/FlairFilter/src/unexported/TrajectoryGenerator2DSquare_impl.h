@@ -3,7 +3,7 @@
 // CECILL-C License, Version 1.0.
 // %flair:license}
 /*!
- * \file TrajectoryGenerator2DCircle_impl.h
+ * \file TrajectoryGenerator2DSquare_impl.h
  * \brief Class generating a circle trajectory in 2D
  * \author Guillaume Sanahuja, Copyright Heudiasyc UMR UTC/CNRS 7253
  * \date 2013/04/08
@@ -26,21 +26,21 @@ class LayoutPosition;
 class DoubleSpinBox;
 }
 namespace filter {
-class TrajectoryGenerator2DCircle;
+class TrajectoryGenerator2DSquare;
 }
 }
 
-/*! \class TrajectoryGenerator2DCircle_impl
+/*! \class TrajectoryGenerator2DSquare_impl
 * \brief Class generating a circle trajectory in 2D
 */
 
-class TrajectoryGenerator2DCircle_impl {
+class TrajectoryGenerator2DSquare_impl {
 
 public:
-  TrajectoryGenerator2DCircle_impl(
-      flair::filter::TrajectoryGenerator2DCircle *self,
+  TrajectoryGenerator2DSquare_impl(
+      flair::filter::TrajectoryGenerator2DSquare *self,
       const flair::gui::LayoutPosition *position, std::string name);
-  ~TrajectoryGenerator2DCircle_impl();
+  ~TrajectoryGenerator2DSquare_impl();
   void Update(flair::core::Time time);
   void StartTraj(const flair::core::Vector2D &start_pos, float nb_lap);
   void FinishTraj(void);
@@ -64,4 +64,4 @@ private:
   void setNb(unsigned int n);
 };
 
-#endif // TRAJECTORYGENERATOR2DCIRCLE_IMPL_H
+#endif // TrajectoryGenerator2DSquare_IMPL_H

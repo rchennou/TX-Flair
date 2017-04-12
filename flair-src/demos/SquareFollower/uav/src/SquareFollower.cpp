@@ -38,10 +38,11 @@ using namespace flair::filter;
 using namespace flair::meta;
 
 SquareFollower::SquareFollower(Uav* uav,TargetController *controller): UavStateMachine(uav,controller), behaviourMode(BehaviourMode_t::Default), vrpnLost(false) {
+
     uav->SetupVRPNAutoIP(uav->ObjectName());
 
-    startCircle=new PushButton(GetButtonsLayout()->NewRow(),"start_square");
-    stopCircle=new PushButton(GetButtonsLayout()->LastRowLastCol(),"stop_square");
+    startSquare=new PushButton(GetButtonsLayout()->NewRow(),"start_square");
+    stopSquare=new PushButton(GetButtonsLayout()->LastRowLastCol(),"stop_square");
 
     if(uav->GetVrpnClient()->UseXbee()==true) {
         targetVrpn=new MetaVrpnObject(uav->GetVrpnClient(),"target",1);
@@ -51,12 +52,12 @@ SquareFollower::SquareFollower(Uav* uav,TargetController *controller): UavStateM
 
     getFrameworkManager()->AddDeviceToLog(targetVrpn);
 
-    circle=new TrajectoryGenerator2DCircle(uav->GetVrpnClient()->GetLayout()->NewRow(),"square");
-    uav->GetVrpnObject()->xPlot()->AddCurve(circle->Matrix()->Element(0,0),DataPlot::Blue);
-    uav->GetVrpnObject()->yPlot()->AddCurve(circle->Matrix()->Element(0,1),DataPlot::Blue);
-    uav->GetVrpnObject()->VxPlot()->AddCurve(circle->Matrix()->Element(1,0),DataPlot::Blue);
-    uav->GetVrpnObject()->VyPlot()->AddCurve(circle->Matrix()->Element(1,1),DataPlot::Blue);
-    uav->GetVrpnObject()->XyPlot()->AddCurve(circle->Matrix()->Element(0,1),circle->Matrix()->Element(0,0),DataPlot::Blue,"square");
+    square=new TrajectoryGenerator2DSquare(uav->GetVrpnClient()->GetLayout()->NewRow(),"square");
+    uav->GetVrpnObject()->xPlot()->AddCurve(square->Matrix()->Element(0,0),DataPlot::Blue);
+    uav->GetVrpnObject()->yPlot()->AddCurve(square->Matrix()->Element(0,1),DataPlot::Blue);
+    uav->GetVrpnObject()->VxPlot()->AddCurve(square->Matrix()->Element(1,0),DataPlot::Blue);
+    uav->GetVrpnObject()->VyPlot()->AddCurve(square->Matrix()->Element(1,1),DataPlot::Blue);
+    uav->GetVrpnObject()->XyPlot()->AddCurve(square->Matrix()->Element(0,1),square->Matrix()->Element(0,0),DataPlot::Blue,"square");
 
     uX=new Pid(setupLawTab->At(1,0),"u_x");
     uX->UseDefaultPlot(graphLawTab->NewRow());
@@ -138,23 +139,23 @@ void SquareFollower::PositionValues(Vector2D &pos_error,Vector2D &vel_error,floa
         pos_error=uav_2Dpos-posHold;
         vel_error=uav_2Dvel;
         yaw_ref=yawHold;
-    } else { //Circle
+    } else { //square
         Vector3D target_pos;
-        Vector2D circle_pos,circle_vel;
+        Vector2D square_pos,square_vel;
         Vector2D target_2Dpos;
 
         targetVrpn->GetPosition(target_pos);
         target_pos.To2Dxy(target_2Dpos);
-        circle->SetCenter(target_2Dpos);
+        square->SetCenter(target_2Dpos);
 
-        //circle reference
-        circle->Update(GetTime());
-        circle->GetPosition(circle_pos);
-        circle->GetSpeed(circle_vel);
+        //square reference
+        square->Update(GetTime());
+        square->GetPosition(square_pos);
+        square->GetSpeed(square_vel);
 
         //error in optitrack frame
-        pos_error=uav_2Dpos-circle_pos;
-        vel_error=uav_2Dvel-circle_vel;
+        pos_error=uav_2Dpos-square_pos;
+        vel_error=uav_2Dvel-square_vel;
         yaw_ref=atan2(target_pos.y-uav_pos.y,target_pos.x-uav_pos.x);
     }
 
@@ -174,7 +175,7 @@ void SquareFollower::SignalEvent(Event_t event) {
         vrpnLost=false;
         break;
     case Event_t::EnteringControlLoop:
-        if ((behaviourMode==BehaviourMode_t::Circle) && (!circle->IsRunning())) {
+        if ((behaviourMode==BehaviourMode_t::Square) && (!square->IsRunning())) {
             VrpnPositionHold();
         }
         break;
@@ -185,7 +186,7 @@ void SquareFollower::SignalEvent(Event_t event) {
 }
 
 void SquareFollower::ExtraSecurityCheck(void) {
-    if ((!vrpnLost) && ((behaviourMode==BehaviourMode_t::Circle) || (behaviourMode==BehaviourMode_t::PositionHold))) {
+    if ((!vrpnLost) && ((behaviourMode==BehaviourMode_t::Square) || (behaviourMode==BehaviourMode_t::PositionHold))) {
         if (!targetVrpn->IsTracked(500)) {
             Thread::Err("VRPN, target lost\n");
             vrpnLost=true;
@@ -202,27 +203,27 @@ void SquareFollower::ExtraSecurityCheck(void) {
 }
 
 void SquareFollower::ExtraCheckPushButton(void) {
-    if(startCircle->Clicked() && (behaviourMode!=BehaviourMode_t::Circle)) {
-        StartCircle();
+    if(startSquare->Clicked() && (behaviourMode!=BehaviourMode_t::Square)) {
+        StartSquare();
     }
-    if(stopCircle->Clicked() && (behaviourMode==BehaviourMode_t::Circle)) {
-        StopCircle();
+    if(stopSquare->Clicked() && (behaviourMode==BehaviourMode_t::Square)) {
+        StopSquare();
     }
 }
 
 void SquareFollower::ExtraCheckJoystick(void) {
-    //R1 and Circle
-    if(GetJoystick()->IsButtonPressed(9) && GetJoystick()->IsButtonPressed(4) && (behaviourMode!=BehaviourMode_t::Circle)) {
-        StartCircle();
+    //R1 and Square
+    if(GetJoystick()->IsButtonPressed(9) && GetJoystick()->IsButtonPressed(4) && (behaviourMode!=BehaviourMode_t::Square)) {
+        StartSquare();
     }
 
     //R1 and Cross
-    if(GetJoystick()->IsButtonPressed(9) && GetJoystick()->IsButtonPressed(5) && (behaviourMode==BehaviourMode_t::Circle)) {
-        StopCircle();
+    if(GetJoystick()->IsButtonPressed(9) && GetJoystick()->IsButtonPressed(5) && (behaviourMode==BehaviourMode_t::Square)) {
+        StopSquare();
     }
 }
 
-void SquareFollower::StartCircle(void) {
+void SquareFollower::StartSquare(void) {
     if (SetOrientationMode(OrientationMode_t::Custom)) {
         Thread::Info("SquareFollower: start square\n");
     } else {
@@ -234,19 +235,19 @@ void SquareFollower::StartCircle(void) {
 
     targetVrpn->GetPosition(target_pos);
     target_pos.To2Dxy(target_2Dpos);
-    circle->SetCenter(target_2Dpos);
+    square->SetCenter(target_2Dpos);
 
     GetUav()->GetVrpnObject()->GetPosition(uav_pos);
     uav_pos.To2Dxy(uav_2Dpos);
-    circle->StartTraj(uav_2Dpos);
+    square->StartTraj(uav_2Dpos);
 
     uX->Reset();
     uY->Reset();
-    behaviourMode=BehaviourMode_t::Circle;
+    behaviourMode=BehaviourMode_t::Square;
 }
 
-void SquareFollower::StopCircle(void) {
-    circle->FinishTraj();
+void SquareFollower::StopSquare(void) {
+    square->FinishTraj();
     //GetJoystick()->Rumble(0x70);
     Thread::Info("SquareFollower: finishing square\n");
 }

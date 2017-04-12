@@ -21,7 +21,7 @@ namespace flair {
         class PushButton;
     }
     namespace filter {
-        class TrajectoryGenerator2DCircle;
+        class TrajectoryGenerator2DSquare;
     }
     namespace meta {
         class MetaVrpnObject;
@@ -40,15 +40,15 @@ class SquareFollower : public flair::meta::UavStateMachine {
         enum class BehaviourMode_t {
             Default,
             PositionHold,
-            Circle
+            Square
         };
 
         BehaviourMode_t behaviourMode;
         bool vrpnLost;
 
         void VrpnPositionHold(void);//flight mode
-        void StartCircle(void);
-        void StopCircle(void);
+        void StartSquare(void);
+        void StopSquare(void);
         void ExtraSecurityCheck(void);
         void ExtraCheckPushButton(void);
         void ExtraCheckJoystick(void);
@@ -63,9 +63,9 @@ class SquareFollower : public flair::meta::UavStateMachine {
         flair::core::Vector2D posHold;
         float yawHold;
 
-        flair::gui::PushButton *startCircle,*stopCircle;
+        flair::gui::PushButton *startSquare,*stopSquare;
         flair::meta::MetaVrpnObject *targetVrpn;
-        flair::filter::TrajectoryGenerator2DCircle *circle;
+        flair::filter::TrajectoryGenerator2DSquare *square;
         flair::core::AhrsData *customReferenceOrientation,*customOrientation;
 };
 

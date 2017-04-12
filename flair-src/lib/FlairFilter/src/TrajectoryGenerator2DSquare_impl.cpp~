@@ -3,7 +3,7 @@
 // CECILL-C License, Version 1.0.
 // %flair:license}
 //  created:    2013/04/08
-//  filename:   TrajectoryGenerator2DCircle_impl.cpp
+//  filename:   TrajectoryGenerator2DSquare_impl.cpp
 //
 //  author:     Guillaume Sanahuja
 //              Copyright Heudiasyc UMR UTC/CNRS 7253
@@ -31,14 +31,14 @@ using namespace flair::core;
 using namespace flair::gui;
 using namespace flair::filter;
 
-TrajectoryGenerator2DCircle_impl::TrajectoryGenerator2DCircle_impl(
-    TrajectoryGenerator2DCircle *self, const LayoutPosition *position,
+TrajectoryGenerator2DSquare_impl::TrajectoryGenerator2DSquare_impl(
+    TrajectoryGenerator2DSquare *self, const LayoutPosition *position,
     string name) {
   first_update = true;
   is_running = false;
   is_finishing = false;
   is_finishing_previous = false;
-  
+
   nb = 0;
 
   // init UI
@@ -67,11 +67,11 @@ TrajectoryGenerator2DCircle_impl::TrajectoryGenerator2DCircle_impl(
   output->SetValue(1, 1, 0);
 }
 
-TrajectoryGenerator2DCircle_impl::~TrajectoryGenerator2DCircle_impl() {
+TrajectoryGenerator2DSquare_impl::~TrajectoryGenerator2DSquare_impl() {
   delete output;
 }
 
-void TrajectoryGenerator2DCircle_impl::StartTraj(const Vector2D &start_pos,
+void TrajectoryGenerator2DSquare_impl::StartTraj(const Vector2D &start_pos,
                                                  float nb_lap) {
   is_running = true;
   first_update = true;
@@ -81,23 +81,23 @@ void TrajectoryGenerator2DCircle_impl::StartTraj(const Vector2D &start_pos,
   // configure trajectory
   angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);				// pos_start.x - pos_off.x ==> position départ en x
   CurrentTime = 0;
-  
+
   pos_start = start_pos;																											// position de départ
 }
 
-void TrajectoryGenerator2DCircle_impl::FinishTraj(void) {
+void TrajectoryGenerator2DSquare_impl::FinishTraj(void) {
   if (!is_finishing) {
     is_finishing = true;
     FinishTime = CurrentTime;
   }
 }
 
-void TrajectoryGenerator2DCircle_impl::setNb(unsigned int n)
+void TrajectoryGenerator2DSquare_impl::setNb(unsigned int n)
 {
 		nb = n;
 }
 
-const Vector2D TrajectoryGenerator2DCircle_impl::move(float& A, float V, float R, float v, float pos, Time currentTime)
+const Vector2D TrajectoryGenerator2DSquare_impl::move(float& A, float V, float R, float v, float pos, Time currentTime)
 {
 					Vector2D res;
 
@@ -116,15 +116,15 @@ const Vector2D TrajectoryGenerator2DCircle_impl::move(float& A, float V, float R
       		if (pos >= R && v >= 0)
         		is_finishing = true;
       		if (pos <= R && v < 0)
-        		is_finishing = true; 
-        		
+        		is_finishing = true;
+
         	res.x = pos;
         	res.y = v;
-        	
+
         	return res;
 }
 
-void TrajectoryGenerator2DCircle_impl::Update(Time time) {
+void TrajectoryGenerator2DSquare_impl::Update(Time time) {
   float delta_t;
   float theta;
   float V = veloctity->Value();
@@ -139,7 +139,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
     if (first_update) {
       first_update = false;
       previous_time = time;
-      
+
       /*output->GetMutex();
       output->SetValueNoMutex(0, 0, pos.x + pos_off.x);
   		output->SetValueNoMutex(0, 1, pos.y + pos_off.y);
@@ -148,7 +148,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       output->ReleaseMutex();
 
       output->SetDataTime(time);*/
-      
+
       return;
     } else {
       delta_t = (float)(time - previous_time) / 1000000000.;
@@ -173,9 +173,9 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       v.x = 0;
       v.y = 0;
     } else {
-    
+
         if (nb < 6) {
-          
+
           if(nb == 0)
           {
       				v.y = A * CurrentTime;
@@ -197,7 +197,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       					setNb(1);
       					FinishTime = CurrentTime;
         			}
-        	} 
+        	}
         	else if(nb == 1)
         	{
         			v.x = A * (CurrentTime - FinishTime);
@@ -220,9 +220,8 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       					setNb(2);
       					FinishTime = CurrentTime;
         			}
-
         	}
-        	else if(nb == 2)
+        	/*else if(nb == 2)
         	{
         			v.y = A * (CurrentTime - FinishTime);
       				if (fabs(v.y) > fabs(V)) {
@@ -236,7 +235,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
         				A = -A;
       				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
         				A = -A;
-        				
+
         			if ( (pos.y <= -R && v.y >= 0) || (pos.y >= -R && v.y < 0) )
       				{
         				v.y = 0;
@@ -244,7 +243,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       					setNb(3);
       					FinishTime = CurrentTime;
         			}
-        					
+
         	}
         	else if(nb == 3)
         	{
@@ -260,7 +259,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
         				A = -A;
       				if (R - v.x * v.x / (2 * A) >= pos.x && v.x < 0)
         				A = -A;
-        				
+
         			if ( (pos.x <= -R && v.x >= 0) || (pos.x >= -R && v.x < 0) )
       				{
         				v.x = 0;
@@ -315,34 +314,34 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       					setNb(6);
         			}
 
-        	}
-        		
+        	}*/
+
         	/*if(pos.y <= R && pos.x <= R)
         	{
         		Vector2D res = move(A, V, R, v.y, pos.y, CurrentTime);
         		v.y = res.y;
         		pos.y = res.x;
         	}*/
-          
-          
+
+
         } else {
-          
+
           v.x = 0;
     			v.y = 0;
     			pos.x = R;
           pos.y = R;
-    			
+
     			nb = 2;
     			CurrentTime = 0;
     			FinishTime = 0;
-          
+
         }
-    
+
       /*if (nb == 0) { //CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) { //((-V + sqrt(V*V-2*A*(R + pos_start.x - pos_off.x))) / A)
 
 				v.x = 0;
         pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + (pos_start.y - pos_off.y));
-      
+
         if( pos.y >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
         {
         		setNb(1);
@@ -353,13 +352,13 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
        	}
 
       } else {
-     
+
       	//if (CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.x - pos_off.x))) / A))
       	if (nb == 1)
       	{
       			v.y = 0;
       			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + pos_off.x);
-      			
+
         		if( pos.x >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
        			{
         				setNb(2);
@@ -373,7 +372,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	{
       			v.x = 0;
       			pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R + pos_off.y);
-      			
+
       			if(pos.y <= -R && CurrentTime >= ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
         		{
         				setNb(3);
@@ -382,14 +381,14 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
        			{
        	    		v.y = -(A * CurrentTime + V);
        			}
-       			
+
       	}
       	else if (nb == 3)
       	{
       			v.y = 0;
       			pos.x = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R + pos_off.x);
-      			
-        		if(pos.x <= -R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) 
+
+        		if(pos.x <= -R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
         				setNb(4);
       		 	}
@@ -402,7 +401,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	{
       			v.x = 0;
       			pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R - pos_off.y);
-      			
+
       			if(pos.y >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
         		{
         				setNb(5);
@@ -416,7 +415,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       	{
       			v.y = 0;
       			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R - pos_off.x);
-      			
+
         		if(pos.x >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
        			{
         				setNb(6);
@@ -426,10 +425,10 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
        			    v.x = (A * CurrentTime + V);
        			}
       	}*/
-      	
+
        /* else if (!is_finishing && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos.y + pos_off.y))) / A) )
         {
-        
+
           pos.y = (1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + pos.y + pos_off.y;
           v.y = A * CurrentTime + V;
 
@@ -454,7 +453,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
     			v.y = 0;
         }*/
       }
-    
+
 
 
 
@@ -463,7 +462,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
     v.y = 0;
   }
 
-        
+
 
   // on prend une fois pour toute les mutex et on fait des accès directs
   output->GetMutex();

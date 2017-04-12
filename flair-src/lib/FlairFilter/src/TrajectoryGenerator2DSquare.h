@@ -3,7 +3,7 @@
 // CECILL-C License, Version 1.0.
 // %flair:license}
 /*!
- * \file TrajectoryGenerator2DCircle.h
+ * \file TrajectoryGenerator2DSquare.h
  * \brief Class generating a circle trajectory in 2D
  * \author Guillaume Sanahuja, Copyright Heudiasyc UMR UTC/CNRS 7253
  * \date 2013/04/08
@@ -25,11 +25,11 @@ class LayoutPosition;
 }
 }
 
-class TrajectoryGenerator2DCircle_impl;
+class TrajectoryGenerator2DSquare_impl;
 
 namespace flair {
 namespace filter {
-/*! \class TrajectoryGenerator2DCircle
+/*! \class TrajectoryGenerator2DSquare
 *
 * \brief Class generating a circle trajectory in 2D
 *
@@ -43,27 +43,27 @@ namespace filter {
 * Position and velocity of the center of the circle can be manually changed
 * through SetCenter() and SetCenterSpeed().
 */
-class TrajectoryGenerator2DCircle : public core::IODevice {
+class TrajectoryGenerator2DSquare : public core::IODevice {
 public:
   /*!
   * \brief Constructor
   *
-  * Construct a TrajectoryGenerator2DCircle at position. \n
-  * The TrajectoryGenerator2DCircle will automatically be child of
+  * Construct a TrajectoryGenerator2DSquare at position. \n
+  * The TrajectoryGenerator2DSquare will automatically be child of
   *position->getLayout() Layout. After calling this function,
   * position will be deleted as it is no longer usefull. \n
   *
   * \param position position to display settings
   * \param name name
   */
-  TrajectoryGenerator2DCircle(const gui::LayoutPosition *position,
+  TrajectoryGenerator2DSquare(const gui::LayoutPosition *position,
                               std::string name);
 
   /*!
   * \brief Destructor
   *
   */
-  ~TrajectoryGenerator2DCircle();
+  ~TrajectoryGenerator2DSquare();
 
   /*!
   * \brief Start trajectory
@@ -149,8 +149,8 @@ private:
   */
   void UpdateFrom(const core::io_data *data){};
 
-  TrajectoryGenerator2DCircle_impl *pimpl_;
+  TrajectoryGenerator2DSquare_impl *pimpl_;
 };
 } // end namespace filter
 } // end namespace flair
-#endif // TRAJECTORYGENERATOR2DCIRCLE_H
+#endif // TrajectoryGenerator2DSquare_H
