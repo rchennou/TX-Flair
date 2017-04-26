@@ -97,33 +97,6 @@ void TrajectoryGenerator2DSquare_impl::setNb(unsigned int n)
 		nb = n;
 }
 
-const Vector2D TrajectoryGenerator2DSquare_impl::move(float& A, float V, float R, float v, float pos, Time currentTime)
-{
-					Vector2D res;
-
-	    		v = A * currentTime;
-      		if (fabs(v) > fabs(V)) {
-       		 if (v > 0)
-          		v = V;
-        		else
-          		v = -V;
-      		}
-      		pos = v * currentTime;
-      		if (R - v * v / (2 * A) <= pos && v >= 0)
-        		A = -A;
-      		if (R - v * v / (2 * A) >= pos && v < 0)
-        		A = -A;
-      		if (pos >= R && v >= 0)
-        		is_finishing = true;
-      		if (pos <= R && v < 0)
-        		is_finishing = true;
-
-        	res.x = pos;
-        	res.y = v;
-
-        	return res;
-}
-
 void TrajectoryGenerator2DSquare_impl::Update(Time time) {
   float delta_t;
   float theta;
@@ -140,15 +113,6 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       first_update = false;
       previous_time = time;
 
-      /*output->GetMutex();
-      output->SetValueNoMutex(0, 0, pos.x + pos_off.x);
-  		output->SetValueNoMutex(0, 1, pos.y + pos_off.y);
-  		output->SetValueNoMutex(1, 0, v.x + vel_off.x);
-  		output->SetValueNoMutex(1, 1, v.y + vel_off.y);
-      output->ReleaseMutex();
-
-      output->SetDataTime(time);*/
-
       return;
     } else {
       delta_t = (float)(time - previous_time) / 1000000000.;
@@ -163,8 +127,6 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
   previous_time = time;																																// algo "temps réel"
   CurrentTime += delta_t;
 
-  /*if (is_finishing && CurrentTime > FinishTime + V / A)
-    is_running = false;*/
 
   if (is_running) {
     if (R == 0) {																																			// Rayon à 0 ==> position à 0 (centre du cercle)
@@ -179,6 +141,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
           if(nb == 0)
           {
       				v.y = A * CurrentTime;
+
       				if (fabs(v.y) > fabs(V)) {
        		 		if (v.y > 0)
           				v.y = V;
@@ -186,10 +149,12 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
           				v.y = -V;
       				}
       				pos.y = v.y * CurrentTime;
+
       				if (R - v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
         				A = -A;
       				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
         				A = -A;
+
       				if ( (pos.y >= R && v.y >= 0) || (pos.y <= R && v.y < 0) )
       				{
         				v.y = 0;
@@ -316,14 +281,6 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
 
         	}
 
-        	/*if(pos.y <= R && pos.x <= R)
-        	{
-        		Vector2D res = move(A, V, R, v.y, pos.y, CurrentTime);
-        		v.y = res.y;
-        		pos.y = res.x;
-        	}*/
-
-
         } else {
 
           v.x = 0;
@@ -336,126 +293,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
     			FinishTime = 0;
 
         }
-
-      /*if (nb == 0) { //CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A)) { //((-V + sqrt(V*V-2*A*(R + pos_start.x - pos_off.x))) / A)
-
-				v.x = 0;
-        pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + (pos_start.y - pos_off.y));
-
-        if( pos.y >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
-        {
-        		setNb(1);
-       	}
-       	else if( pos.y < R && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       	{
-       	    v.y = (A * CurrentTime + V);
-       	}
-
-      } else {
-
-      	//if (CurrentTime >= ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos_start.x - pos_off.x))) / A))
-      	if (nb == 1)
-      	{
-      			v.y = 0;
-      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + pos_off.x);
-
-        		if( pos.x >= R && CurrentTime >= ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A) )
-       			{
-        				setNb(2);
-      		 	}
-       			else if( pos.x < R && CurrentTime < ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-       			    v.x = (A * CurrentTime + V);
-       			}
-      	}
-      	else if (nb == 2)
-      	{
-      			v.x = 0;
-      			pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R + pos_off.y);
-
-      			if(pos.y <= -R && CurrentTime >= ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-        		{
-        				setNb(3);
-       			}
-       			else if ( pos.y > -R && CurrentTime < ((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-       	    		v.y = -(A * CurrentTime + V);
-       			}
-
-      	}
-      	else if (nb == 3)
-      	{
-      			v.y = 0;
-      			pos.x = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R + pos_off.x);
-
-        		if(pos.x <= -R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-        				setNb(4);
-      		 	}
-       			else if( pos.x > -R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + ((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-       			    v.x = -(A * CurrentTime + V);
-       			}
-      	}
-      	else if (nb == 4)
-      	{
-      			v.x = 0;
-      			pos.y = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R - pos_off.y);
-
-      			if(pos.y >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-        		{
-        				setNb(5);
-       			}
-       			else if( pos.y < R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + 2*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-       	    		v.y = (A * CurrentTime + V);
-       			}
-      	}
-      	else if (nb == 5)
-      	{
-      			v.y = 0;
-      			pos.x = ((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R - pos_off.x);
-
-        		if(pos.x >= R && CurrentTime >= 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-        				setNb(6);
-      		 	}
-       			else if( pos.x < R && CurrentTime < 2*((V - sqrt(V*V+2*A*(R))) / -A) + 3*((-V + sqrt(V*V-2*A*(-R))) / A) + ((-V + sqrt(V*V-2*A*(-R + pos_start.y - pos_off.y))) / A))
-       			{
-       			    v.x = (A * CurrentTime + V);
-       			}
-      	}*/
-
-       /* else if (!is_finishing && CurrentTime < ((-V + sqrt(V*V-2*A*(-R + pos.y + pos_off.y))) / A) )
-        {
-
-          pos.y = (1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime + pos.y + pos_off.y;
-          v.y = A * CurrentTime + V;
-
-        }*/
-        /*else if (!is_finishing && CurrentTime >= (((-V + sqrt(V*V-2*A*(- 2*R))) / A) + V / A)  && CurrentTime < (((-V + sqrt(V*V-2*A*(- 2*R))) / A) ))
-        {
-
-        	pos.x = pos_off.x + (1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R;
-          v.x = A * CurrentTime + V;
-
-        }*/
-        /*else if (!is_finishing && pos.x >= R && pos.y >= R)
-        {
-
-        	pos.y = -((1 / 2) * A * CurrentTime * CurrentTime + V * CurrentTime - R) ;
-          v.y =  -(A * CurrentTime + V);
-
-        }*/
-       /* else if( nb == 6 )
-        {
-    			v.x = 0;
-    			v.y = 0;
-        }*/
       }
-
-
-
 
   } else {
     v.x = 0;

@@ -247,10 +247,12 @@ void SquareFollower::StartSquare(void) {
 }
 
 void SquareFollower::StopSquare(void) {
-    square->FinishTraj();
+    square->StopTraj();
     //GetJoystick()->Rumble(0x70);
     Thread::Info("SquareFollower: finishing square\n");
 }
+
+
 
 void SquareFollower::VrpnPositionHold(void) {
     Euler vrpn_euler;

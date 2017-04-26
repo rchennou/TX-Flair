@@ -179,6 +179,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
           if(nb == 0)
           {
       				v.y = A * CurrentTime;
+
       				if (fabs(v.y) > fabs(V)) {
        		 		if (v.y > 0)
           				v.y = V;
@@ -186,6 +187,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
           				v.y = -V;
       				}
       				pos.y = v.y * CurrentTime;
+
       				if (R - v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
         				A = -A;
       				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
@@ -221,7 +223,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       					FinishTime = CurrentTime;
         			}
         	}
-        	/*else if(nb == 2)
+        	else if(nb == 2)
         	{
         			v.y = A * (CurrentTime - FinishTime);
       				if (fabs(v.y) > fabs(V)) {
@@ -314,7 +316,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       					setNb(6);
         			}
 
-        	}*/
+        	}
 
         	/*if(pos.y <= R && pos.x <= R)
         	{
