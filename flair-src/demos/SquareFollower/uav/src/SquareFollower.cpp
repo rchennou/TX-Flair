@@ -252,8 +252,6 @@ void SquareFollower::StopSquare(void) {
     Thread::Info("SquareFollower: finishing square\n");
 }
 
-
-
 void SquareFollower::VrpnPositionHold(void) {
     Euler vrpn_euler;
     Vector3D vrpn_pos;

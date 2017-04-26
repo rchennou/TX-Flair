@@ -81,8 +81,6 @@ void TrajectoryGenerator2DSquare_impl::StartTraj(const Vector2D &start_pos,
   // configure trajectory
   angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);				// pos_start.x - pos_off.x ==> position départ en x
   CurrentTime = 0;
-
-  pos_start = start_pos;																											// position de départ
 }
 
 void TrajectoryGenerator2DSquare_impl::FinishTraj(void) {
@@ -121,7 +119,6 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
     delta_t = T->Value();
   }
 
-	is_finishing_previous = is_finishing;
 	is_finishing = false;
 
   previous_time = time;																																// algo "temps réel"
