@@ -30,7 +30,7 @@ CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-de
 CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairFilter/ControlLaw.h
 CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairFilter/Pid.h
 CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairFilter/PidThrust.h
-CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DCircle.h
+CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DSquare.h
 CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairMeta/MetaDualShock3.h
 CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairMeta/MetaUsRangeFinder.h
 CMakeFiles/SimpleFleet_nrt.dir/src/SimpleFleet.cpp.o: /home/rafik/flair/flair-dev/include/FlairMeta/MetaVrpnObject.h

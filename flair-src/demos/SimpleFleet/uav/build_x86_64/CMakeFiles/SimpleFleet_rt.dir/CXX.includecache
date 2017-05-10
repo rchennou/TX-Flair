@@ -144,7 +144,7 @@ ControlLaw.h
 ControlLaw.h
 -
 
-/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DCircle.h
+/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DSquare.h
 IODevice.h
 -
 
@@ -233,7 +233,7 @@ VrpnClient.h
 -
 MetaVrpnObject.h
 -
-TrajectoryGenerator2DCircle.h
+TrajectoryGenerator2DSquare.h
 -
 Vector3D.h
 -

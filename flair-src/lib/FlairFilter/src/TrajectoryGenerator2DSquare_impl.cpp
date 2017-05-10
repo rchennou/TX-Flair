@@ -133,7 +133,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       v.y = 0;
     } else {
 
-        if (nb < 6) {
+        if (nb < 6 && pos.x != 0 && pos.y != 0) {
 
           if(nb == 0)
           {
@@ -295,6 +295,8 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
   } else {
     v.x = 0;
     v.y = 0;
+    CurrentTime = 0;
+    FinishTime = 0;
   }
 
 

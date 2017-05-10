@@ -23,7 +23,7 @@ namespace flair {
         class AhrsData;
     }
     namespace filter {
-        class TrajectoryGenerator2DCircle;
+        class TrajectoryGenerator2DSquare;
     }
     namespace gui {
         class DoubleSpinBox;
@@ -71,7 +71,7 @@ class SimpleFleet : public flair::meta::UavStateMachine {
         flair::core::Socket *message;
         flair::core::Time posWait;
 
-        flair::filter::TrajectoryGenerator2DCircle *circle;
+        flair::filter::TrajectoryGenerator2DSquare *circle;
         flair::gui::DoubleSpinBox *xCircleCenter,*yCircleCenter,*yDisplacement;
         flair::core::AhrsData *customReferenceOrientation,*customOrientation;
 };

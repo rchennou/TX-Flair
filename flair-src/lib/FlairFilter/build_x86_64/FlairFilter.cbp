@@ -248,6 +248,24 @@
 		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator1D_impl.cpp">
 			<Option target="FlairFilter"/>
 		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine.h">
+			<Option target="FlairFilter"/>
+		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine_impl.cpp">
+			<Option target="FlairFilter"/>
+		</Unit>
 		<Unit filename="/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare.cpp">
 			<Option target="FlairFilter"/>
 		</Unit>

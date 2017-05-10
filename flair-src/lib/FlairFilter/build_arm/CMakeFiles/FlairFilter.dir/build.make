@@ -633,9 +633,105 @@ CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.o.provides: CMakeF
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.o.provides.build: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.o
 
 
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o: ../src/TrajectoryGenerator2DCircle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle.cpp
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.i"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle.cpp > CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.i
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.s"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle.cpp -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.s
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.requires:
+
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.requires
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.provides: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.provides.build
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.provides
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.provides.build: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o
+
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o: ../src/TrajectoryGenerator2DCircle_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle_impl.cpp
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.i"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle_impl.cpp > CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.i
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.s"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle_impl.cpp -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.s
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.requires:
+
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.requires
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.provides: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.provides.build
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.provides
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.provides.build: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o
+
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o: ../src/TrajectoryGenerator2DLine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine.cpp
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.i"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine.cpp > CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.i
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.s"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine.cpp -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.s
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.requires:
+
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.requires
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.provides: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.provides.build
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.provides
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.provides.build: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o
+
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o: ../src/TrajectoryGenerator2DLine_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine_impl.cpp
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.i"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine_impl.cpp > CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.i
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.s"
+	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine_impl.cpp -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.s
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.requires:
+
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.requires
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.provides: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.provides.build
+.PHONY : CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.provides
+
+CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.provides.build: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o
+
+
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o: ../src/TrajectoryGenerator2DSquare.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o"
 	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare.cpp
 
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.i: cmake_force
@@ -659,7 +755,7 @@ CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o.provides.build:
 
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o: ../src/TrajectoryGenerator2DSquare_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o"
 	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare_impl.cpp
 
 CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.i: cmake_force
@@ -683,7 +779,7 @@ CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o.provides.b
 
 CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
 CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o: ../src/UavMultiplex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o"
 	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex.cpp
 
 CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.i: cmake_force
@@ -707,7 +803,7 @@ CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o.provides.build: CMakeFiles/Fla
 
 CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
 CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.o: ../src/UavMultiplex_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.o"
 	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex_impl.cpp
 
 CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.i: cmake_force
@@ -731,7 +827,7 @@ CMakeFiles/FlairFilter.dir/src/UavMultiplex_impl.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
 CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o: ../src/X4X8Multiplex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o"
 	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/X4X8Multiplex.cpp
 
 CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.i: cmake_force
@@ -755,7 +851,7 @@ CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o.provides.build: CMakeFiles/Fl
 
 CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.o: CMakeFiles/FlairFilter.dir/flags.make
 CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.o: ../src/X4X8Multiplex_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.o"
 	/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.o -c /home/rafik/flair/flair-src/lib/FlairFilter/src/X4X8Multiplex_impl.cpp
 
 CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.i: cmake_force
@@ -803,6 +899,10 @@ FlairFilter_OBJECTS = \
 "CMakeFiles/FlairFilter.dir/src/SimuAhrs.cpp.o" \
 "CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D.cpp.o" \
 "CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.o" \
+"CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o" \
+"CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o" \
+"CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o" \
+"CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o" \
 "CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o" \
 "CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o" \
 "CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o" \
@@ -837,6 +937,10 @@ bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/Pid_impl.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/SimuAhrs.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.o
+bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o
+bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o
+bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o
+bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o
@@ -845,7 +949,7 @@ bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/X4X8Multiplex.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/src/X4X8Multiplex_impl.cpp.o
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/build.make
 bin/libFlairFilter.a: CMakeFiles/FlairFilter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX static library bin/libFlairFilter.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafik/flair/flair-src/lib/FlairFilter/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX static library bin/libFlairFilter.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/FlairFilter.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FlairFilter.dir/link.txt --verbose=$(VERBOSE)
 
@@ -878,6 +982,10 @@ CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/Pid_impl.cpp
 CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/SimuAhrs.cpp.o.requires
 CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D.cpp.o.requires
 CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.o.requires
+CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o.requires
+CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o.requires
+CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o.requires
+CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o.requires
 CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare.cpp.o.requires
 CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DSquare_impl.cpp.o.requires
 CMakeFiles/FlairFilter.dir/requires: CMakeFiles/FlairFilter.dir/src/UavMultiplex.cpp.o.requires

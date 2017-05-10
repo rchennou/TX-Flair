@@ -1,0 +1,357 @@
+//  created:    2015/11/05
+//  filename:   SquareFleet.cpp
+//
+//  author:     Guillaume Sanahuja
+//              Copyright Heudiasyc UMR UTC/CNRS 7253
+//
+//  version:    $Id: $
+//
+//  purpose:    demo fleet
+//
+//
+/*********************************************************************/
+
+#include "SquareFleet.h"
+#include <TargetController.h>
+#include <Uav.h>
+#include <GridLayout.h>
+#include <PushButton.h>
+#include <DataPlot1D.h>
+#include <Ahrs.h>
+#include <MetaUsRangeFinder.h>
+#include <MetaDualShock3.h>
+#include <FrameworkManager.h>
+#include <VrpnClient.h>
+#include <MetaVrpnObject.h>
+#include <TrajectoryGenerator2DSquare.h>
+#include <Vector3D.h>
+#include <Vector2D.h>
+#include <PidThrust.h>
+#include <Euler.h>
+#include <cvmatrix.h>
+#include <AhrsData.h>
+#include <Ahrs.h>
+#include <DoubleSpinBox.h>
+#include <stdio.h>
+#include <cmath>
+#include <Tab.h>
+#include <Pid.h>
+#include <Socket.h>
+#include <string.h>
+
+#define PI ((float)3.14159265358979323846)
+
+using namespace std;
+using namespace flair::core;
+using namespace flair::gui;
+using namespace flair::sensor;
+using namespace flair::filter;
+using namespace flair::meta;
+
+
+SquareFleet::SquareFleet(flair::meta::Uav* uav,string broadcast,TargetController *controller): UavStateMachine(uav,controller), behaviourMode(BehaviourMode_t::Default), vrpnLost(false) {
+    uav->SetupVRPNAutoIP(uav->ObjectName());
+
+    circle=new TrajectoryGenerator2DSquare(uav->GetVrpnClient()->GetLayout()->NewRow(),"circle");
+    uav->GetVrpnObject()->xPlot()->AddCurve(circle->Matrix()->Element(0,0),0,0,255);
+    uav->GetVrpnObject()->yPlot()->AddCurve(circle->Matrix()->Element(0,1),0,0,255);
+    uav->GetVrpnObject()->VxPlot()->AddCurve(circle->Matrix()->Element(1,0),0,0,255);
+    uav->GetVrpnObject()->VyPlot()->AddCurve(circle->Matrix()->Element(1,1),0,0,255);
+
+    xCircleCenter=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"x circle center"," m",-5,5,0.1,1,0);
+    yCircleCenter=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"y circle center"," m",-5,5,0.1,1,0);
+    yDisplacement=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"y displacement"," m",0,2,0.1,1,0);
+
+    //parent->AddDeviceToLog(Uz());
+
+    u_x=new Pid(setupLawTab->At(1,0),"u_x");
+    u_x->UseDefaultPlot(graphLawTab->NewRow());
+    u_y=new Pid(setupLawTab->At(1,1),"u_y");
+    u_y->UseDefaultPlot(graphLawTab->LastRowLastCol());
+
+    message=new Socket(uav,"Message",broadcast,true);
+
+    customReferenceOrientation= new AhrsData(this,"reference");
+    uav->GetAhrs()->AddPlot(customReferenceOrientation,DataPlot::Yellow);
+    AddDataToControlLawLog(customReferenceOrientation);
+
+    customOrientation=new AhrsData(this,"orientation");
+/*
+    //check init conditions
+    Vector3D uav_pos;
+    Euler vrpn_euler;
+    GetVrpnObject()->GetPosition(uav_pos);
+    GetVrpnObject()->GetEuler(vrpn_euler);
+
+    if(name=="x8_0") {
+        //x8_0 should be on the left, with 0 yaw
+        if(uav_pos.y>yCircleCenter->Value() || vrpn_euler.yaw>20 || vrpn_euler.yaw<-20) Thread::Err("wrong init position\n");
+    }
+    if(name=="x8_1") {
+        //x8_1 should be on the right, with 180 yaw
+        if(uav_pos.y<yCircleCenter->Value() || (vrpn_euler.yaw<160 && vrpn_euler.yaw>-160)) Thread::Err("wrong init position %f %f\n",yCircleCenter->Value(),vrpn_euler.yaw);
+    }
+    */
+}
+
+SquareFleet::~SquareFleet() {
+}
+
+const AhrsData *SquareFleet::GetOrientation(void) const {
+    //get yaw from vrpn
+    Euler vrpnEuler;
+    GetUav()->GetVrpnObject()->GetEuler(vrpnEuler);
+
+    //get roll, pitch and w from imu
+    Quaternion ahrsQuaternion;
+    Vector3D ahrsAngularSpeed;
+    GetDefaultOrientation()->GetQuaternionAndAngularRates(ahrsQuaternion, ahrsAngularSpeed);
+
+    Euler ahrsEuler=ahrsQuaternion.ToEuler();
+    ahrsEuler.yaw=vrpnEuler.yaw;
+    Quaternion mixQuaternion=ahrsEuler.ToQuaternion();
+
+    customOrientation->SetQuaternionAndAngularRates(mixQuaternion,ahrsAngularSpeed);
+
+    return customOrientation;
+}
+
+void SquareFleet::AltitudeValues(float &z,float &dz) const {
+    Vector3D uav_pos,uav_vel;
+
+    GetUav()->GetVrpnObject()->GetPosition(uav_pos);
+    GetUav()->GetVrpnObject()->GetSpeed(uav_vel);
+    //z and dz must be in uav's frame
+    z=-uav_pos.z;
+    dz=-uav_vel.z;
+}
+
+const AhrsData *SquareFleet::GetReferenceOrientation(void) {
+    Vector2D pos_err, vel_err; // in uav coordinate system
+    float yaw_ref;
+    Euler refAngles;
+
+    PositionValues(pos_err, vel_err, yaw_ref);
+
+    refAngles.yaw=yaw_ref;
+
+    u_x->SetValues(pos_err.x, vel_err.x);
+    u_x->Update(GetTime());
+    refAngles.pitch=u_x->Output();
+
+    u_y->SetValues(pos_err.y, vel_err.y);
+    u_y->Update(GetTime());
+    refAngles.roll=-u_y->Output();
+
+    customReferenceOrientation->SetQuaternionAndAngularRates(refAngles.ToQuaternion(),Vector3D(0,0,0));
+
+    return customReferenceOrientation;
+}
+
+void SquareFleet::PositionValues(Vector2D &pos_error,Vector2D &vel_error,float &yaw_ref) {
+    Vector3D uav_pos,uav_vel; // in VRPN coordinate system
+    Vector2D uav_2Dpos,uav_2Dvel; // in VRPN coordinate system
+    Euler vrpn_euler; // in VRPN coordinate system
+
+    GetUav()->GetVrpnObject()->GetPosition(uav_pos);
+    GetUav()->GetVrpnObject()->GetSpeed(uav_vel);
+    GetUav()->GetVrpnObject()->GetEuler(vrpn_euler);
+
+    uav_pos.To2Dxy(uav_2Dpos);
+    uav_vel.To2Dxy(uav_2Dvel);
+
+    if (behaviourMode==BehaviourMode_t::PositionHold1 || behaviourMode==BehaviourMode_t::PositionHold2
+        || behaviourMode==BehaviourMode_t::PositionHold3 || behaviourMode==BehaviourMode_t::PositionHold4) {
+        pos_error=uav_2Dpos-pos_hold;
+        vel_error=uav_2Dvel;
+        yaw_ref=yaw_hold;
+    } else { //Circle
+        Vector2D circle_pos,circle_vel;
+        Vector2D target_2Dpos;
+
+        //circle center
+        target_2Dpos.x=xCircleCenter->Value();
+        target_2Dpos.y=yCircleCenter->Value();
+        circle->SetCenter(target_2Dpos);
+
+        //circle reference
+        circle->Update(GetTime());
+        circle->GetPosition(circle_pos);
+        circle->GetSpeed(circle_vel);
+
+        //error in optitrack frame
+        pos_error=uav_2Dpos-circle_pos;
+        vel_error=uav_2Dvel-circle_vel;
+        yaw_ref=atan2(target_2Dpos.y-uav_pos.y,target_2Dpos.x-uav_pos.x);
+    }
+    //error in uav frame
+    Quaternion currentQuaternion=GetCurrentQuaternion();
+    Euler currentAngles;//in vrpn frame
+    currentQuaternion.ToEuler(currentAngles);
+    pos_error.Rotate(-currentAngles.yaw);
+    vel_error.Rotate(-currentAngles.yaw);
+}
+
+void SquareFleet::SignalEvent(Event_t event) {
+    UavStateMachine::SignalEvent(event);
+
+    switch(event) {
+    case Event_t::EmergencyStop:
+        message->SendMessage("EmergencyStop");
+        break;
+    case Event_t::TakingOff:
+        //behaviourMode=BehaviourMode_t::Default;
+        message->SendMessage("TakeOff");
+        VrpnPositionHold();
+        behaviourMode=BehaviourMode_t::PositionHold1;
+        break;
+    case Event_t::StartLanding:
+        VrpnPositionHold();
+        behaviourMode=BehaviourMode_t::PositionHold4;
+        message->SendMessage("Landing");
+        break;
+    case Event_t::EnteringControlLoop:
+        CheckMessages();
+        if ((behaviourMode==BehaviourMode_t::Circle1) && (!circle->IsRunning())) {
+            VrpnPositionHold();
+            behaviourMode=BehaviourMode_t::PositionHold2;
+            if(pos_hold.y<0) {
+                pos_hold.y-=yDisplacement->Value();
+            } else {
+                pos_hold.y+=yDisplacement->Value();
+            }
+            posWait=GetTime();
+            Printf("Circle1 -> PositionHold2\n");
+        }
+        if (behaviourMode==BehaviourMode_t::PositionHold2 && GetTime()>(posWait+3*(Time)1000000000)) {
+            behaviourMode=BehaviourMode_t::PositionHold3;
+            if(pos_hold.y<0) {
+                pos_hold.y+=yDisplacement->Value();
+            } else {
+                pos_hold.y-=yDisplacement->Value();
+            }
+            posWait=GetTime();
+            Printf("PositionHold2 -> PositionHold3\n");
+        }
+        if (behaviourMode==BehaviourMode_t::PositionHold3 && GetTime()>(posWait+3*(Time)1000000000)) {
+            behaviourMode=BehaviourMode_t::Circle2;
+            StartCircle();
+            Printf("PositionHold3 -> Circle2\n");
+        }
+        if ((behaviourMode==BehaviourMode_t::Circle2) && (!circle->IsRunning())) {
+            Printf("Circle2 -> Land\n");
+            behaviourMode=BehaviourMode_t::PositionHold4;
+            Land();
+        }
+
+        break;
+    case Event_t::EnteringFailSafeMode:
+        behaviourMode=BehaviourMode_t::Default;
+        break;
+    case Event_t::ZTrajectoryFinished:
+        Printf("PositionHold1 -> Circle1\n");
+        StartCircle();
+        behaviourMode=BehaviourMode_t::Circle1;
+        break;
+    }
+}
+
+void SquareFleet::CheckMessages(void) {
+    char msg[64];
+    char src[64];
+    size_t src_size=sizeof(src);
+    while(message->RecvMessage(msg,sizeof(msg),TIME_NONBLOCK,src,&src_size)>0) {
+      //  printf("%s %s\n",GetUav()->ObjectName().c_str(),msg);
+        if(strcmp(src,GetUav()->ObjectName().c_str())!=0) {
+            /*
+            if(strcmp(msg,"StopMotors")==0 && orientation_state!=OrientationState_t::Stopped)
+            {
+                joy->FlashLed(DualShock3::led1,10,10);
+                joy->Rumble(0x70);
+                GetBldc()->SetEnabled(false);
+                GetUavMultiplex()->UnlockUserInterface();
+                altitude_state=AltitudeState_t::Stopped;
+                orientation_state=OrientationState_t::Stopped;
+                GetAhrs()->UnlockUserInterface();
+            }
+*/
+            if(strcmp(msg,"TakeOff")==0) {
+                Printf("TakeOff fleet\n");
+                TakeOff();
+            }
+            if(strcmp(msg,"Landing")==0) {
+                Printf("Landing fleet\n");
+                Land();
+            }
+            if(strcmp(msg,"EmergencyStop")==0) {
+                Printf("EmergencyStop fleet\n");
+                EmergencyStop();
+            }
+        }
+    }
+}
+
+void SquareFleet::ExtraSecurityCheck(void) {
+    if (!vrpnLost && behaviourMode!=BehaviourMode_t::Default) {
+        if (!GetUav()->GetVrpnObject()->IsTracked(500)) {
+            Thread::Err("Optitrack, uav lost\n");
+            vrpnLost=true;
+            EnterFailSafeMode();
+            Land();
+        }
+    }
+}
+
+void SquareFleet::ExtraCheckJoystick(void) {
+
+}
+
+void SquareFleet::StartCircle(void) {
+    if (SetOrientationMode(OrientationMode_t::Custom)) {
+        Thread::Info("Demo flotte: start circle\n");
+    } else {
+        Thread::Warn("Demo flotte: could not start circle\n");
+        return;
+    }
+    Vector3D uav_pos;
+    Vector2D uav_2Dpos,target_2Dpos;
+
+    //circle center
+    target_2Dpos.x=xCircleCenter->Value();
+    target_2Dpos.y=yCircleCenter->Value();
+    circle->SetCenter(target_2Dpos);
+
+    GetUav()->GetVrpnObject()->GetPosition(uav_pos);
+    uav_pos.To2Dxy(uav_2Dpos);
+    circle->StartTraj(uav_2Dpos,1);
+
+    u_x->Reset();
+    u_y->Reset();
+}
+
+void SquareFleet::StopCircle(void) {
+    circle->FinishTraj();
+    //joy->Rumble(0x70);
+    Thread::Info("Demo flotte: finishing circle\n");
+}
+
+void SquareFleet::VrpnPositionHold(void) {
+    Euler vrpn_euler;
+    Vector3D vrpn_pos;
+
+    if (SetOrientationMode(OrientationMode_t::Custom)) {
+        Thread::Info("Demo flotte: holding position\n");
+    } else {
+        Thread::Info("Demo flotte: could not hold position\n");
+        //return;
+    }
+
+    GetUav()->GetVrpnObject()->GetEuler(vrpn_euler);
+    yaw_hold=vrpn_euler.yaw;
+
+    GetUav()->GetVrpnObject()->GetPosition(vrpn_pos);
+    vrpn_pos.To2Dxy(pos_hold);
+
+    u_x->Reset();
+    u_y->Reset();
+}

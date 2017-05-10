@@ -1,4 +1,0 @@
-/home/rafik/flair/flair-src/demos/CircleFollower/uav/build/CMakeFiles/rebuild_cache.dir
-/home/rafik/flair/flair-src/demos/CircleFollower/uav/build/CMakeFiles/edit_cache.dir
-/home/rafik/flair/flair-src/demos/CircleFollower/uav/build/CMakeFiles/CircleFollower_nrt.dir
-/home/rafik/flair/flair-src/demos/CircleFollower/uav/build/CMakeFiles/CircleFollower_rt.dir

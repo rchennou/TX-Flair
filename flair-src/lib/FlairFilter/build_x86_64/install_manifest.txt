@@ -13,6 +13,8 @@
 /home/rafik/flair/flair-dev/include/FlairFilter/PidThrust.h
 /home/rafik/flair/flair-dev/include/FlairFilter/SimuAhrs.h
 /home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator1D.h
+/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DCircle.h
+/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DLine.h
 /home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DSquare.h
 /home/rafik/flair/flair-dev/include/FlairFilter/UavMultiplex.h
 /home/rafik/flair/flair-dev/include/FlairFilter/X4X8Multiplex.h

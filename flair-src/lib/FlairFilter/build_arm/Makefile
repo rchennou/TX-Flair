@@ -817,6 +817,114 @@ src/TrajectoryGenerator1D_impl.cpp.s:
 	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator1D_impl.cpp.s
 .PHONY : src/TrajectoryGenerator1D_impl.cpp.s
 
+src/TrajectoryGenerator2DCircle.o: src/TrajectoryGenerator2DCircle.cpp.o
+
+.PHONY : src/TrajectoryGenerator2DCircle.o
+
+# target to build an object file
+src/TrajectoryGenerator2DCircle.cpp.o:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.o
+.PHONY : src/TrajectoryGenerator2DCircle.cpp.o
+
+src/TrajectoryGenerator2DCircle.i: src/TrajectoryGenerator2DCircle.cpp.i
+
+.PHONY : src/TrajectoryGenerator2DCircle.i
+
+# target to preprocess a source file
+src/TrajectoryGenerator2DCircle.cpp.i:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.i
+.PHONY : src/TrajectoryGenerator2DCircle.cpp.i
+
+src/TrajectoryGenerator2DCircle.s: src/TrajectoryGenerator2DCircle.cpp.s
+
+.PHONY : src/TrajectoryGenerator2DCircle.s
+
+# target to generate assembly for a file
+src/TrajectoryGenerator2DCircle.cpp.s:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle.cpp.s
+.PHONY : src/TrajectoryGenerator2DCircle.cpp.s
+
+src/TrajectoryGenerator2DCircle_impl.o: src/TrajectoryGenerator2DCircle_impl.cpp.o
+
+.PHONY : src/TrajectoryGenerator2DCircle_impl.o
+
+# target to build an object file
+src/TrajectoryGenerator2DCircle_impl.cpp.o:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.o
+.PHONY : src/TrajectoryGenerator2DCircle_impl.cpp.o
+
+src/TrajectoryGenerator2DCircle_impl.i: src/TrajectoryGenerator2DCircle_impl.cpp.i
+
+.PHONY : src/TrajectoryGenerator2DCircle_impl.i
+
+# target to preprocess a source file
+src/TrajectoryGenerator2DCircle_impl.cpp.i:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.i
+.PHONY : src/TrajectoryGenerator2DCircle_impl.cpp.i
+
+src/TrajectoryGenerator2DCircle_impl.s: src/TrajectoryGenerator2DCircle_impl.cpp.s
+
+.PHONY : src/TrajectoryGenerator2DCircle_impl.s
+
+# target to generate assembly for a file
+src/TrajectoryGenerator2DCircle_impl.cpp.s:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DCircle_impl.cpp.s
+.PHONY : src/TrajectoryGenerator2DCircle_impl.cpp.s
+
+src/TrajectoryGenerator2DLine.o: src/TrajectoryGenerator2DLine.cpp.o
+
+.PHONY : src/TrajectoryGenerator2DLine.o
+
+# target to build an object file
+src/TrajectoryGenerator2DLine.cpp.o:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.o
+.PHONY : src/TrajectoryGenerator2DLine.cpp.o
+
+src/TrajectoryGenerator2DLine.i: src/TrajectoryGenerator2DLine.cpp.i
+
+.PHONY : src/TrajectoryGenerator2DLine.i
+
+# target to preprocess a source file
+src/TrajectoryGenerator2DLine.cpp.i:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.i
+.PHONY : src/TrajectoryGenerator2DLine.cpp.i
+
+src/TrajectoryGenerator2DLine.s: src/TrajectoryGenerator2DLine.cpp.s
+
+.PHONY : src/TrajectoryGenerator2DLine.s
+
+# target to generate assembly for a file
+src/TrajectoryGenerator2DLine.cpp.s:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine.cpp.s
+.PHONY : src/TrajectoryGenerator2DLine.cpp.s
+
+src/TrajectoryGenerator2DLine_impl.o: src/TrajectoryGenerator2DLine_impl.cpp.o
+
+.PHONY : src/TrajectoryGenerator2DLine_impl.o
+
+# target to build an object file
+src/TrajectoryGenerator2DLine_impl.cpp.o:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.o
+.PHONY : src/TrajectoryGenerator2DLine_impl.cpp.o
+
+src/TrajectoryGenerator2DLine_impl.i: src/TrajectoryGenerator2DLine_impl.cpp.i
+
+.PHONY : src/TrajectoryGenerator2DLine_impl.i
+
+# target to preprocess a source file
+src/TrajectoryGenerator2DLine_impl.cpp.i:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.i
+.PHONY : src/TrajectoryGenerator2DLine_impl.cpp.i
+
+src/TrajectoryGenerator2DLine_impl.s: src/TrajectoryGenerator2DLine_impl.cpp.s
+
+.PHONY : src/TrajectoryGenerator2DLine_impl.s
+
+# target to generate assembly for a file
+src/TrajectoryGenerator2DLine_impl.cpp.s:
+	$(MAKE) -f CMakeFiles/FlairFilter.dir/build.make CMakeFiles/FlairFilter.dir/src/TrajectoryGenerator2DLine_impl.cpp.s
+.PHONY : src/TrajectoryGenerator2DLine_impl.cpp.s
+
 src/TrajectoryGenerator2DSquare.o: src/TrajectoryGenerator2DSquare.cpp.o
 
 .PHONY : src/TrajectoryGenerator2DSquare.o
@@ -1064,6 +1172,18 @@ help:
 	@echo "... src/TrajectoryGenerator1D_impl.o"
 	@echo "... src/TrajectoryGenerator1D_impl.i"
 	@echo "... src/TrajectoryGenerator1D_impl.s"
+	@echo "... src/TrajectoryGenerator2DCircle.o"
+	@echo "... src/TrajectoryGenerator2DCircle.i"
+	@echo "... src/TrajectoryGenerator2DCircle.s"
+	@echo "... src/TrajectoryGenerator2DCircle_impl.o"
+	@echo "... src/TrajectoryGenerator2DCircle_impl.i"
+	@echo "... src/TrajectoryGenerator2DCircle_impl.s"
+	@echo "... src/TrajectoryGenerator2DLine.o"
+	@echo "... src/TrajectoryGenerator2DLine.i"
+	@echo "... src/TrajectoryGenerator2DLine.s"
+	@echo "... src/TrajectoryGenerator2DLine_impl.o"
+	@echo "... src/TrajectoryGenerator2DLine_impl.i"
+	@echo "... src/TrajectoryGenerator2DLine_impl.s"
 	@echo "... src/TrajectoryGenerator2DSquare.o"
 	@echo "... src/TrajectoryGenerator2DSquare.i"
 	@echo "... src/TrajectoryGenerator2DSquare.s"

@@ -46,7 +46,7 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rafik/flair/flair-dev/include/FlairFilter/Ahrs.h;/home/rafik/flair/flair-dev/include/FlairFilter/AhrsComplementaryFilter.h;/home/rafik/flair/flair-dev/include/FlairFilter/AhrsKalman.h;/home/rafik/flair/flair-dev/include/FlairFilter/ButterworthLowPass.h;/home/rafik/flair/flair-dev/include/FlairFilter/ControlLaw.h;/home/rafik/flair/flair-dev/include/FlairFilter/EulerDerivative.h;/home/rafik/flair/flair-dev/include/FlairFilter/Gx3_25_ahrs.h;/home/rafik/flair/flair-dev/include/FlairFilter/JoyReference.h;/home/rafik/flair/flair-dev/include/FlairFilter/LowPassFilter.h;/home/rafik/flair/flair-dev/include/FlairFilter/NestedSat.h;/home/rafik/flair/flair-dev/include/FlairFilter/Pid.h;/home/rafik/flair/flair-dev/include/FlairFilter/PidThrust.h;/home/rafik/flair/flair-dev/include/FlairFilter/SimuAhrs.h;/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator1D.h;/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DSquare.h;/home/rafik/flair/flair-dev/include/FlairFilter/UavMultiplex.h;/home/rafik/flair/flair-dev/include/FlairFilter/X4X8Multiplex.h")
+   "/home/rafik/flair/flair-dev/include/FlairFilter/Ahrs.h;/home/rafik/flair/flair-dev/include/FlairFilter/AhrsComplementaryFilter.h;/home/rafik/flair/flair-dev/include/FlairFilter/AhrsKalman.h;/home/rafik/flair/flair-dev/include/FlairFilter/ButterworthLowPass.h;/home/rafik/flair/flair-dev/include/FlairFilter/ControlLaw.h;/home/rafik/flair/flair-dev/include/FlairFilter/EulerDerivative.h;/home/rafik/flair/flair-dev/include/FlairFilter/Gx3_25_ahrs.h;/home/rafik/flair/flair-dev/include/FlairFilter/JoyReference.h;/home/rafik/flair/flair-dev/include/FlairFilter/LowPassFilter.h;/home/rafik/flair/flair-dev/include/FlairFilter/NestedSat.h;/home/rafik/flair/flair-dev/include/FlairFilter/Pid.h;/home/rafik/flair/flair-dev/include/FlairFilter/PidThrust.h;/home/rafik/flair/flair-dev/include/FlairFilter/SimuAhrs.h;/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator1D.h;/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DCircle.h;/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DLine.h;/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DSquare.h;/home/rafik/flair/flair-dev/include/FlairFilter/UavMultiplex.h;/home/rafik/flair/flair-dev/include/FlairFilter/X4X8Multiplex.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
@@ -68,6 +68,8 @@ file(INSTALL DESTINATION "/home/rafik/flair/flair-dev/include/FlairFilter" TYPE 
     "/home/rafik/flair/flair-src/lib/FlairFilter/src/PidThrust.h"
     "/home/rafik/flair/flair-src/lib/FlairFilter/src/SimuAhrs.h"
     "/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator1D.h"
+    "/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DCircle.h"
+    "/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DLine.h"
     "/home/rafik/flair/flair-src/lib/FlairFilter/src/TrajectoryGenerator2DSquare.h"
     "/home/rafik/flair/flair-src/lib/FlairFilter/src/UavMultiplex.h"
     "/home/rafik/flair/flair-src/lib/FlairFilter/src/X4X8Multiplex.h"
