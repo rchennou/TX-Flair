@@ -52,14 +52,14 @@ using namespace flair::meta;
 SimpleFleet::SimpleFleet(flair::meta::Uav* uav,string broadcast,TargetController *controller): UavStateMachine(uav,controller), behaviourMode(BehaviourMode_t::Default), vrpnLost(false) {
     uav->SetupVRPNAutoIP(uav->ObjectName());
 
-    circle=new TrajectoryGenerator2DSquare(uav->GetVrpnClient()->GetLayout()->NewRow(),"circle");
-    uav->GetVrpnObject()->xPlot()->AddCurve(circle->Matrix()->Element(0,0),0,0,255);
-    uav->GetVrpnObject()->yPlot()->AddCurve(circle->Matrix()->Element(0,1),0,0,255);
-    uav->GetVrpnObject()->VxPlot()->AddCurve(circle->Matrix()->Element(1,0),0,0,255);
-    uav->GetVrpnObject()->VyPlot()->AddCurve(circle->Matrix()->Element(1,1),0,0,255);
+    square=new TrajectoryGenerator2DSquare(uav->GetVrpnClient()->GetLayout()->NewRow(),"square");
+    uav->GetVrpnObject()->xPlot()->AddCurve(square->Matrix()->Element(0,0),0,0,255);
+    uav->GetVrpnObject()->yPlot()->AddCurve(square->Matrix()->Element(0,1),0,0,255);
+    uav->GetVrpnObject()->VxPlot()->AddCurve(square->Matrix()->Element(1,0),0,0,255);
+    uav->GetVrpnObject()->VyPlot()->AddCurve(square->Matrix()->Element(1,1),0,0,255);
 
-    xCircleCenter=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"x circle center"," m",-5,5,0.1,1,0);
-    yCircleCenter=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"y circle center"," m",-5,5,0.1,1,0);
+    xSquareCenter=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"x square center"," m",-5,5,0.1,1,0);
+    ySquareCenter=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"y square center"," m",-5,5,0.1,1,0);
     yDisplacement=new DoubleSpinBox(uav->GetVrpnClient()->GetLayout()->NewRow(),"y displacement"," m",0,2,0.1,1,0);
 
     //parent->AddDeviceToLog(Uz());
@@ -165,23 +165,23 @@ void SimpleFleet::PositionValues(Vector2D &pos_error,Vector2D &vel_error,float &
         pos_error=uav_2Dpos-pos_hold;
         vel_error=uav_2Dvel;
         yaw_ref=yaw_hold;
-    } else { //Circle
-        Vector2D circle_pos,circle_vel;
+    } else { //square
+        Vector2D square_pos,square_vel;
         Vector2D target_2Dpos;
 
-        //circle center
-        target_2Dpos.x=xCircleCenter->Value();
-        target_2Dpos.y=yCircleCenter->Value();
-        circle->SetCenter(target_2Dpos);
+        //square center
+        target_2Dpos.x=xSquareCenter->Value();
+        target_2Dpos.y=ySquareCenter->Value();
+        square->SetCenter(target_2Dpos);
 
-        //circle reference
-        circle->Update(GetTime());
-        circle->GetPosition(circle_pos);
-        circle->GetSpeed(circle_vel);
+        //square reference
+        square->Update(GetTime());
+        square->GetPosition(square_pos);
+        square->GetSpeed(square_vel);
 
         //error in optitrack frame
-        pos_error=uav_2Dpos-circle_pos;
-        vel_error=uav_2Dvel-circle_vel;
+        pos_error=uav_2Dpos-square_pos;
+        vel_error=uav_2Dvel-square_vel;
         yaw_ref=atan2(target_2Dpos.y-uav_pos.y,target_2Dpos.x-uav_pos.x);
     }
     //error in uav frame
@@ -212,7 +212,7 @@ void SimpleFleet::SignalEvent(Event_t event) {
         break;
     case Event_t::EnteringControlLoop:
         CheckMessages();
-        if ((behaviourMode==BehaviourMode_t::Circle1) && (!circle->IsRunning())) {
+        if ((behaviourMode==BehaviourMode_t::Square1) && (!square->IsRunning())) {
             VrpnPositionHold();
             behaviourMode=BehaviourMode_t::PositionHold2;
             if(pos_hold.y<0) {
@@ -221,7 +221,7 @@ void SimpleFleet::SignalEvent(Event_t event) {
                 pos_hold.y+=yDisplacement->Value();
             }
             posWait=GetTime();
-            Printf("Circle1 -> PositionHold2\n");
+            Printf("Square1 -> PositionHold2\n");
         }
         if (behaviourMode==BehaviourMode_t::PositionHold2 && GetTime()>(posWait+3*(Time)1000000000)) {
             behaviourMode=BehaviourMode_t::PositionHold3;
@@ -234,12 +234,12 @@ void SimpleFleet::SignalEvent(Event_t event) {
             Printf("PositionHold2 -> PositionHold3\n");
         }
         if (behaviourMode==BehaviourMode_t::PositionHold3 && GetTime()>(posWait+3*(Time)1000000000)) {
-            behaviourMode=BehaviourMode_t::Circle2;
-            StartCircle();
-            Printf("PositionHold3 -> Circle2\n");
+            behaviourMode=BehaviourMode_t::Square2;
+            StartSquare();
+            Printf("PositionHold3 -> Square2\n");
         }
-        if ((behaviourMode==BehaviourMode_t::Circle2) && (!circle->IsRunning())) {
-            Printf("Circle2 -> Land\n");
+        if ((behaviourMode==BehaviourMode_t::Square2) && (!square->IsRunning())) {
+            Printf("Square2 -> Land\n");
             behaviourMode=BehaviourMode_t::PositionHold4;
             Land();
         }
@@ -249,9 +249,9 @@ void SimpleFleet::SignalEvent(Event_t event) {
         behaviourMode=BehaviourMode_t::Default;
         break;
     case Event_t::ZTrajectoryFinished:
-        Printf("PositionHold1 -> Circle1\n");
-        StartCircle();
-        behaviourMode=BehaviourMode_t::Circle1;
+        Printf("PositionHold1 -> Square1\n");
+        StartSquare();
+        behaviourMode=BehaviourMode_t::Square1;
         break;
     }
 }
@@ -306,33 +306,33 @@ void SimpleFleet::ExtraCheckJoystick(void) {
 
 }
 
-void SimpleFleet::StartCircle(void) {
+void SimpleFleet::StartSquare(void) {
     if (SetOrientationMode(OrientationMode_t::Custom)) {
-        Thread::Info("Demo flotte: start circle\n");
+        Thread::Info("Demo flotte: start square\n");
     } else {
-        Thread::Warn("Demo flotte: could not start circle\n");
+        Thread::Warn("Demo flotte: could not start square\n");
         return;
     }
     Vector3D uav_pos;
     Vector2D uav_2Dpos,target_2Dpos;
 
-    //circle center
-    target_2Dpos.x=xCircleCenter->Value();
-    target_2Dpos.y=yCircleCenter->Value();
-    circle->SetCenter(target_2Dpos);
+    //square center
+    target_2Dpos.x=xSquareCenter->Value();
+    target_2Dpos.y=ySquareCenter->Value();
+    square->SetCenter(target_2Dpos);
 
     GetUav()->GetVrpnObject()->GetPosition(uav_pos);
     uav_pos.To2Dxy(uav_2Dpos);
-    circle->StartTraj(uav_2Dpos,1);
+    square->StartTraj(uav_2Dpos,1);
 
     u_x->Reset();
     u_y->Reset();
 }
 
-void SimpleFleet::StopCircle(void) {
-    circle->FinishTraj();
+void SimpleFleet::StopSquare(void) {
+    square->FinishTraj();
     //joy->Rumble(0x70);
-    Thread::Info("Demo flotte: finishing circle\n");
+    Thread::Info("Demo flotte: finishing square\n");
 }
 
 void SimpleFleet::VrpnPositionHold(void) {

@@ -40,10 +40,10 @@ class SimpleFleet : public flair::meta::UavStateMachine {
         enum class BehaviourMode_t {
             Default,
             PositionHold1,
-            Square1,
+            Circle1,
             PositionHold2,
             PositionHold3,
-            Square2,
+            Circle2,
             PositionHold4,
         };
 
@@ -52,8 +52,8 @@ class SimpleFleet : public flair::meta::UavStateMachine {
         bool vrpnLost;
 
         void VrpnPositionHold(void);//flight mode
-        void StartSquare(void);
-        void StopSquare(void);
+        void StartCircle(void);
+        void StopCircle(void);
         void ExtraTakeOff(void);
         void ExtraSecurityCheck(void);
         void ExtraCheckJoystick(void);
@@ -72,7 +72,7 @@ class SimpleFleet : public flair::meta::UavStateMachine {
         flair::core::Time posWait;
 
         flair::filter::TrajectoryGenerator2DSquare *square;
-        flair::gui::DoubleSpinBox *xSquareCenter,*ySquareCenter,*yDisplacement;
+        flair::gui::DoubleSpinBox *xCircleCenter,*yCircleCenter,*yDisplacement;
         flair::core::AhrsData *customReferenceOrientation,*customOrientation;
 };
 

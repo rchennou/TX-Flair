@@ -165,7 +165,7 @@ void SquareFleet::PositionValues(Vector2D &pos_error,Vector2D &vel_error,float &
         pos_error=uav_2Dpos-pos_hold;
         vel_error=uav_2Dvel;
         yaw_ref=yaw_hold;
-    } else { //Circle
+    } else { //circle
         Vector2D circle_pos,circle_vel;
         Vector2D target_2Dpos;
 

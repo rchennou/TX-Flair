@@ -183,7 +183,7 @@
      <DoubleSpinBox value="1" name="velocity"/>
      <DoubleSpinBox value="0.1" name="acceleration (absolute)"/>
     </GroupBox>
-   <GroupBox name="x8_1 Passe bas"><DoubleSpinBox name="period, 0 for auto" value="0"/><DoubleSpinBox name="cutoff frequency" value="1"/></GroupBox><GroupBox name="x8_1_euler"><DoubleSpinBox name="period, 0 for auto:" value="0"/></GroupBox><DoubleSpinBox name="x circle center" value="-1.5"/><DoubleSpinBox name="y circle center" value="0"/><DoubleSpinBox name="y displacement" value="0"/><GroupBox name="square"><DoubleSpinBox name="period, 0 for auto" value="0"/><DoubleSpinBox name="R" value="0"/><DoubleSpinBox name="velocity" value="0"/><DoubleSpinBox name="acceleration (absolute)" value="0"/></GroupBox><DoubleSpinBox name="x square center" value="1.5"/><DoubleSpinBox name="y square center" value="0"/></Tab>
+   <GroupBox name="x8_1 Passe bas"><DoubleSpinBox name="period, 0 for auto" value="0"/><DoubleSpinBox name="cutoff frequency" value="1"/></GroupBox><GroupBox name="x8_1_euler"><DoubleSpinBox name="period, 0 for auto:" value="0"/></GroupBox><DoubleSpinBox name="x circle center" value="-1.5"/><DoubleSpinBox name="y circle center" value="0"/><DoubleSpinBox name="y displacement" value="0"/><GroupBox name="square"><DoubleSpinBox name="period, 0 for auto" value="0"/><DoubleSpinBox name="R" value="0"/><DoubleSpinBox name="velocity" value="0"/><DoubleSpinBox name="acceleration (absolute)" value="0"/></GroupBox><DoubleSpinBox name="x square center" value="-1.5"/><DoubleSpinBox name="y square center" value="0"/></Tab>
    <Tab name="Mesures x8_0">
     <DataPlot1D name="x" period="100" enabled="1">
      <Setup period="100" enabled="1"/>

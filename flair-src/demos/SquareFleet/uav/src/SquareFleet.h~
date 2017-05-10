@@ -40,10 +40,10 @@ class SquareFleet : public flair::meta::UavStateMachine {
         enum class BehaviourMode_t {
             Default,
             PositionHold1,
-            square1,
+            Circle1,
             PositionHold2,
             PositionHold3,
-            square2,
+            Circle2,
             PositionHold4,
         };
 
@@ -52,8 +52,8 @@ class SquareFleet : public flair::meta::UavStateMachine {
         bool vrpnLost;
 
         void VrpnPositionHold(void);//flight mode
-        void StartSquare(void);
-        void StopSquare(void);
+        void StartCircle(void);
+        void StopCircle(void);
         void ExtraTakeOff(void);
         void ExtraSecurityCheck(void);
         void ExtraCheckJoystick(void);
@@ -72,7 +72,7 @@ class SquareFleet : public flair::meta::UavStateMachine {
         flair::core::Time posWait;
 
         flair::filter::TrajectoryGenerator2DSquare *square;
-        flair::gui::DoubleSpinBox *xsquareCenter,*ysquareCenter,*yDisplacement;
+        flair::gui::DoubleSpinBox *xCircleCenter,*yCircleCenter,*yDisplacement;
         flair::core::AhrsData *customReferenceOrientation,*customOrientation;
 };
 
