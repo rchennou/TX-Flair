@@ -1,0 +1,66 @@
+<!DOCTYPE remote_ui_xml>
+<root name="simulator">
+ <TabWidget name="Main_TabWidget">
+  <Tab name="x4_0">
+   <TabWidget name="tabs">
+    <Tab name="sampling">
+     <DoubleSpinBox value="0.001" name="Tech (s):"/>
+    </Tab>
+    <Tab name="optitrack">
+     <CheckBox value="1" name="enabled"/>
+    </Tab>
+    <Tab name="init">
+     <Vector3DSpinBox value_x="-1.5" value_y="0" value_z="-1" name="position"/>
+     <SpinBox value="90" name="yaw (deg):"/>
+    </Tab>
+    <Tab name="model">
+     <DoubleSpinBox value="1.2" name="mass (kg):"/>
+     <DoubleSpinBox value="0.2" name="arm length (m):"/>
+     <DoubleSpinBox value="0.001" name="k_mot:"/>
+     <DoubleSpinBox value="0.001" name="c_mot:"/>
+     <DoubleSpinBox value="0.01" name="f_air_vert:"/>
+     <DoubleSpinBox value="0.4" name="f_air_lat:"/>
+     <DoubleSpinBox value="0.006" name="j_roll:"/>
+     <DoubleSpinBox value="0.006" name="j_pitch:"/>
+     <DoubleSpinBox value="0.1" name="j_yaw:"/>
+    </Tab>
+    <Tab name="us">
+     <Vector3DSpinBox value_x="0" value_y="0" value_z="0.0399999991059303" name="position"/>
+     <Vector3DSpinBox value_x="0" value_y="0" value_z="1" name="direction"/>
+     <DoubleSpinBox value="6" name="range:"/>
+    </Tab>
+    <Tab name="bottom camera">
+     <Vector3DSpinBox value_x="0" value_y="0" value_z="0" name="position"/>
+     <Vector3DSpinBox value_x="0" value_y="0" value_z="1" name="direction"/>
+     <Vector3DSpinBox value_x="1" value_y="0" value_z="0" name="up"/>
+     <DoubleSpinBox value="70" name="fov:"/>
+    </Tab>
+    <Tab name="front camera">
+     <Vector3DSpinBox value_x="0" value_y="0" value_z="0" name="position"/>
+     <Vector3DSpinBox value_x="1" value_y="0" value_z="0" name="direction"/>
+     <Vector3DSpinBox value_x="0" value_y="0" value_z="-1" name="up"/>
+     <DoubleSpinBox value="70" name="fov:"/>
+    </Tab>
+   </TabWidget>
+  </Tab>
+  <Tab name="target">
+   <TabWidget name="tabs">
+    <Tab name="sampling">
+     <DoubleSpinBox value="0.02" name="Tech (s):"/>
+    </Tab>
+    <Tab name="optitrack">
+     <CheckBox value="1" name="enabled"/>
+    </Tab>
+    <Tab name="init">
+     <Vector3DSpinBox value_x="-5.0" value_y="-1.00" value_z="0.00" name="position"/>
+     <SpinBox value="90" name="yaw (deg):"/>
+    </Tab>
+    <Tab name="model">
+     <DoubleSpinBox value="1.3" name="translational speed (m/s):"/>
+     <DoubleSpinBox value="60" name="rotational speed (deg/s):"/>
+    </Tab>
+   </TabWidget>
+  </Tab>
+ </TabWidget>
+ <PushButton value="0" name="save config on target (simulator)"/>
+</root>

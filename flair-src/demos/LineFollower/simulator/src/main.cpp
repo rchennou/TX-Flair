@@ -97,6 +97,7 @@ int main(int argc, char* argv[]) {
     Camera *cam_av,*cam_bas;
     Parser *gui;
     Man *man;
+    Man *man2;
 #endif
     parseOptions(argc,argv);
 
@@ -122,6 +123,7 @@ int main(int argc, char* argv[]) {
     cam_av=new SimuCameraGL(drone,"front camera",320,240,640,240,1);
 
     man=new Man(simu,"target");
+    man2=new Man(simu,"target2");
 #endif
 
     simu->RunSimu();

@@ -19,6 +19,7 @@
 namespace flair {
     namespace gui {
         class PushButton;
+	class DoubleSpinBox;
     }
     namespace filter {
         class TrajectoryGenerator2DCircle;
@@ -67,6 +68,7 @@ class SquareFollower : public flair::meta::UavStateMachine {
         flair::meta::MetaVrpnObject *targetVrpn;
         flair::filter::TrajectoryGenerator2DCircle *circle;
         flair::core::AhrsData *customReferenceOrientation,*customOrientation;
+	flair::gui::DoubleSpinBox *xPoint1, *yPoint1, *xPoint2, *yPoint2;
 };
 
 #endif // SquareFollower_H

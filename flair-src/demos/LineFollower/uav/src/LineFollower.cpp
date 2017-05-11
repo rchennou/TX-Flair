@@ -22,13 +22,19 @@
 #include <FrameworkManager.h>
 #include <VrpnClient.h>
 #include <MetaVrpnObject.h>
-#include <TrajectoryGenerator2DLine.h>
+#include "TrajectoryGenerator2DLine.h"
 #include <cvmatrix.h>
 #include <cmath>
 #include <Tab.h>
 #include <Pid.h>
 #include <Ahrs.h>
 #include <AhrsData.h>
+#include <DoubleSpinBox.h>
+#include <stdio.h>
+#include <cmath>
+#include <Tab.h>
+#include <Socket.h>
+#include <string.h>
 
 using namespace std;
 using namespace flair::core;
@@ -40,9 +46,12 @@ using namespace flair::meta;
 SquareFollower::SquareFollower(Uav* uav,TargetController *controller): UavStateMachine(uav,controller), behaviourMode(BehaviourMode_t::Default), vrpnLost(false) {
     uav->SetupVRPNAutoIP(uav->ObjectName());
 
-    startCircle=new PushButton(GetButtonsLayout()->NewRow(),"start_Line");
-    stopCircle=new PushButton(GetButtonsLayout()->LastRowLastCol(),"stop_Line");
-    
+    startCircle=new PushButton(GetButtonsLayout()->NewRow(),"start_waypoint");
+    stopCircle=new PushButton(GetButtonsLayout()->LastRowLastCol(),"stop_waypoint");
+ 
+
+
+
     if(uav->GetVrpnClient()->UseXbee()==true) {
         targetVrpn=new MetaVrpnObject(uav->GetVrpnClient(),"target",1);
     } else {
@@ -51,7 +60,7 @@ SquareFollower::SquareFollower(Uav* uav,TargetController *controller): UavStateM
 
     getFrameworkManager()->AddDeviceToLog(targetVrpn);
 
-    circle=new TrajectoryGenerator2DCircle(uav->GetVrpnClient()->GetLayout()->NewRow(),"square");
+    circle=new TrajectoryGenerator2DCircle(uav->GetVrpnClient()->GetLayout()->NewRow(),"line");
     uav->GetVrpnObject()->xPlot()->AddCurve(circle->Matrix()->Element(0,0),DataPlot::Blue);
     uav->GetVrpnObject()->yPlot()->AddCurve(circle->Matrix()->Element(0,1),DataPlot::Blue);
     uav->GetVrpnObject()->VxPlot()->AddCurve(circle->Matrix()->Element(1,0),DataPlot::Blue);
