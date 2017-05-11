@@ -189,8 +189,8 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
           
           if(nb == 0)
           {
-      				v.y += A * CurrentTime;
-				v.x += A * CurrentTime;
+      				v.y = A * CurrentTime;
+				v.x = A * CurrentTime;
       				if (fabs(v.y) > fabs(V)) {
        		 		if (v.y > 0)
           				v.y = V;
@@ -218,17 +218,20 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
         				v.y = 0;
 				
       					pos.y = y1;
-      					setNb(1);
-      					FinishTime = CurrentTime;
+      					
         			}
 				if ( (pos.x >= x1 && v.x >= 0) || (pos.x <= x1 && v.x < 0) )
       				{
         				v.x = 0;
 				
       					pos.x = x1;
-      					setNb(1);
-      					FinishTime = CurrentTime;
+      					
+      					
         			}
+				if ( ((pos.y >= y1 && v.y >= 0) || (pos.y <= y1 && v.y < 0)) && ((pos.x >= x1 && v.x >= 0) || (pos.x <= x1 && v.x < 0)) )			{
+					FinishTime = CurrentTime;
+					setNb(1);
+				}
         	} 
         	else if(nb == 1)
         	{
