@@ -43,22 +43,20 @@ public:
   ~TrajectoryGenerator2DSquare_impl();
   void Update(flair::core::Time time);
   void StartTraj(const flair::core::Vector2D &start_pos, float nb_lap);
-  void FinishTraj(void);
   bool is_running;
   flair::core::cvmatrix *output;
   flair::core::Vector2D pos_off, vel_off;
-  
+
 private:
   flair::core::Time previous_time;
   float CurrentTime, FinishTime;
-  bool first_update, is_finishing, is_finishing_previous;
-  flair::core::Vector2D pos;
+  bool first_update;
+  flair::core::Vector2D pos, posStart;
   float angle_off;
-  flair::gui::DoubleSpinBox *T, *veloctity, *acceleration, *rayon;
+  flair::gui::DoubleSpinBox *veloctity, *acceleration, *distance;
   float nb_lap;
 
   unsigned int nb;
-  void setNb(unsigned int n);
 };
 
 #endif // TrajectoryGenerator2DSquare_IMPL_H

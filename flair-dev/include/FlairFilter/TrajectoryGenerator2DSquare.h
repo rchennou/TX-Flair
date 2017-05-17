@@ -81,13 +81,6 @@ public:
   void StopTraj(void);
 
   /*!
-  * \brief Finish trajectory
-  *
-  * Finish smoothly the trajectory.
-  */
-  void FinishTraj(void);
-
-  /*!
   * \brief Set center position
   *
   * \param value center position

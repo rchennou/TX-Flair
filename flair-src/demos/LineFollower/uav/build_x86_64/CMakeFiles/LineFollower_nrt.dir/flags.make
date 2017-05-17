@@ -6,5 +6,5 @@ CXX_FLAGS =  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse --sysroot=/opt/r
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2 -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv -I/home/sofiane/flair/flair-dev/include/FlairCore -I/home/sofiane/flair/flair-dev/include/FlairSensorActuator -I/home/sofiane/flair/flair-dev/include/FlairFilter -I/home/sofiane/flair/flair-dev/include/FlairMeta 
+CXX_INCLUDES = -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/libxml2 -I/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/include/opencv -I/home/rafik/flair/flair-dev/include/FlairCore -I/home/rafik/flair/flair-dev/include/FlairSensorActuator -I/home/rafik/flair/flair-dev/include/FlairFilter -I/home/rafik/flair/flair-dev/include/FlairMeta 
 

@@ -48,10 +48,10 @@ RM = /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav
+CMAKE_SOURCE_DIR = /home/rafik/flair/flair-src/demos/LineFollower/uav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav/build
+CMAKE_BINARY_DIR = /home/rafik/flair/flair-src/demos/LineFollower/uav/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build/CMakeFiles /home/sofiane/flair/flair-src/demos/LineFollower/uav/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build/CMakeFiles /home/rafik/flair/flair-src/demos/LineFollower/uav/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -166,6 +166,66 @@ src/LineFollower.cpp.s:
 	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/LineFollower.cpp.s
 .PHONY : src/LineFollower.cpp.s
 
+src/TrajectoryGenerator2DLine.o: src/TrajectoryGenerator2DLine.cpp.o
+
+.PHONY : src/TrajectoryGenerator2DLine.o
+
+# target to build an object file
+src/TrajectoryGenerator2DLine.cpp.o:
+	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine.cpp.o
+	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/TrajectoryGenerator2DLine.cpp.o
+.PHONY : src/TrajectoryGenerator2DLine.cpp.o
+
+src/TrajectoryGenerator2DLine.i: src/TrajectoryGenerator2DLine.cpp.i
+
+.PHONY : src/TrajectoryGenerator2DLine.i
+
+# target to preprocess a source file
+src/TrajectoryGenerator2DLine.cpp.i:
+	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine.cpp.i
+	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/TrajectoryGenerator2DLine.cpp.i
+.PHONY : src/TrajectoryGenerator2DLine.cpp.i
+
+src/TrajectoryGenerator2DLine.s: src/TrajectoryGenerator2DLine.cpp.s
+
+.PHONY : src/TrajectoryGenerator2DLine.s
+
+# target to generate assembly for a file
+src/TrajectoryGenerator2DLine.cpp.s:
+	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine.cpp.s
+	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/TrajectoryGenerator2DLine.cpp.s
+.PHONY : src/TrajectoryGenerator2DLine.cpp.s
+
+src/TrajectoryGenerator2DLine_impl.o: src/TrajectoryGenerator2DLine_impl.cpp.o
+
+.PHONY : src/TrajectoryGenerator2DLine_impl.o
+
+# target to build an object file
+src/TrajectoryGenerator2DLine_impl.cpp.o:
+	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine_impl.cpp.o
+	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/TrajectoryGenerator2DLine_impl.cpp.o
+.PHONY : src/TrajectoryGenerator2DLine_impl.cpp.o
+
+src/TrajectoryGenerator2DLine_impl.i: src/TrajectoryGenerator2DLine_impl.cpp.i
+
+.PHONY : src/TrajectoryGenerator2DLine_impl.i
+
+# target to preprocess a source file
+src/TrajectoryGenerator2DLine_impl.cpp.i:
+	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine_impl.cpp.i
+	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/TrajectoryGenerator2DLine_impl.cpp.i
+.PHONY : src/TrajectoryGenerator2DLine_impl.cpp.i
+
+src/TrajectoryGenerator2DLine_impl.s: src/TrajectoryGenerator2DLine_impl.cpp.s
+
+.PHONY : src/TrajectoryGenerator2DLine_impl.s
+
+# target to generate assembly for a file
+src/TrajectoryGenerator2DLine_impl.cpp.s:
+	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine_impl.cpp.s
+	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/src/TrajectoryGenerator2DLine_impl.cpp.s
+.PHONY : src/TrajectoryGenerator2DLine_impl.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -209,6 +269,12 @@ help:
 	@echo "... src/LineFollower.o"
 	@echo "... src/LineFollower.i"
 	@echo "... src/LineFollower.s"
+	@echo "... src/TrajectoryGenerator2DLine.o"
+	@echo "... src/TrajectoryGenerator2DLine.i"
+	@echo "... src/TrajectoryGenerator2DLine.s"
+	@echo "... src/TrajectoryGenerator2DLine_impl.o"
+	@echo "... src/TrajectoryGenerator2DLine_impl.i"
+	@echo "... src/TrajectoryGenerator2DLine_impl.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

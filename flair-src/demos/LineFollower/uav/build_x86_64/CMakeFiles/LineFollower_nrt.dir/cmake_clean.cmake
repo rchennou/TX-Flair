@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LineFollower_nrt.dir/src/main.cpp.o"
   "CMakeFiles/LineFollower_nrt.dir/src/LineFollower.cpp.o"
+  "CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine.cpp.o"
+  "CMakeFiles/LineFollower_nrt.dir/src/TrajectoryGenerator2DLine_impl.cpp.o"
   "bin/LineFollower_nrt.pdb"
   "bin/LineFollower_nrt"
 )

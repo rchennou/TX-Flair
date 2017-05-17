@@ -22,7 +22,7 @@
 #include <FrameworkManager.h>
 #include <VrpnClient.h>
 #include <MetaVrpnObject.h>
-#include "TrajectoryGenerator2DLine.h"
+#include <TrajectoryGenerator2DLine.h>
 #include <cvmatrix.h>
 #include <cmath>
 #include <Tab.h>

@@ -1,5 +1,5 @@
 The target system is: Linux -  - arm
-The host system is: Linux - 4.8.0-45-generic - x86_64
+The host system is: Linux - 4.4.0-34-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc 
 Build flags: ;-march=armv7-a;-mthumb-interwork;-mfloat-abi=softfp;-mfpu=neon;--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi;-O2;-pipe
@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/3.7.0/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/3.7.0/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ 
@@ -24,33 +24,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/3.7.0/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/3.7.0/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7089c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7089c.dir/build.make CMakeFiles/cmTC_7089c.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7089c.dir/testCCompiler.c.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_7089c.dir/testCCompiler.c.o   -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_7089c
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7089c.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_7089c.dir/testCCompiler.c.o  -o cmTC_7089c -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_73137/fast"
+/usr/bin/make -f CMakeFiles/cmTC_73137.dir/build.make CMakeFiles/cmTC_73137.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_73137.dir/testCCompiler.c.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_73137.dir/testCCompiler.c.o   -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_73137
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73137.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_73137.dir/testCCompiler.c.o  -o cmTC_73137 -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d64c3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d64c3.dir/build.make CMakeFiles/cmTC_d64c3.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_d64c3
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d64c3.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o  -o cmTC_d64c3 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_0169f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0169f.dir/build.make CMakeFiles/cmTC_0169f.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_0169f
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0169f.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o  -o cmTC_0169f -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
 COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper
@@ -60,23 +60,23 @@ Thread model: posix
 gcc version 4.9.1 (GCC) 
 COMPILER_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
 LIBRARY_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'cmTC_d64c3' '-rdynamic' '-mtls-dialect=gnu'
- /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cclvckYR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_d64c3 /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'cmTC_0169f' '-rdynamic' '-mtls-dialect=gnu'
+ /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cckGzJoO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_0169f /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d64c3/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d64c3.dir/build.make CMakeFiles/cmTC_d64c3.dir/build]
-  ignore line: [make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_d64c3]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d64c3.dir/link.txt --verbose=1]
-  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o  -o cmTC_d64c3 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0169f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0169f.dir/build.make CMakeFiles/cmTC_0169f.dir/build]
+  ignore line: [make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »]
+  ignore line: [Building C object CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o   -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_0169f]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0169f.dir/link.txt --verbose=1]
+  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o  -o cmTC_0169f -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.9.1 (GCC) ]
   ignore line: [COMPILER_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
   ignore line: [LIBRARY_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'cmTC_d64c3' '-rdynamic' '-mtls-dialect=gnu']
-  link line: [ /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cclvckYR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_d64c3 /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'cmTC_0169f' '-rdynamic' '-mtls-dialect=gnu']
+  link line: [ /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cckGzJoO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_0169f /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o]
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cclvckYR.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckGzJoO.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d64c3] ==> ignore
+    arg [cmTC_0169f] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-O1] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--as-needed] ==> ignore
-    arg [CMakeFiles/cmTC_d64c3.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_0169f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -148,17 +148,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fba93/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fba93.dir/build.make CMakeFiles/cmTC_fba93.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fba93.dir/feature_tests.c.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c11 -o CMakeFiles/cmTC_fba93.dir/feature_tests.c.o   -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.c
-Linking C executable cmTC_fba93
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fba93.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_fba93.dir/feature_tests.c.o  -o cmTC_fba93 -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b27e6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b27e6.dir/build.make CMakeFiles/cmTC_b27e6.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_b27e6.dir/feature_tests.c.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c11 -o CMakeFiles/cmTC_b27e6.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b27e6
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b27e6.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_b27e6.dir/feature_tests.c.o  -o cmTC_b27e6 -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -168,17 +168,17 @@ make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_adc72/fast"
-/usr/bin/make -f CMakeFiles/cmTC_adc72.dir/build.make CMakeFiles/cmTC_adc72.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_adc72.dir/feature_tests.c.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c99 -o CMakeFiles/cmTC_adc72.dir/feature_tests.c.o   -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.c
-Linking C executable cmTC_adc72
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc72.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_adc72.dir/feature_tests.c.o  -o cmTC_adc72 -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9a724/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a724.dir/build.make CMakeFiles/cmTC_9a724.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_9a724.dir/feature_tests.c.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c99 -o CMakeFiles/cmTC_9a724.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9a724
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a724.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_9a724.dir/feature_tests.c.o  -o cmTC_9a724 -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -188,17 +188,17 @@ make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8399c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8399c.dir/build.make CMakeFiles/cmTC_8399c.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8399c.dir/feature_tests.c.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c90 -o CMakeFiles/cmTC_8399c.dir/feature_tests.c.o   -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.c
-Linking C executable cmTC_8399c
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8399c.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_8399c.dir/feature_tests.c.o  -o cmTC_8399c -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_1bbb9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1bbb9.dir/build.make CMakeFiles/cmTC_1bbb9.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_1bbb9.dir/feature_tests.c.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c90 -o CMakeFiles/cmTC_1bbb9.dir/feature_tests.c.o   -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1bbb9
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bbb9.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_1bbb9.dir/feature_tests.c.o  -o cmTC_1bbb9 -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -206,30 +206,30 @@ make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3d364/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3d364.dir/build.make CMakeFiles/cmTC_3d364.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3d364.dir/testCXXCompiler.cxx.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_3d364.dir/testCXXCompiler.cxx.o -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_3d364
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d364.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_3d364.dir/testCXXCompiler.cxx.o  -o cmTC_3d364 -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a71ee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a71ee.dir/build.make CMakeFiles/cmTC_a71ee.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_a71ee.dir/testCXXCompiler.cxx.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_a71ee.dir/testCXXCompiler.cxx.o -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_a71ee
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a71ee.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_a71ee.dir/testCXXCompiler.cxx.o  -o cmTC_a71ee -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8e05f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8e05f.dir/build.make CMakeFiles/cmTC_8e05f.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_8e05f
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e05f.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8e05f -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_84fd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84fd3.dir/build.make CMakeFiles/cmTC_84fd3.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_84fd3
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84fd3.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_84fd3 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++
 COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper
@@ -239,23 +239,23 @@ Thread model: posix
 gcc version 4.9.1 (GCC) 
 COMPILER_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/
 LIBRARY_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-v' '-o' 'cmTC_8e05f' '-rdynamic' '-shared-libgcc' '-mtls-dialect=gnu'
- /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFY52Ze.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_8e05f /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-v' '-o' 'cmTC_84fd3' '-rdynamic' '-shared-libgcc' '-mtls-dialect=gnu'
+ /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqOjsH7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_84fd3 /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8e05f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8e05f.dir/build.make CMakeFiles/cmTC_8e05f.dir/build]
-  ignore line: [make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_8e05f]
-  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e05f.dir/link.txt --verbose=1]
-  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8e05f -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_84fd3/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_84fd3.dir/build.make CMakeFiles/cmTC_84fd3.dir/build]
+  ignore line: [make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »]
+  ignore line: [Building CXX object CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -o CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o -c /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_84fd3]
+  ignore line: [/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84fd3.dir/link.txt --verbose=1]
+  ignore line: [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -v CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_84fd3 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper]
@@ -265,13 +265,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.9.1 (GCC) ]
   ignore line: [COMPILER_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/]
   ignore line: [LIBRARY_PATH=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-v' '-o' 'cmTC_8e05f' '-rdynamic' '-shared-libgcc' '-mtls-dialect=gnu']
-  link line: [ /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccFY52Ze.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_8e05f /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-march=armv7-a' '-mthumb-interwork' '-mfloat-abi=softfp' '-mfpu=neon' '-O2' '-pipe' '-v' '-o' 'cmTC_84fd3' '-rdynamic' '-shared-libgcc' '-mtls-dialect=gnu']
+  link line: [ /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2 -plugin /opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so -plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqOjsH7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_84fd3 /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1 -L/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib -rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtend.o /opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crtn.o]
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/4.9.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccFY52Ze.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccqOjsH7.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -288,7 +288,7 @@ Parsed CXX implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8e05f] ==> ignore
+    arg [cmTC_84fd3] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crt1.o] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/crti.o] ==> ignore
     arg [/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/4.9.1/crtbegin.o] ==> ignore
@@ -300,7 +300,7 @@ Parsed CXX implicit link information from above output:
     arg [-O1] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--as-needed] ==> ignore
-    arg [CMakeFiles/cmTC_8e05f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_84fd3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -326,17 +326,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c0326/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c0326.dir/build.make CMakeFiles/cmTC_c0326.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c0326.dir/feature_tests.cxx.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c++14 -o CMakeFiles/cmTC_c0326.dir/feature_tests.cxx.o -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c0326
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0326.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_c0326.dir/feature_tests.cxx.o  -o cmTC_c0326 -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_048bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_048bc.dir/build.make CMakeFiles/cmTC_048bc.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_048bc.dir/feature_tests.cxx.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c++14 -o CMakeFiles/cmTC_048bc.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_048bc
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_048bc.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_048bc.dir/feature_tests.cxx.o  -o cmTC_048bc -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -399,17 +399,17 @@ make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_87923/fast"
-/usr/bin/make -f CMakeFiles/cmTC_87923.dir/build.make CMakeFiles/cmTC_87923.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_87923.dir/feature_tests.cxx.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c++11 -o CMakeFiles/cmTC_87923.dir/feature_tests.cxx.o -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_87923
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87923.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_87923.dir/feature_tests.cxx.o  -o cmTC_87923 -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8b4d0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b4d0.dir/build.make CMakeFiles/cmTC_8b4d0.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_8b4d0.dir/feature_tests.cxx.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c++11 -o CMakeFiles/cmTC_8b4d0.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8b4d0
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b4d0.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_8b4d0.dir/feature_tests.cxx.o  -o cmTC_8b4d0 -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -472,17 +472,17 @@ make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60296/fast"
-/usr/bin/make -f CMakeFiles/cmTC_60296.dir/build.make CMakeFiles/cmTC_60296.dir/build
-make[1]: Entering directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_60296.dir/feature_tests.cxx.o
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c++98 -o CMakeFiles/cmTC_60296.dir/feature_tests.cxx.o -c /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_60296
-/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60296.dir/link.txt --verbose=1
-/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_60296.dir/feature_tests.cxx.o  -o cmTC_60296 -rdynamic 
-make[1]: Leaving directory '/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_93002/fast"
+/usr/bin/make -f CMakeFiles/cmTC_93002.dir/build.make CMakeFiles/cmTC_93002.dir/build
+make[1]: entrant dans le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_93002.dir/feature_tests.cxx.o
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi    -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe    -std=c++98 -o CMakeFiles/cmTC_93002.dir/feature_tests.cxx.o -c /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_93002
+/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93002.dir/link.txt --verbose=1
+/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++  --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -O2 -pipe   -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sysroot=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi -Wl,-rpath=/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib:/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/lib -O2 -pipe -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed   CMakeFiles/cmTC_93002.dir/feature_tests.cxx.o  -o cmTC_93002 -rdynamic 
+make[1]: quittant le répertoire « /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/CMakeTmp »
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

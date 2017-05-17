@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sofiane/flair/flair-dev/include/FlairCore/AhrsData.h
+/home/rafik/flair/flair-dev/include/FlairCore/AhrsData.h
 io_data.h
 -
 IODataElement.h
@@ -16,51 +16,67 @@ Vector3D.h
 Quaternion.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/DataPlot.h
+/home/rafik/flair/flair-dev/include/FlairCore/Box.h
+Widget.h
+-
+
+/home/rafik/flair/flair-dev/include/FlairCore/DataPlot.h
 SendData.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/DataPlot1D.h
+/home/rafik/flair/flair-dev/include/FlairCore/DataPlot1D.h
 DataPlot.h
 -
 stdint.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/DataPlot2D.h
+/home/rafik/flair/flair-dev/include/FlairCore/DataPlot2D.h
 DataPlot.h
 -
 stdint.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Euler.h
+/home/rafik/flair/flair-dev/include/FlairCore/DoubleSpinBox.h
+Box.h
+-
 
-/home/sofiane/flair/flair-dev/include/FlairCore/FrameworkManager.h
+/home/rafik/flair/flair-dev/include/FlairCore/Euler.h
+
+/home/rafik/flair/flair-dev/include/FlairCore/FrameworkManager.h
 Object.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/GridLayout.h
+/home/rafik/flair/flair-dev/include/FlairCore/GridLayout.h
 Layout.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/IODataElement.h
-io_data.h
-/home/sofiane/flair/flair-dev/include/FlairCore/io_data.h
+/home/rafik/flair/flair-dev/include/FlairCore/GroupBox.h
+Layout.h
+-
 
-/home/sofiane/flair/flair-dev/include/FlairCore/IODevice.h
+/home/rafik/flair/flair-dev/include/FlairCore/IODataElement.h
+io_data.h
+/home/rafik/flair/flair-dev/include/FlairCore/io_data.h
+
+/home/rafik/flair/flair-dev/include/FlairCore/IODevice.h
 Object.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Layout.h
+/home/rafik/flair/flair-dev/include/FlairCore/Layout.h
 Widget.h
 -
 Mutex.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Mutex.h
+/home/rafik/flair/flair-dev/include/FlairCore/LayoutPosition.h
+stdint.h
+-
+
+/home/rafik/flair/flair-dev/include/FlairCore/Mutex.h
 Object.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Object.h
+/home/rafik/flair/flair-dev/include/FlairCore/Object.h
 string
 -
 vector
@@ -68,39 +84,47 @@ vector
 stdarg.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/PushButton.h
+/home/rafik/flair/flair-dev/include/FlairCore/PushButton.h
 Widget.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Quaternion.h
+/home/rafik/flair/flair-dev/include/FlairCore/Quaternion.h
 
-/home/sofiane/flair/flair-dev/include/FlairCore/SendData.h
+/home/rafik/flair/flair-dev/include/FlairCore/SendData.h
 Widget.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Tab.h
+/home/rafik/flair/flair-dev/include/FlairCore/Socket.h
+unistd.h
+-
+stdint.h
+-
+Object.h
+-
+
+/home/rafik/flair/flair-dev/include/FlairCore/Tab.h
 Layout.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Thread.h
+/home/rafik/flair/flair-dev/include/FlairCore/Thread.h
 Object.h
 -
 stdint.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Vector2D.h
+/home/rafik/flair/flair-dev/include/FlairCore/Vector2D.h
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Vector3D.h
+/home/rafik/flair/flair-dev/include/FlairCore/Vector3D.h
 stddef.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/Widget.h
+/home/rafik/flair/flair-dev/include/FlairCore/Widget.h
 Object.h
 -
 libxml/xpath.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/cvmatrix.h
+/home/rafik/flair/flair-dev/include/FlairCore/cvmatrix.h
 io_data.h
 -
 IODataElement.h
@@ -108,53 +132,53 @@ IODataElement.h
 cvmatrix_descriptor.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/cvmatrix_descriptor.h
+/home/rafik/flair/flair-dev/include/FlairCore/cvmatrix_descriptor.h
 string
 -
 
-/home/sofiane/flair/flair-dev/include/FlairCore/io_data.h
+/home/rafik/flair/flair-dev/include/FlairCore/io_data.h
 Mutex.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairFilter/Ahrs.h
+/home/rafik/flair/flair-dev/include/FlairFilter/Ahrs.h
 IODevice.h
 -
 DataPlot.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairFilter/ControlLaw.h
+/home/rafik/flair/flair-dev/include/FlairFilter/ControlLaw.h
 IODevice.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairFilter/Pid.h
+/home/rafik/flair/flair-dev/include/FlairFilter/Pid.h
 ControlLaw.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DLine.h
+/home/rafik/flair/flair-dev/include/FlairFilter/TrajectoryGenerator2DLine.h
 IODevice.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairMeta/MetaDualShock3.h
+/home/rafik/flair/flair-dev/include/FlairMeta/MetaDualShock3.h
 TargetController.h
 -
 IODevice.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairMeta/MetaVrpnObject.h
+/home/rafik/flair/flair-dev/include/FlairMeta/MetaVrpnObject.h
 VrpnObject.h
 -
 io_data.h
-/home/sofiane/flair/flair-dev/include/FlairMeta/io_data.h
+/home/rafik/flair/flair-dev/include/FlairMeta/io_data.h
 
-/home/sofiane/flair/flair-dev/include/FlairMeta/Uav.h
+/home/rafik/flair/flair-dev/include/FlairMeta/Uav.h
 Object.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairMeta/UavFactory.h
+/home/rafik/flair/flair-dev/include/FlairMeta/UavFactory.h
 Uav.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairMeta/UavStateMachine.h
+/home/rafik/flair/flair-dev/include/FlairMeta/UavStateMachine.h
 Thread.h
 -
 Vector2D.h
@@ -166,7 +190,7 @@ Euler.h
 Quaternion.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairSensorActuator/TargetController.h
+/home/rafik/flair/flair-dev/include/FlairSensorActuator/TargetController.h
 IODevice.h
 -
 Thread.h
@@ -176,23 +200,23 @@ stdint.h
 queue
 -
 
-/home/sofiane/flair/flair-dev/include/FlairSensorActuator/TargetEthController.h
+/home/rafik/flair/flair-dev/include/FlairSensorActuator/TargetEthController.h
 TargetController.h
-/home/sofiane/flair/flair-dev/include/FlairSensorActuator/TargetController.h
+/home/rafik/flair/flair-dev/include/FlairSensorActuator/TargetController.h
 
-/home/sofiane/flair/flair-dev/include/FlairSensorActuator/VrpnClient.h
+/home/rafik/flair/flair-dev/include/FlairSensorActuator/VrpnClient.h
 Thread.h
 -
 
-/home/sofiane/flair/flair-dev/include/FlairSensorActuator/VrpnObject.h
+/home/rafik/flair/flair-dev/include/FlairSensorActuator/VrpnObject.h
 IODevice.h
 -
 stdint.h
 -
 
-/home/sofiane/flair/flair-src/demos/LineFollower/uav/src/LineFollower.cpp
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/LineFollower.cpp
 LineFollower.h
-/home/sofiane/flair/flair-src/demos/LineFollower/uav/src/LineFollower.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/LineFollower.h
 TargetController.h
 -
 Uav.h
@@ -227,14 +251,68 @@ Ahrs.h
 -
 AhrsData.h
 -
+DoubleSpinBox.h
+-
+stdio.h
+-
+cmath
+-
+Tab.h
+-
+Socket.h
+-
+string.h
+-
 
-/home/sofiane/flair/flair-src/demos/LineFollower/uav/src/LineFollower.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/LineFollower.h
 UavStateMachine.h
 -
 
-/home/sofiane/flair/flair-src/demos/LineFollower/uav/src/main.cpp
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine.cpp
+TrajectoryGenerator2DLine.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine.h
+TrajectoryGenerator2DLine_impl.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine_impl.h
+cvmatrix.h
+-
+Layout.h
+-
+LayoutPosition.h
+-
+Vector2D.h
+-
+
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine.h
+IODevice.h
+-
+
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine_impl.cpp
+TrajectoryGenerator2DLine_impl.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine_impl.h
+TrajectoryGenerator2DLine.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine.h
+cvmatrix.h
+-
+Layout.h
+-
+GroupBox.h
+-
+DoubleSpinBox.h
+-
+cmath
+-
+iostream
+-
+
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/TrajectoryGenerator2DLine_impl.h
+Object.h
+-
+Vector2D.h
+-
+
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/main.cpp
 LineFollower.h
-/home/sofiane/flair/flair-src/demos/LineFollower/uav/src/LineFollower.h
+/home/rafik/flair/flair-src/demos/LineFollower/uav/src/LineFollower.h
 UavFactory.h
 -
 FrameworkManager.h

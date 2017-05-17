@@ -57,7 +57,7 @@ private:
   bool first_update, is_finishing, is_finishing_previous;
   flair::core::Vector2D pos;
   float angle_off;
-  flair::gui::DoubleSpinBox *T, *veloctity, *acceleration, *rayon;
+  flair::gui::DoubleSpinBox *T, *veloctity, *acceleration, *rayon,  *xPoint1, *xPoint2, *yPoint1, *yPoint2;
   float nb_lap;
   
   unsigned int nb;

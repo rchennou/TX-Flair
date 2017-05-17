@@ -210,7 +210,7 @@
      <DoubleSpinBox value="1" name="velocity"/>
      <DoubleSpinBox value="0.1" name="acceleration (absolute)"/>
     </GroupBox>
-   <GroupBox name="square"><DoubleSpinBox name="period, 0 for auto" value="0"/><DoubleSpinBox name="R" value="2"/><DoubleSpinBox name="velocity" value="0.6"/><DoubleSpinBox name="acceleration (absolute)" value="0.1"/></GroupBox></Tab>
+   <GroupBox name="square"><DoubleSpinBox name="period, 0 for auto" value="0"/><DoubleSpinBox name="R" value="2"/><DoubleSpinBox name="velocity" value="0.6"/><DoubleSpinBox name="acceleration (absolute)" value="0.1"/><DoubleSpinBox name="D" value="1.50"/></GroupBox></Tab>
    <Tab name="Mesures x4_0">
     <DataPlot1D name="x" period="100" enabled="1">
      <Setup period="100" enabled="1"/>

@@ -43,10 +43,10 @@ RM = /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/simulator
+CMAKE_SOURCE_DIR = /home/rafik/flair/flair-src/demos/LineFollower/simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/simulator/build
+CMAKE_BINARY_DIR = /home/rafik/flair/flair-src/demos/LineFollower/simulator/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LineFollower_simulator_rt.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/LineFollower_simulator_rt.dir/flags.make
 
 CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o: CMakeFiles/LineFollower_simulator_rt.dir/flags.make
 CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sofiane/flair/flair-src/demos/LineFollower/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o"
-	/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o -c /home/sofiane/flair/flair-src/demos/LineFollower/simulator/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafik/flair/flair-src/demos/LineFollower/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o"
+	/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o -c /home/rafik/flair/flair-src/demos/LineFollower/simulator/src/main.cpp
 
 CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.i"
-	/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sofiane/flair/flair-src/demos/LineFollower/simulator/src/main.cpp > CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.i
+	/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafik/flair/flair-src/demos/LineFollower/simulator/src/main.cpp > CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.i
 
 CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.s"
-	/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sofiane/flair/flair-src/demos/LineFollower/simulator/src/main.cpp -o CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.s
+	/opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++  --sysroot=/opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafik/flair/flair-src/demos/LineFollower/simulator/src/main.cpp -o CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.s
 
 CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o.requires:
 
@@ -90,15 +90,15 @@ LineFollower_simulator_rt_EXTERNAL_OBJECTS =
 
 bin/LineFollower_simulator_rt: CMakeFiles/LineFollower_simulator_rt.dir/src/main.cpp.o
 bin/LineFollower_simulator_rt: CMakeFiles/LineFollower_simulator_rt.dir/build.make
-bin/LineFollower_simulator_rt: /home/sofiane/flair/flair-bin/lib/x86_64/unix/libFlairSimulator_gl.a
-bin/LineFollower_simulator_rt: /home/sofiane/flair/flair-bin/lib/x86_64/unix/libFlairSensorActuator.a
-bin/LineFollower_simulator_rt: /home/sofiane/flair/flair-bin/lib/x86_64/unix/libFlairCore_rt.a
+bin/LineFollower_simulator_rt: /home/rafik/flair/flair-bin/lib/x86_64/unix/libFlairSimulator_gl.a
+bin/LineFollower_simulator_rt: /home/rafik/flair/flair-bin/lib/x86_64/unix/libFlairSensorActuator.a
+bin/LineFollower_simulator_rt: /home/rafik/flair/flair-bin/lib/x86_64/unix/libFlairCore_rt.a
 bin/LineFollower_simulator_rt: /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/libxml2.so
 bin/LineFollower_simulator_rt: /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/librtdm.so
 bin/LineFollower_simulator_rt: /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/libnative.so
 bin/LineFollower_simulator_rt: /opt/robomap3/1.7.3/core2-64/sysroots/core2-64-poky-linux/usr/lib/libxenomai.so
 bin/LineFollower_simulator_rt: CMakeFiles/LineFollower_simulator_rt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sofiane/flair/flair-src/demos/LineFollower/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/LineFollower_simulator_rt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafik/flair/flair-src/demos/LineFollower/simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/LineFollower_simulator_rt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LineFollower_simulator_rt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +115,6 @@ CMakeFiles/LineFollower_simulator_rt.dir/clean:
 .PHONY : CMakeFiles/LineFollower_simulator_rt.dir/clean
 
 CMakeFiles/LineFollower_simulator_rt.dir/depend:
-	cd /home/sofiane/flair/flair-src/demos/LineFollower/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sofiane/flair/flair-src/demos/LineFollower/simulator /home/sofiane/flair/flair-src/demos/LineFollower/simulator /home/sofiane/flair/flair-src/demos/LineFollower/simulator/build /home/sofiane/flair/flair-src/demos/LineFollower/simulator/build /home/sofiane/flair/flair-src/demos/LineFollower/simulator/build/CMakeFiles/LineFollower_simulator_rt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rafik/flair/flair-src/demos/LineFollower/simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafik/flair/flair-src/demos/LineFollower/simulator /home/rafik/flair/flair-src/demos/LineFollower/simulator /home/rafik/flair/flair-src/demos/LineFollower/simulator/build /home/rafik/flair/flair-src/demos/LineFollower/simulator/build /home/rafik/flair/flair-src/demos/LineFollower/simulator/build/CMakeFiles/LineFollower_simulator_rt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LineFollower_simulator_rt.dir/depend
 

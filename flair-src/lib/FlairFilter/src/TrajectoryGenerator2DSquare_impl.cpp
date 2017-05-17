@@ -36,16 +36,13 @@ TrajectoryGenerator2DSquare_impl::TrajectoryGenerator2DSquare_impl(
     string name) {
   first_update = true;
   is_running = false;
-  is_finishing = false;
-  is_finishing_previous = false;
 
   nb = 0;
 
   // init UI
   GroupBox *reglages_groupbox = new GroupBox(position, name);
-  T = new DoubleSpinBox(reglages_groupbox->NewRow(), "period, 0 for auto", " s",
-                        0, 1, 0.01);
-  rayon = new DoubleSpinBox(reglages_groupbox->LastRowLastCol(), "R", " m", 0,
+
+  distance = new DoubleSpinBox(reglages_groupbox->LastRowLastCol(), "D", " m", 0,
                             1000, .1);
   veloctity = new DoubleSpinBox(reglages_groupbox->LastRowLastCol(), "velocity",
                                 " m/s", -10, 10, 1);
@@ -75,38 +72,26 @@ void TrajectoryGenerator2DSquare_impl::StartTraj(const Vector2D &start_pos,
                                                  float nb_lap) {
   is_running = true;
   first_update = true;
-  is_finishing = false;
   this->nb_lap = nb_lap;
+  nb = 0;
 
   // configure trajectory
-  angle_off = atan2(start_pos.y - pos_off.y, start_pos.x - pos_off.x);				// pos_start.x - pos_off.x ==> position départ en x
+  posStart.x = start_pos.x - pos_off.x;                                       // pos_start.x - pos_off.x ==> position départ en x
+  posStart.y = start_pos.y - pos_off.y;
   CurrentTime = 0;
-}
-
-void TrajectoryGenerator2DSquare_impl::FinishTraj(void) {
-  if (!is_finishing) {
-    is_finishing = true;
-    FinishTime = CurrentTime;
-  }
-}
-
-void TrajectoryGenerator2DSquare_impl::setNb(unsigned int n)
-{
-		nb = n;
+  FinishTime = 0;
 }
 
 void TrajectoryGenerator2DSquare_impl::Update(Time time) {
   float delta_t;
-  float theta;
   float V = veloctity->Value();
   float A = acceleration->Value();
-  float R = rayon->Value();
+  float R = distance->Value();
   Vector2D v;
 
   if (V < 0)
     A = -A;
 
-  if (T->Value() == 0) {
     if (first_update) {
       first_update = false;
       previous_time = time;
@@ -115,75 +100,71 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
     } else {
       delta_t = (float)(time - previous_time) / 1000000000.;
     }
-  } else {
-    delta_t = T->Value();
-  }
 
-	is_finishing = false;
-
-  previous_time = time;																																// algo "temps réel"
+  previous_time = time;
   CurrentTime += delta_t;
 
 
   if (is_running) {
-    if (R == 0) {																																			// Rayon à 0 ==> position à 0 (centre du cercle)
+    if (R == 0) {
       pos.x = 0;
       pos.y = 0;
       v.x = 0;
       v.y = 0;
     } else {
 
-        if (nb < 6 && pos.x != 0 && pos.y != 0) {
+        if (nb < 5) {
 
           if(nb == 0)
           {
       				v.y = A * CurrentTime;
-
       				if (fabs(v.y) > fabs(V)) {
        		 		if (v.y > 0)
           				v.y = V;
         				else
           				v.y = -V;
       				}
-      				pos.y = v.y * CurrentTime;
 
+              v.x = A * CurrentTime;
+              if (fabs(v.x) > fabs(V)) {
+              if (v.x > 0)
+                  v.x = V;
+                else
+                  v.x = -V;
+              }
+
+      				pos.y = v.y * CurrentTime + posStart.y;
       				if (R - v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
         				A = -A;
       				if (R - v.y * v.y / (2 * A) >= pos.y && v.y < 0)
         				A = -A;
 
-      				if ( (pos.y >= R && v.y >= 0) || (pos.y <= R && v.y < 0) )
+              pos.x = v.x * CurrentTime + posStart.x;
+              if (R - v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
+                A = -A;
+              if (R - v.x * v.x / (2 * A) >= pos.x && v.x < 0)
+                A = -A;
+
+              if ( (pos.y >= R && v.y >= 0) || (pos.y <= R && v.y < 0) )
+        			{
+          				v.y = 0;
+        					pos.y = R;
+          		}
+
+              if ( (pos.x >= R && v.x >= 0) || (pos.x <= R && v.x < 0) )
+              {
+                  v.x = 0;
+                  pos.x = R;
+              }
+
+      				if ( ((pos.y >= R && v.y >= 0) || (pos.y <= R && v.y < 0)) && ((pos.x >= R && v.x >= 0) || (pos.x <= R && v.x < 0)) )
       				{
-        				v.y = 0;
-      					pos.y = R;
-      					setNb(1);
+      					nb = 1;
       					FinishTime = CurrentTime;
         			}
+
         	}
         	else if(nb == 1)
-        	{
-        			v.x = A * (CurrentTime - FinishTime);
-      				if (fabs(v.x) > fabs(V)) {
-       		 		if (v.x > 0)
-          				v.x = V;
-        				else
-          				v.x = -V;
-      				}
-      				pos.x = v.x * (CurrentTime - FinishTime);
-      				if (R - v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
-        				A = -A;
-      				if (R - v.x * v.x / (2 * A) >= pos.x && v.x < 0)
-        				A = -A;
-
-      				if ( (pos.x >= R && v.x >= 0) || (pos.x <= R && v.x < 0) )
-      				{
-        				v.x = 0;
-      					pos.x = R;
-      					setNb(2);
-      					FinishTime = CurrentTime;
-        			}
-        	}
-        	else if(nb == 2)
         	{
         			v.y = A * (CurrentTime - FinishTime);
       				if (fabs(v.y) > fabs(V)) {
@@ -202,12 +183,12 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       				{
         				v.y = 0;
       					pos.y = -R;
-      					setNb(3);
+      					nb = 2;
       					FinishTime = CurrentTime;
         			}
 
         	}
-        	else if(nb == 3)
+        	else if(nb == 2)
         	{
         			v.x = A * (CurrentTime - FinishTime);
       				if (fabs(v.x) > fabs(V)) {
@@ -226,12 +207,12 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       				{
         				v.x = 0;
       					pos.x = -R;
-      					setNb(4);
+      					nb = 3;
       					FinishTime = CurrentTime;
         			}
 
         	}
-        	else if(nb == 4)
+        	else if(nb == 3)
         	{
       				v.y = A * (CurrentTime - FinishTime);
       				if (fabs(v.y) > fabs(V)) {
@@ -249,12 +230,12 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       				{
         				v.y = 0;
       					pos.y = R;
-      					setNb(5);
+      					nb = 4;
       					FinishTime = CurrentTime;
         			}
 
         	}
-        	else if(nb == 5)
+        	else if(nb == 4)
         	{
         			v.x = A * (CurrentTime - FinishTime);
       				if (fabs(v.x) > fabs(V)) {
@@ -273,7 +254,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
       				{
         				v.x = 0;
       					pos.x = R;
-      					setNb(6);
+      					nb = 5;
         			}
 
         	}
@@ -285,7 +266,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
     			pos.x = R;
           pos.y = R;
 
-    			nb = 2;
+    			nb = 1;
     			CurrentTime = 0;
     			FinishTime = 0;
 
@@ -295,10 +276,7 @@ void TrajectoryGenerator2DSquare_impl::Update(Time time) {
   } else {
     v.x = 0;
     v.y = 0;
-    CurrentTime = 0;
-    FinishTime = 0;
   }
-
 
 
   // on prend une fois pour toute les mutex et on fait des accès directs

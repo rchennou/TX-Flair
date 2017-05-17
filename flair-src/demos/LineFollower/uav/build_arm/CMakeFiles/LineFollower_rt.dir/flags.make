@@ -6,5 +6,5 @@ CXX_FLAGS =  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon --sy
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/libxml2 -I/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/opencv -I/home/sofiane/flair/flair-dev/include/FlairCore -I/home/sofiane/flair/flair-dev/include/FlairSensorActuator -I/home/sofiane/flair/flair-dev/include/FlairFilter -I/home/sofiane/flair/flair-dev/include/FlairMeta 
+CXX_INCLUDES = -I/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/libxml2 -I/opt/robomap3/1.7.3/armv7a-neon/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/opencv -I/home/rafik/flair/flair-dev/include/FlairCore -I/home/rafik/flair/flair-dev/include/FlairSensorActuator -I/home/rafik/flair/flair-dev/include/FlairFilter -I/home/rafik/flair/flair-dev/include/FlairMeta 
 

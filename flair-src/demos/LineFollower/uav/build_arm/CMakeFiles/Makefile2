@@ -54,10 +54,10 @@ RM = /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav
+CMAKE_SOURCE_DIR = /home/rafik/flair/flair-src/demos/LineFollower/uav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm
+CMAKE_BINARY_DIR = /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm
 
 #=============================================================================
 # Target rules for target CMakeFiles/LineFollower_nrt.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_ar
 CMakeFiles/LineFollower_nrt.dir/all:
 	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/depend
 	$(MAKE) -f CMakeFiles/LineFollower_nrt.dir/build.make CMakeFiles/LineFollower_nrt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles --progress-num=1,2,3 "Built target LineFollower_nrt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles --progress-num=1,2,3 "Built target LineFollower_nrt"
 .PHONY : CMakeFiles/LineFollower_nrt.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/LineFollower_nrt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LineFollower_nrt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LineFollower_nrt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 0
 .PHONY : CMakeFiles/LineFollower_nrt.dir/rule
 
 # Convenience name for target.
@@ -103,7 +103,7 @@ clean: CMakeFiles/LineFollower_nrt.dir/clean
 CMakeFiles/LineFollower_rt.dir/all:
 	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/depend
 	$(MAKE) -f CMakeFiles/LineFollower_rt.dir/build.make CMakeFiles/LineFollower_rt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles --progress-num=4,5,6 "Built target LineFollower_rt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles --progress-num=4,5,6 "Built target LineFollower_rt"
 .PHONY : CMakeFiles/LineFollower_rt.dir/all
 
 # Include target in all.
@@ -113,9 +113,9 @@ all: CMakeFiles/LineFollower_rt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LineFollower_rt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LineFollower_rt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 0
 .PHONY : CMakeFiles/LineFollower_rt.dir/rule
 
 # Convenience name for target.

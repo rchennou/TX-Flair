@@ -51,8 +51,6 @@ void TrajectoryGenerator2DSquare::StartTraj(const Vector2D &start_pos,
   pimpl_->StartTraj(start_pos, nb_lap);
 }
 
-void TrajectoryGenerator2DSquare::FinishTraj(void) { pimpl_->FinishTraj(); }
-
 void TrajectoryGenerator2DSquare::StopTraj(void) { pimpl_->is_running = false; }
 
 void TrajectoryGenerator2DSquare::GetPosition(Vector2D &point) const {

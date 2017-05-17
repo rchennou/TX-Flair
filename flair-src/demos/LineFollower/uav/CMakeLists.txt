@@ -13,6 +13,8 @@ include(${FLAIR_USE_FILE})
 SET(SRC_FILES
 	${CMAKE_SOURCE_DIR}/src/main.cpp
 	${CMAKE_SOURCE_DIR}/src/LineFollower.cpp
+	${CMAKE_SOURCE_DIR}/src/TrajectoryGenerator2DLine.cpp
+	${CMAKE_SOURCE_DIR}/src/TrajectoryGenerator2DLine_impl.cpp
 )
 
 INCLUDE_DIRECTORIES(

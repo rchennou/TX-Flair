@@ -4,7 +4,7 @@
 #include <string>
 
 #define USER "rafik@rafik-Linux"
-#define DATE "mercredi 10 mai 2017, 19:32:14 (UTC+0200)"
+#define DATE "mercredi 17 mai 2017, 18:09:58 (UTC+0200)"
 #define GCC_REV "4.9.1"
 #define GCC_PATH "/opt/robomap3/1.7.3/armv7a-neon/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc"
 #define SVN_PATH "/home/rafik/flair/flair-src/lib/FlairMeta"

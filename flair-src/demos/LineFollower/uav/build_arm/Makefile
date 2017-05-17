@@ -48,10 +48,10 @@ RM = /opt/robomap3/1.7.3/core2-64/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav
+CMAKE_SOURCE_DIR = /home/rafik/flair/flair-src/demos/LineFollower/uav
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm
+CMAKE_BINARY_DIR = /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofiane/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafik/flair/flair-src/demos/LineFollower/uav/build_arm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -11,3 +11,6 @@ Redaction d'un tuto d'utilisation en anglais (word - LibreOffice Writer)
 Prog 1 : Demarrage d'un drone + suivi d'une trajectoire donné (carré)
 Prog 2 : Faire voler le drone et le commander en manuel
 Possibilité de tester sur le simulateur (à voir comment faire) ==> tester dans le simulateur avant puis dans la voilière
+
+
+Expliciter les changements de repère (VRPN, UAV..)
