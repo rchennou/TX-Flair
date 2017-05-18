@@ -185,33 +185,33 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
       v.y = 0;
     } else {
     
-        if (nb < 6) {
+        if (nb < 3) {
           
           if(nb == 0)
           {
       				v.y = A * CurrentTime;
-				v.x = A * CurrentTime;
+				      v.x = A * CurrentTime;
       				if (fabs(v.y) > fabs(V)) {
-       		 		if (v.y > 0)
+       		 		  if (v.y > 0)
           				v.y = V;
         				else
           				v.y = -V;
-      				}
+      		}
 				if (fabs(v.x) > fabs(V)) {
-				if (v.x > 0)
+				        if (v.x > 0)
           				v.x = V;
         				else
           				v.x = -V;
-      				}
+      	  }
 				pos.x= v.x * CurrentTime;
-      				pos.y = v.y * CurrentTime;
-      				if (y1/2 <= pos.y && v.y >= 0)
+      	pos.y = v.y * CurrentTime;
+      				if (y1-v.y * v.y / (2 * A) <= pos.y && v.y >= 0)
         				A = -A;
-      				if (y1/2 >= pos.y && v.y < 0)
+      				if (y1-v.y * v.y / (2 * A) >= pos.y && v.y < 0)
         				A = -A;
-				if (x1/2 <= pos.x && v.x >= 0)
+				      if (x1-v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
         				A = -A;
-      				if (x1/2 >= pos.x && v.x < 0)
+      				if (x1-v.x * v.x / (2 * A) >= pos.x && v.x < 0)
         				A = -A;
       				if ( (pos.y >= y1 && v.y >= 0) || (pos.y <= y1 && v.y < 0) )
       				{
@@ -236,7 +236,7 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
         	else if(nb == 1)
         	{
         			v.y = A * CurrentTime;
-				v.x = A * CurrentTime;
+				      v.x = A * CurrentTime;
       				if (fabs(v.y) > fabs(V)) {
        		 		if (v.y > 0)
           				v.y = V;
@@ -250,31 +250,33 @@ void TrajectoryGenerator2DCircle_impl::Update(Time time) {
           				v.x = -V;
       				}
 				pos.x= v.x * CurrentTime;
-      				pos.y = v.y * CurrentTime;
-      				if (y2/2 <= pos.y && v.y >= 0)
+      	pos.y = v.y * CurrentTime;
+      				if (y2-v.y * v.y/ (2 * A) <= pos.y && v.y >= 0)
         				A = -A;
-      				if (y2/2 >= pos.y && v.y < 0)
+      				if (y2-v.y * v.y / (2 * A) >= pos.y && v.y < 0)
         				A = -A;
-				if (x2/2 <= pos.x && v.x >= 0)
+				      if (x2-v.x * v.x / (2 * A) <= pos.x && v.x >= 0)
         				A = -A;
-      				if (x2/2 >= pos.x && v.x < 0)
+      				if (x2-v.x * v.x / (2 * A) >= pos.x && v.x < 0)
         				A = -A;
       				if ( (pos.y >= y2 && v.y >= 0) || (pos.y <= y2 && v.y < 0) )
       				{
         				v.y = 0;
 				
       					pos.y = y2;
-      					setNb(8);
-      					FinishTime = CurrentTime;
+      					
         			}
 				if ( (pos.x >= x2 && v.x >= 0) || (pos.x <= x2 && v.x < 0) )
       				{
         				v.x = 0;
 				
       					pos.x = x2;
-      					setNb(8);
-      					FinishTime = CurrentTime;
+      					
         			}
+            if ( ((pos.y >= y2 && v.y >= 0) || (pos.y <= y2 && v.y < 0)) && ((pos.x >= x2 && v.x >= 0) || (pos.x <= x2 && v.x < 0)) )     {
+              FinishTime = CurrentTime;
+              setNb(8);
+               }
 
         	}
         	
