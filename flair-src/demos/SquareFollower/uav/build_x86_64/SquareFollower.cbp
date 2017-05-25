@@ -164,6 +164,9 @@
 		<Unit filename="/home/rafik/flair/flair-src/demos/SquareFollower/uav/../../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
 		</Unit>
+		<Unit filename="/home/rafik/flair/flair-src/demos/SquareFollower/uav/../../../../../../../opt/robomap3/1.7.3/core2-64/toolchain.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\robomap3\1.7.3\core2-64\"/>
+		</Unit>
 		<Unit filename="/home/rafik/flair/flair-src/demos/SquareFollower/uav/../../../../flair-dev/cmake-modules/GlobalCmakeFlair.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\flair-dev\cmake-modules\"/>
 		</Unit>

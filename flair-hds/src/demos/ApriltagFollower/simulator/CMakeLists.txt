@@ -1,0 +1,43 @@
+PROJECT(ApriltagFollower_simulator)
+cmake_minimum_required(VERSION 2.8)
+include($ENV{FLAIR_ROOT}/flair-dev/cmake-modules/GlobalCmakeFlair.cmake)
+
+if("${CMAKE_SYSTEM_PROCESSOR}" MATCHES "x86_64")
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+SET(FLAIR_USE_SIMULATOR TRUE)
+SET(FLAIR_USE_SIMULATOR_GL TRUE)
+SET(FLAIR_USE_VISION_FILTER TRUE)
+
+include(${FLAIR_USE_FILE})
+
+SET(SRC_FILES
+	${CMAKE_SOURCE_DIR}/src/main.cpp
+  ${CMAKE_SOURCE_DIR}/src/X4WithTag
+)
+
+LINK_DIRECTORIES (
+	${FLAIR_LIBRARY_DIR}
+)
+
+INCLUDE_DIRECTORIES(
+	${FLAIR_INCLUDE_DIR}
+)
+
+#real time executable
+ADD_EXECUTABLE(${PROJECT_NAME}_rt
+	${SRC_FILES}
+)
+
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}_rt ${FLAIR_LIBRARIES_RT})
+
+#non real time executable
+ADD_EXECUTABLE(${PROJECT_NAME}_nrt
+	${SRC_FILES}
+)
+
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}_nrt ${FLAIR_LIBRARIES_NRT})
+
+else()
+warn("${PROJECT_NAME} will not be built for ${CMAKE_SYSTEM_PROCESSOR} architecture")
+endif()

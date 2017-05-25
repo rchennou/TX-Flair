@@ -1,0 +1,9 @@
+# CLion generated folders and files
+.idea/
+cmake-build-debug/
+
+# Flair generated folders and files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake

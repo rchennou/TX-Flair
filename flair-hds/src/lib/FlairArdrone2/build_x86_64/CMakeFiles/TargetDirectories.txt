@@ -1,0 +1,2 @@
+/home/rafik/flair/flair-hds/src/lib/FlairArdrone2/build/CMakeFiles/rebuild_cache.dir
+/home/rafik/flair/flair-hds/src/lib/FlairArdrone2/build/CMakeFiles/edit_cache.dir

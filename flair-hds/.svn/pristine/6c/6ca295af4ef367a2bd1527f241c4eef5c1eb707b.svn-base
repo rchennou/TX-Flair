@@ -1,0 +1,72 @@
+<scene>
+        <params>
+                <archive id="0" path="indoor_flight_arena.zip" />
+                <mesh id="0" model="voliere.bsp" >
+                        <position x="0" y="0" z="0" />
+                        <rotation x="0" y="0" z="0" />
+                        <scale x="10" y="10" z="3" />
+                </mesh>
+                <camera name="fixed camera 1">
+                        <position x="-5" y="-5" z="-2.5" />
+                        <lookat x="0" y="0" z="0" />
+                </camera>
+                <camera name="fixed camera 2">
+                        <position x="-5" y="5" z="-2.5" />
+                </camera>
+                <camera name="fixed camera 3">
+                        <position x="5" y="-5" z="-2.5" />
+                </camera>
+                <camera name="fixed camera 4">
+                        <position x="5" y="5" z="-2.5" />
+                </camera>
+        </params>
+        <objects>
+                <cylinder radius="0.02" length="2" tesselation="120" >
+                        <position x="3" y="-1" z="-0.02" />
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2.83" tesselation="120" >
+                        <position x="3" y="1" z="-0.02" />
+                        <rotation x="0" y="0" z="0.785" /> 
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2" tesselation="120" >
+                        <position x="1" y="3" z="-0.02" />
+                        <rotation x="0" y="0" z="1.571" /> 
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2.83" tesselation="120" >
+                        <position x="-3" y="1" z="-0.02" />
+                        <rotation x="0" y="0" z="-0.785" /> 
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2" tesselation="120" >
+                        <position x="-3" y="-1" z="-0.02" />
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2.83" tesselation="120" >
+                        <position x="-1" y="-3" z="-0.02" />
+                        <rotation x="0" y="0" z="0.785" /> 
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2" tesselation="120" >
+                        <position x="1" y="-3" z="-0.02" />
+                        <rotation x="0" y="0" z="1.571" /> 
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+                <cylinder radius="0.02" length="2.83" tesselation="120" >
+                        <position x="1" y="-3" z="-0.02" />
+                        <rotation x="0" y="0" z="-0.785" /> 
+                        <color r="0" g="0" b="0" a="255"/>
+                        <scale x="1" y="1" z="1" />
+                </cylinder>
+        </objects>
+</scene>
+
